@@ -3,11 +3,329 @@
 <head>
 	<!-- Add CSS at the head of HTML file -->
     <link rel="stylesheet" href="./css/main.css">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 </head>
-<body>
-		<!-- Your code goes here-->
+<body><div id="mySidepanel" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <ul id="lists">
+            <h2>Procedure to Perform the Instrumentation Amplifier.</h2>
+            <li>Step 1: Simulator will open the circuit diagram
+                of Instrumentation Amplifier Student will initiate the simulator To aware the connection diagram of
+                Instrumentation amplifier.
+            </li>
+            <li>Step 2: Simulator will allow to change supply voltage from AC or DC voltage Student will select the
+                button of voltage type from input section To aware the type of supply
+                from AC or DC voltage.</li>
+            <li>Step 3: Simulator will show the value of V1 and V2 at the node of supply value Student will allow to change the supply voltage of V1 and V2 by clicking the mouse button on slide bar to obtain the voltage of V1 and V2 .
+            </li>
+            <li>Step 4: Simulator will give the value of R1, R2 and R3 and shown on the diagram	Student will change the value of resistor by clicking on the slide bar	To show the value of R1, R2, R3.
+            </li>
+            <li>Simulator will display value of Vout or output voltage	Student will allow to obtain the value of Vout or output voltage by clicking on the Vout button To obtain the value of Vout of Instrumentation Amplifier
+            </li>
+            <li>Simulator will make a graph on the right side of the simulator interaction Student will allow to obtain the graph To obtain the graph of Instrumentation amplifier.
+            </li>
+        </ul>
+    </div>
+    <button class="openbtn" onclick="openNav()">☰ Open Procedure</button>
+    <center>
+        <h2 id="h2_head">INSTRUMENTATION AMPLIFIER EXPERIMENT</h2>
+    </center>
+    <div class="allbox">
+        <div class="container">
 
-	<!-- Add JS at the bottom of HTML file --> 
-        <script src="./js/main.js"></script>
+            <section class="main-section">
+                <h4 style="text-align:center; margin-top: 10px;">
+                    Instrumentation Amplifier Circuit Diagram
+                </h4>
+                <div style="height:100% ; width:100%">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 200 597.6 842.4"
+                        style="enable-background:new 0 0 597.6 842.4;" xml:space="preserve">
+                        <style type="text/css">
+                            .st0 {
+                                fill: none;
+                                stroke: #000000;
+                                stroke-miterlimit: 10;
+                            }
+
+                            .st1 {
+                                fill: none;
+                                stroke: #000000;
+                                stroke-width: 0.5;
+                                stroke-miterlimit: 10;
+                            }
+
+                            .st2 {
+                                fill: none;
+
+                            }
+
+                            .st3 {
+                                font-family: 'ArialMT';
+
+                            }
+
+                            .st4 {
+                                font-size: 7px;
+
+                            }
+
+                            .st5 {
+                                font-size: 18px;
+                                fill: #1836b8;
+                            }
+                        </style>
+                        <line class="st0" x1="94" y1="291" x2="159" y2="291" />
+                        <line class="st0" x1="159" y1="279.5" x2="159" y2="344.5" />
+                        <line class="st0" x1="158.7" y1="279.5" x2="219.2" y2="314.6" />
+                        <line class="st0" x1="123.1" y1="386.5" x2="235.1" y2="386.5" />
+                        <line class="st0" x1="123.1" y1="330.5" x2="123.1" y2="386.5" />
+                        <line class="st1" x1="161.4" y1="330.5" x2="165.3" y2="330.5" />
+                        <line class="st0" x1="159" y1="344.4" x2="219.2" y2="314.6" />
+                        <line class="st0" x1="123.1" y1="330.5" x2="159" y2="330.5" />
+                        <rect x="161.4" y="287.7" class="st2" width="7.7" height="6" />
+                        <text transform="matrix(1 0 0 1 161.4249 292.6768)" class="st3 st4">+</text>
+                        <!-- resistor image -->
+                        <image style="overflow:visible;enable-background:new    ;" width="2000" height="750"
+                            xlink:href="https://drive.google.com/uc?id=17_ctdgCAAQxXZoM5wtgVAZ5fyjzfi6wV"
+                            transform="matrix(-8.872567e-18 4.830000e-02 -4.450000e-02 -8.174517e-18 283.5014 302.5711)">
+                        </image>
+                        <line class="st0" x1="218.3" y1="314.8" x2="283.3" y2="314.8" />
+                        <line class="st0" x1="338.8" y1="314.8" x2="338.8" y2="396.1" />
+                        <!-- resistor image -->
+                        <image style="overflow:visible;enable-background:new    ;" width="2000" height="750"
+                            xlink:href="https://drive.google.com/uc?id=17_ctdgCAAQxXZoM5wtgVAZ5fyjzfi6wV"
+                            transform="matrix(-9.037893e-18 4.920000e-02 -4.530000e-02 -8.321475e-18 283.8183 361.6157)">
+                        </image>
+                        <line class="st0" x1="225.6" y1="386.5" x2="266.8" y2="386.5" />
+                        <!-- resistor image -->
+                        <image style="overflow:visible;enable-background:new    ;" width="2000" height="750"
+                            xlink:href="https://drive.google.com/uc?id=17_ctdgCAAQxXZoM5wtgVAZ5fyjzfi6wV"
+                            transform="matrix(4.830000e-02 0 0 4.450000e-02 254.948 298.1833)">
+                        </image>
+                        <line class="st0" x1="338.4" y1="396.1" x2="357.7" y2="396.1" />
+                        <line class="st0" x1="358.4" y1="384.6" x2="358.4" y2="449.6" />
+                        <line class="st0" x1="358.1" y1="384.6" x2="418.5" y2="419.6" />
+                        <line class="st1" x1="360.8" y1="395.6" x2="364.7" y2="395.6" />
+                        <line class="st0" x1="358.4" y1="449.5" x2="418.5" y2="419.6" />
+                        <line class="st0" x1="338.4" y1="435.6" x2="358.4" y2="435.6" />
+                        <rect x="360.8" y="431.8" class="st2" width="7.7" height="6" />
+                        <text transform="matrix(1 0 0 1 360.7783 436.7597)" class="st3 st4">+</text>
+                        <line class="st0" x1="338.8" y1="435.6" x2="338.8" y2="526.5" />
+                        <line class="st0" x1="154.8" y1="447.2" x2="266.8" y2="447.2" />
+                        <line class="st0" x1="123.1" y1="447.2" x2="154.9" y2="447.2" />
+                        <!-- resistor image -->
+                        <image style="overflow:visible;enable-background:new    ;" width="2000" height="750"
+                            xlink:href="https://drive.google.com/uc?id=17_ctdgCAAQxXZoM5wtgVAZ5fyjzfi6wV"
+                            transform="matrix(-9.037893e-18 4.920000e-02 -4.530000e-02 -8.321475e-18 283.8183 426.413)">
+                        </image>
+                        <line class="st0" x1="123.4" y1="446.6" x2="123.4" y2="502.6" />
+                        <line class="st0" x1="123.1" y1="502.9" x2="158.3" y2="502.9" />
+                        <line class="st0" x1="158.9" y1="491.4" x2="158.9" y2="556.4" />
+                        <line class="st0" x1="158.6" y1="491.4" x2="219.1" y2="526.5" />
+                        <line class="st1" x1="161.4" y1="502.4" x2="165.3" y2="502.4" />
+                        <line class="st0" x1="158.9" y1="556.3" x2="219.1" y2="526.5" />
+                        <line class="st0" x1="94" y1="542.4" x2="158.9" y2="542.4" />
+                        <rect x="161.4" y="538.6" class="st2" width="7.7" height="6" />
+                        <text transform="matrix(1 0 0 1 161.3659 543.5917)" class="st3 st4">+</text>
+                        <line class="st0" x1="219.1" y1="526.5" x2="266.8" y2="526.5" />
+                        <line class="st0" x1="266.8" y1="512.2" x2="266.8" y2="526.8" />
+                        <circle class="st0" cx="90.3" cy="291.7" r="4" />
+                        <circle class="st0" cx="90.3" cy="542.4" r="4" />
+                        <!-- resistor image -->
+                        <image style="overflow:visible;enable-background:new    ;" width="2000" height="750"
+                            xlink:href="https://drive.google.com/uc?id=17_ctdgCAAQxXZoM5wtgVAZ5fyjzfi6wV"
+                            transform="matrix(-4.860000e-02 0 0 -4.470000e-02 351.4597 543.3197)">
+                        </image>
+                        <line class="st0" x1="338.9" y1="526.5" x2="348" y2="526.5" />
+                        <!-- resistor image -->
+                        <image style="overflow:visible;enable-background:new    ;" width="2000" height="750"
+                            xlink:href="https://drive.google.com/uc?id=17_ctdgCAAQxXZoM5wtgVAZ5fyjzfi6wV"
+                            transform="matrix(-4.920000e-02 0 0 -4.530000e-02 425.2668 543.5305)">
+                        </image>
+
+                        <image style="overflow:visible;enable-background:new    ;" width="512" height="490"
+                            xlink:href="https://drive.google.com/uc?id=1z7ZLG8cZx3q7bmXB6HUHKF3kVrFSjQBz"
+                            transform="matrix(6.440000e-02 0 0 6.440000e-02 442.4459 525.6301)">
+                        </image>
+                        <line class="st0" x1="412.2" y1="526.5" x2="459.9" y2="526.5" />
+                        <line class="st0" x1="418.7" y1="419.8" x2="524.3" y2="419.8" />
+                        <!-- resistor image -->
+                        <image style="overflow:visible;enable-background:new    ;" width="2000" height="750"
+                            xlink:href="https://drive.google.com/uc?id=17_ctdgCAAQxXZoM5wtgVAZ5fyjzfi6wV"
+                            transform="matrix(4.830000e-02 0 0 4.450000e-02 326.2687 298.1833)">
+                        </image>
+                        <line class="st0" x1="409.7" y1="314.8" x2="459.9" y2="314.8" />
+                        <line class="st0" x1="459.9" y1="315" x2="459.9" y2="419.6" />
+                        <rect x="68.3" y="256.3" class="st2" width="89.1" height="26.8" />
+                        <text transform="matrix(1 0 0 1 68.3224 269.096)" class="st3 st5" id="voltage-1-display-svg">V1:
+                            0 volts</text>
+                        <polygon class="st2" points="74.5,231.8 86.3,231.8 86.3,231.8 " />
+                        <rect x="68.3" y="565.8" class="st2" width="89.1" height="26.8" />
+                        <text transform="matrix(1 0 0 1 68.3223 578.5952)" class="st3 st5"
+                            id="voltage-2-display-svg">V2: 0 volts</text>
+                        <rect x="231.6" y="347.6" class="st2" width="31" height="26.8" />
+                        <text transform="matrix(1 0 0 1 231.5987 360.3747)" class="st3 st5">R1: </text>
+                        <text transform="matrix(1 0 0 1 275.9211 355.4986)" class="st3 st5" id="r1-svg-display"> 0
+                        </text>
+                        <text transform="matrix(1 0 0 1 275.9211 370.4986)" class="st3 st5">ohm</text>
+                        <rect x="289.4" y="290.7" class="st2" width="27.7" height="26.8" />
+                        <text transform="matrix(1 0 0 1 289.3656 303.4566)" class="st3 st5">R2: </text>
+                        <text transform="matrix(1 0 0 1 283.2774 264.9695)" class="st3 st5" id="r2-svg-display"> 0
+                        </text>
+                        <text transform="matrix(1 0 0 1 283.2774 279.9695)" class="st3 st5">ohm</text>
+                        <rect x="363.7" y="292.1" class="st2" width="27.7" height="26.8" />
+                        <text transform="matrix(1 0 0 1 363.7304 304.8963)" class="st3 st5">R3: </text>
+                        <text transform="matrix(1 0 0 1 357.6422 266.4091)" class="st3 st5" id="r3-svg-display"> 0
+                        </text>
+                        <text transform="matrix(1 0 0 1 357.6422 281.4091)" class="st3 st5">ohm</text>
+                        <rect x="288.3" y="543.8" class="st2" width="27.7" height="26.8" />
+                        <text transform="matrix(1 0 0 1 288.2682 556.5692)" class="st3 st5">R2: </text>
+                        <text transform="matrix(1 0 0 1 282.9615 575.8995)" class="st3 st5" id="r20-svg-display"> 0
+                        </text>
+                        <text transform="matrix(1 0 0 1 282.9615 590.8995)" class="st3 st5">ohm</text>
+                        <rect x="233.4" y="471.4" class="st2" width="31" height="26.8" />
+                        <text transform="matrix(1 0 0 1 233.3685 484.2299)" class="st3 st5">R1: </text>
+                        <text transform="matrix(1 0 0 1 276.6056 475.5861)" class="st3 st5" id="r10-svg-display"> 0
+                        </text>
+                        <text transform="matrix(1 0 0 1 276.6056 490.5861)" class="st3 st5">ohm</text>
+                        <rect x="358.5" y="544.6" class="st2" width="27.7" height="26.8" />
+                        <text transform="matrix(1 0 0 1 358.5525 557.3698)" class="st3 st5">R3: </text>
+                        <text transform="matrix(1 0 0 1 353.2458 576.7003)" class="st3 st5" id="r30-svg-display"> 0
+                        </text>
+                        <text transform="matrix(1 0 0 1 353.2458 591.7003)" class="st3 st5">ohm</text>
+                        <rect x="195.6" y="406.2" class="st2" width="60" height="26.8" />
+                        <text transform="matrix(1 0 0 1 195.6172 418.9506)" class="st3 st5">R gain : </text>
+                        <rect x="472.5" y="403.7" class="st2" width="60" height="26.8" />
+                        <text transform="matrix(1 0 0 1 472.4842 416.4487)" class="st3 st5">V out :</text>
+                        <text transform="matrix(1 0 0 1 276.5148 415.9286)" class="st3 st5" id="rgain-svg-display"> 0
+                        </text>
+                        <text transform="matrix(1 0 0 1 276.5148 430.9286)" class="st3 st5">ohm</text>
+                        <text transform="matrix(1 0 0 1 473.2556 442.5997)" class="st3 st5" id="Vout_svg_display">0
+                            volts</text>
+                    </svg>
+                </div>
+            </section>
+            <section class="main-section2">
+                <div class="control-container">
+                    <h4>Amplifier Current</h4>
+                    <select style="margin-top: 10px;" id="ACDC">
+                        <option value="voltagetype">Voltage-Type</option>
+                        <option value="Alternative">AC</option>
+                        <option value="Direct">DC</option>
+                    </select>
+                </div>
+                <div class="control-container">
+                    <div class="control-grp">
+                        <span>V1</span>
+                        <input type="range" min="-10" max="10" value="0" class="slider" id="voltage1"
+                            oninput="getVoltage(this.id)">
+                        <span id="voltage-1-display">0</span>
+                    </div>
+                    <div class="control-grp">
+                        <span>V2</span>
+                        <input type="range" min="-10" max="10" value="0" class="slider" id="voltage2"
+                            oninput="getVoltage(this.id)">
+                        <span id="voltage-2-display">0</span>
+                    </div>
+                </div>
+                <div class="control-container">
+                    <div class="control-grp">
+                        <span>R1</span>
+                        <input type="range" min="0" max="2000" value="0" class="slider" id="Resistance-1"
+                            oninput="getResistance(this.id)">
+                        <span id="r-1-display">0</span>
+                    </div>
+                    <div class="control-grp">
+                        <span>R2</span>
+                        <input type="range" min="0" max="2000" value="0" class="slider" id="Resistance-2"
+                            oninput="getResistance(this.id)">
+                        <span id="r-2-display">0</span>
+                    </div>
+                    <div class="control-grp">
+                        <span>R3</span>
+                        <input type="range" min="0" max="2000" value="0" class="slider" id="Resistance-3"
+                            oninput="getResistance(this.id)">
+                        <span id="r-3-display">0</span>
+                    </div>
+                    <div class="control-grp">
+                        <span style="position: relative; left: -10px;">R<sub>gain</sub></span>
+                        <input type="range" min="0" max="2000" value="0" class="slider" id="Rgain"
+                            oninput="getResistance(this.id)" style="position: relative; left: -8px;">
+                        <span id="rgain-display">0</span>
+                    </div>
+                    <div class="buttons">
+                        <button id="getvoutid" onclick="get_Vout()"> V_out </button>
+                        <button id="graphid" onclick="graph()">GRAPH</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section class="main-section3">
+            <h3 style="margin-left:300px;margin-top: 20px;">OUTPUT SECTION FOR INSTRUMENTATION AMPLIFIER</h4>
+                <div class="outsection">
+                    <div id="myPlot"
+                        style="height:420px;width:400px; margin-left:50px;margin-top:20px;border:2px solid rgb(0, 0, 0)">
+                    </div>
+                    <table id="tab1" class="tableclass" border="2px">
+                        <tr>
+                            <th>S.No:</th>
+                            <th>V1</th>
+                            <th>V2</th>
+                            <th>R1</th>
+                            <th>R2</th>
+                            <th>R3</th>
+                            <th>Rgain</th>
+                            <th>Vout</th>
+                        </tr>
+                        <tr>
+                            <td>1.</td>
+                            <td><input type="number"></td>
+                            <td><input type="number"></td>
+                            <td><input type="number"></td>
+                            <td><input type="number"></td>
+                            <td><input type="number"></td>
+                            <td><input type="number"></td>
+                            <td><input type="number"></td>
+                        </tr>
+                        <tr>
+                            <td>2.</td>
+                            <td><input type="number"></td>
+                            <td><input type="number"></td>
+                            <td><input type="number"></td>
+                            <td><input type="number"></td>
+                            <td><input type="number"></td>
+                            <td><input type="number"></td>
+                            <td><input type="number"></td>
+                        </tr>
+                        <tr>
+                            <td>3.</td>
+                            <td><input type="number"></td>
+                            <td><input type="number"></td>
+                            <td><input type="number"></td>
+                            <td><input type="number"></td>
+                            <td><input type="number"></td>
+                            <td><input type="number"></td>
+                            <td><input type="number"></td>
+                        </tr>
+                        <tr>
+                            <td>4.</td>
+                            <td><input type="number"></td>
+                            <td><input type="number"></td>
+                            <td><input type="number"></td>
+                            <td><input type="number"></td>
+                            <td><input type="number"></td>
+                            <td><input type="number"></td>
+                            <td><input type="number"></td>
+                        </tr>
+                    </table>
+                </div>
+        </section>
+    </div>
+    </div>
+    <script src="./js/main.js"></script>
+    <div>
+    <center><button style="margin-bottom: 40px; " onclick="window.print()">Print this page</button></center>
+    </div>
 </body>
 </html>

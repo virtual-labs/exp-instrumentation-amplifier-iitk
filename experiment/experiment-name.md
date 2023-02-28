@@ -1,1 +1,1 @@
-## Experiment name
+Study of Instrumentation Amplifiers
