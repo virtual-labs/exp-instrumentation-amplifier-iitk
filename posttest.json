@@ -1,0 +1,39 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "1. Which of the following characteristics is NOT desirable for the DC amplifier?  ",
+      "answers": {
+        "a": "Low common mode rejection ratio  ",
+        "b": "High input impedance ",
+        "c": "Good thermal and long term stability ",
+        "d": "Balanced differential inputs"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "2. General purpose op-amps are used in applications as",
+      "answers": {
+        "a": ". Instrumentation amplifier",
+        "b": "Differential instrumentation amplifier",
+        "c": "Inverting instrumentation amplifier",
+        "d": ". Non-inverting instrumentation amplifier  "
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    }
+  ]
+}
