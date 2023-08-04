@@ -25,15 +25,15 @@ The instrumentation amplifier is designed and constructed and the output value w
 theoretical calculation.<br>
   
 
-<b>Name of Developer | <b> Manas Verma 
+<b>Name of Developer | <b> Dr. Ashutosh Tiwari 
 :--|:--|
 <b> Institute | <b> Rajkiya Engineering College Banda 
-<b> Email id|     <b> manasverma012345@gmail.com 
-<b> Department |  Manas Verma
+<b> Email id|     <b> ashutosh.tiwari@recbanda.ac.in 
+<b> Department | Applied Sciences and Humanities
 
 ### Contributors List
 
 SrNo | Name | Faculty or Student | Department| Institute | Email id
 :--|:--|:--|:--|:--|:--|
+1 | Manas Verma  | Student | Information Technology | Rajkiya Engineering College Banda | manasverma012345@gmail.com 
 1 | Adarsh Singh | Student | Information Technology | Rajkiya Engineering College Banda | adarshsingh2508@gmail.com
-2 | Dr. Ashutosh Tiwari | Faculty | Applied Sciences and Humanities | Rajkiya Engineering College Banda | ashutosh.tiwari@recbanda.ac.in
