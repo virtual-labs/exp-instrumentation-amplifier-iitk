@@ -86,7 +86,7 @@
   margin:20px 32px 30px 34px;
 }
 .slider{
-  width:500px;
+  width:400px;
 }
 .tableclass{
   border-radius: 5px;
@@ -97,7 +97,7 @@ th,td{
   border-radius: 2px;
 }
 
-tr:nth-child(even) {
+/* tr:nth-child(even) {
   background-color: rgba(216, 154, 249, 0.995);
 }
 
@@ -110,7 +110,7 @@ tr:nth-child(odd) {
 
 th:nth-child(odd),td:nth-child(odd) {
   background-color: rgba(255, 255, 255, 0.995);
-}
+} */
 .outsection{
   display: flex;
   flex-direction: row;

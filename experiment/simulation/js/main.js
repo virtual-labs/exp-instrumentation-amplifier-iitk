@@ -40,13 +40,13 @@ Graph_id.disabled = true;
 function getVoltage(id) {
     if (id === 'voltage1') {
         voltage1 = document.getElementById(id).value;
-        document.getElementById("voltage-1-display").innerText = voltage1;
+        document.getElementById("voltage-1-display").innerText = voltage1+"V";
         document.getElementById("voltage-1-display-svg").innerHTML = "V1: " + voltage1 + " volts";
     }
 
     else {
         voltage2 = document.getElementById(id).value;
-        document.getElementById("voltage-2-display").innerText = voltage2;
+        document.getElementById("voltage-2-display").innerText = voltage2+"V";
         document.getElementById("voltage-2-display-svg").innerHTML = "V2: " + voltage2 + " volts";
     }
 
@@ -59,7 +59,7 @@ function getResistance(id) {
 
     if (id === 'Resistance-1') {
         r1 = document.getElementById(id).value;
-        document.getElementById("r-1-display").innerText = r1;
+        document.getElementById("r-1-display").innerText = r1+"Ω";
 
         document.getElementById("r1-svg-display").innerHTML = r1;
         document.getElementById("r10-svg-display").innerHTML = r1;
@@ -67,7 +67,7 @@ function getResistance(id) {
 
     else if (id === 'Resistance-2') {
         r2 = document.getElementById(id).value;
-        document.getElementById("r-2-display").innerText = r2;
+        document.getElementById("r-2-display").innerText = r2+"Ω";
 
         document.getElementById("r2-svg-display").innerHTML = r2;
         document.getElementById("r20-svg-display").innerHTML = r2;
@@ -75,7 +75,7 @@ function getResistance(id) {
 
     else if (id === 'Resistance-3') {
         r3 = document.getElementById(id).value;
-        document.getElementById("r-3-display").innerText = r3;
+        document.getElementById("r-3-display").innerText = r3+"Ω";
 
         document.getElementById("r3-svg-display").innerHTML = r3;
         document.getElementById("r30-svg-display").innerHTML = r3;
@@ -83,7 +83,7 @@ function getResistance(id) {
 
     else {
         rgain = document.getElementById(id).value;
-        document.getElementById("rgain-display").innerText = rgain;
+        document.getElementById("rgain-display").innerText = rgain+"Ω";
 
         document.getElementById("rgain-svg-display").innerHTML = rgain;
     }
@@ -114,7 +114,7 @@ function graph() {
         // Display using Plotly
         var data = [{ x: xValues, y: yValues, mode: "lines" }];
         var layout = { title: "y = " + exp };
-        var layout2 = { title: "Alternative Current" + " " }
+        var layout2 = { title: "Voltage(Volts) vs Time(Seconds)" + " " }
         Plotly.newPlot("myPlot", data, layout2);
     }
     else if (V_type.value == 'Direct') {
@@ -136,7 +136,7 @@ function graph() {
 
         // Define Layout
         var layout = { title: "y = " + exp };
-        var layout1 = { title: "Direct Current" + " " }
+        var layout1 = { title: "Voltage(Volts) vs Time(Seconds)" + " " }
 
         // Display using Plotly
         Plotly.newPlot("myPlot", data, layout1);
@@ -151,3 +151,4 @@ function openNav() {
 function closeNav() {
     document.getElementById("mySidepanel").style.width = "0";
 }
+

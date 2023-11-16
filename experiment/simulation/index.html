@@ -5,7 +5,8 @@
     <link rel="stylesheet" href="./css/main.css">
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 </head>
-<body><div id="mySidepanel" class="sidepanel">
+<body><body>
+    <div id="mySidepanel" class="sidepanel">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
         <ul id="lists">
             <h2>Procedure to Perform the Instrumentation Amplifier.</h2>
@@ -16,27 +17,32 @@
             <li>Step 2: Simulator will allow to change supply voltage from AC or DC voltage Student will select the
                 button of voltage type from input section To aware the type of supply
                 from AC or DC voltage.</li>
-            <li>Step 3: Simulator will show the value of V1 and V2 at the node of supply value Student will allow to change the supply voltage of V1 and V2 by clicking the mouse button on slide bar to obtain the voltage of V1 and V2 .
+            <li>Step 3: Simulator will show the value of V1 and V2 at the node of supply value Student will allow to
+                change the supply voltage of V1 and V2 by clicking the mouse button on slide bar to obtain the voltage
+                of V1 and V2 .
             </li>
-            <li>Step 4: Simulator will give the value of R1, R2 and R3 and shown on the diagram	Student will change the value of resistor by clicking on the slide bar	To show the value of R1, R2, R3.
+            <li>Step 4: Simulator will give the value of R1, R2 and R3 and shown on the diagram Student will change the
+                value of resistor by clicking on the slide bar To show the value of R1, R2, R3.
             </li>
-            <li>Simulator will display value of Vout or output voltage	Student will allow to obtain the value of Vout or output voltage by clicking on the Vout button To obtain the value of Vout of Instrumentation Amplifier
+            <li>Simulator will display value of Vout or output voltage Student will allow to obtain the value of Vout or
+                output voltage by clicking on the Vout button To obtain the value of Vout of Instrumentation Amplifier
             </li>
-            <li>Simulator will make a graph on the right side of the simulator interaction Student will allow to obtain the graph To obtain the graph of Instrumentation amplifier.
+            <li>Simulator will make a graph on the right side of the simulator interaction Student will allow to obtain
+                the graph To obtain the graph of Instrumentation amplifier.
             </li>
         </ul>
     </div>
     <button class="openbtn" onclick="openNav()">☰ Open Procedure</button>
-    <center>
-        <h2 id="h2_head">INSTRUMENTATION AMPLIFIER EXPERIMENT</h2>
-    </center>
     <div class="allbox">
         <div class="container">
 
             <section class="main-section">
-                <h4 style="text-align:center; margin-top: 10px;">
-                    Instrumentation Amplifier Circuit Diagram
-                </h4>
+                <center>
+                    <h4 style="text-align:center; margin-top: 20px;">
+                        INSTRUMENTATION AMPLIFIER CIRCUIT DIAGRAM
+                    </h4>
+                </center>
+
                 <div style="height:100% ; width:100%">
                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 200 597.6 842.4"
@@ -207,8 +213,9 @@
                 </div>
             </section>
             <section class="main-section2">
+                <center><h4 style="margin-top:20px ;">INPUT SECTION</h4></center>
                 <div class="control-container">
-                    <h4>Amplifier Current</h4>
+
                     <select style="margin-top: 10px;" id="ACDC">
                         <option value="voltagetype">Voltage-Type</option>
                         <option value="Alternative">AC</option>
@@ -270,13 +277,13 @@
                     <table id="tab1" class="tableclass" border="2px">
                         <tr>
                             <th>S.No:</th>
-                            <th>V1</th>
-                            <th>V2</th>
-                            <th>R1</th>
-                            <th>R2</th>
-                            <th>R3</th>
-                            <th>Rgain</th>
-                            <th>Vout</th>
+                            <th>V1(volts)</th>
+                            <th>V2(volts)</th>
+                            <th>R1(ohms)</th>
+                            <th>R2(ohms)</th>
+                            <th>R3(ohms)</th>
+                            <th>Rgain(ohms)</th>
+                            <th>Vout(ohms)</th>
                         </tr>
                         <tr>
                             <td>1.</td>
