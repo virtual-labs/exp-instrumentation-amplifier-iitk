@@ -28,7 +28,7 @@
   height: 515px;
   border-radius: 25px;
   width: 60.3%;
-  margin: 2px;
+  margin: 70px;
   margin-left: 0px;
   border: 2px solid black;
 }
@@ -36,10 +36,10 @@
   display: flex;
   flex-direction: column;
   background-color: rgba(252, 234, 153, 0.651);
-  height: 515px;
+  height: 600%;
   border-radius: 25px;
   width: 42.3%;
-  margin: 2px;
+  margin: 75px;
   margin-left: 0px;
   margin-right:0px;
   border: 2px solid black;
