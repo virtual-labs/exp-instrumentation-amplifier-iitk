@@ -1,1 +1,1 @@
-To Study Instrumentation Amplifiers.
+To study Instrumentation Amplifiers.

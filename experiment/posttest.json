@@ -1,39 +1,42 @@
 {
-  "version": 2.0,
-  "questions": [
-    {
-      "question": "1. Which of the following characteristics is NOT desirable for the DC amplifier?  ",
-      "answers": {
-        "a": "Low common mode rejection ratio  ",
-        "b": "High input impedance ",
-        "c": "Good thermal and long term stability ",
-        "d": "Balanced differential inputs"
+    "version": 2.0,
+    "questions": [
+      {
+        "question": "1. Which of the following characteristics is NOT desirable for the DC amplifier?",
+        "answers": {
+          "a": "Low common mode rejection ratio",
+          "b": "High input impedance",
+          "c": "Good thermal and long term stability",
+          "d": "Balanced differential inputs"
+        },
+        "explanations": {
+          "a": "Explanation: A low common mode rejection ratio (CMRR) means the amplifier can't effectively reject noise common to both inputs, which is undesirable for DC amplifiers.",
+          "b": "Explanation: High input impedance is desirable in DC amplifiers to prevent loading the source.",
+          "c": "Explanation: Good thermal and long-term stability ensure the amplifier performs reliably over time.",
+          "d": "Explanation: Balanced differential inputs help in rejecting common-mode signals and are desirable in DC amplifier design."
+        },
+        "correctAnswer": "a",
+        "difficulty": "beginner"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "2. General purpose op-amps are used in applications as",
-      "answers": {
-        "a": ". Instrumentation amplifier",
-        "b": "Differential instrumentation amplifier",
-        "c": "Inverting instrumentation amplifier",
-        "d": ". Non-inverting instrumentation amplifier  "
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "b",
-      "difficulty": "beginner"
-    }
-  ]
-}
+      {
+        "question": "2. General purpose op-amps are used in applications as:",
+        "answers": {
+          "a": "Instrumentation amplifier",
+          "b": "Differential instrumentation amplifier",
+          "c": "Inverting instrumentation amplifier",
+          "d": "Non-inverting instrumentation amplifier"
+        },
+        "explanations": {
+          "a": "Explanation: Instrumentation amplifiers can be built using general purpose op-amps, but more precise configurations are often preferred.",
+          "b": "Explanation: Differential instrumentation amplifiers are commonly implemented using general-purpose op-amps for measuring small differential voltages.",
+          "c": "Explanation: Inverting instrumentation amplifiers are not typically the default application for general purpose op-amps.",
+          "d": "Explanation: Non-inverting instrumentation amplifiers may use general op-amps but are typically tailored for specific gains and noise requirements."
+        },
+        "correctAnswer": "b",
+        "difficulty": "beginner"
+      }
+    ]
+  }
+  
+ 
+

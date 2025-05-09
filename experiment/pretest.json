@@ -1,39 +1,75 @@
-{
-  "version": 2.0,
-  "questions": [
-    {
-      "question": "1. What are the characteristics of an instrumentation amplifier",
-      "answers": {
-        "a": "High input resistance",
-        "b": "Low noise",
-        "c": "High CMRR",
-        "d": "All of the above"
+  {
+    "version": 2.0,
+    "questions": [
+      {
+        "question": "1. What are the characteristics of an instrumentation amplifier?",
+        "answers": {
+          "a": "High input resistance",
+          "b": "Low noise",
+          "c": "High CMRR",
+          "d": "All of the above"
+        },
+        "explanations": {
+          "a": "Explanation: An instrumentation amplifier has high input resistance, which prevents loading of the signal source.",
+          "b": "Explanation: Instrumentation amplifiers are designed to have low noise to provide a clean amplified signal.",
+          "c": "Explanation: Instrumentation amplifiers have high Common-Mode Rejection Ratio (CMRR) to reject common-mode signals effectively.",
+          "d": "Explanation: All of the above characteristics (High input resistance, Low noise, High CMRR) are true for an instrumentation amplifier."
+        },
+        "correctAnswer": "d",
+        "difficulty": "beginner"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+      {
+        "question": "2. What instrument is used to amplify the output signal of a transducer?",
+        "answers": {
+          "a": "What instrument is used to amplify the output signal of transducer",
+          "b": "Instrumentation amplifier",
+          "c": "Differential amplifier",
+          "d": "Bridge amplifier"
+        },
+        "explanations": {
+          "a": "Explanation: This option doesn't correctly answer the question.",
+          "b": "Explanation: An instrumentation amplifier is designed to amplify the output signal of a transducer, especially when the signal is weak and differential.",
+          "c": "Explanation: A differential amplifier amplifies the difference between two input signals, but it is not specifically designed for transducer outputs.",
+          "d": "Explanation: A bridge amplifier is often used in applications like strain gauges, but it doesn't amplify transducer signals as effectively as an instrumentation amplifier."
+        },
+        "correctAnswer": "b",
+        "difficulty": "beginner"
       },
-      "correctAnswer": "d",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "2. What instrument is used to amplify output signal of transducer",
-      "answers": {
-        "a": "What instrument is used to amplify output signal of transducer",
-        "b": "Instrumentation amplifier",
-        "c": ". Differential amplifier",
-        "d": "Bridge amplifier"
+      {
+        "question": "3. What is the primary purpose of an instrumentation amplifier?",
+        "answers": {
+          "a": "To amplify low-level differential signals",
+          "b": "To provide high power output",
+          "c": "To act as a voltage regulator",
+          "d": "To operate as a comparator"
+        },
+        "explanations": {
+          "a": "Explanation: The primary purpose of an instrumentation amplifier is to amplify low-level differential signals, especially in situations with high common-mode noise.",
+          "b": "Explanation: While an instrumentation amplifier amplifies signals, it is not primarily designed to provide high power output.",
+          "c": "Explanation: Instrumentation amplifiers do not regulate voltage, so they are not used as voltage regulators.",
+          "d": "Explanation: Instrumentation amplifiers are not comparators. They are designed to amplify signals, not to compare them."
+        },
+        "correctAnswer": "a",
+        "difficulty": "beginner"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "b",
-      "difficulty": "beginner"
-    }
-  ]
-}
+      {
+        "question": "4. The common-mode rejection ratio (CMRR) of an instrumentation amplifier should ideally be:",
+        "answers": {
+          "a": "High",
+          "b": "Low",
+          "c": "Zero",
+          "d": "Infinite"
+        },
+        "explanations": {
+          "a": "Explanation: The CMRR should ideally be high to reject common-mode signals and focus on the differential signals, which is the main purpose of an instrumentation amplifier.",
+          "b": "Explanation: A low CMRR would mean that the amplifier cannot reject common-mode signals effectively.",
+          "c": "Explanation: A CMRR of zero would mean no rejection of common-mode signals, which is not ideal for an instrumentation amplifier.",
+          "d": "Explanation: While an infinite CMRR is theoretically ideal, it is not practical. However, a very high CMRR is the desired specification."
+        },
+        "correctAnswer": "a",
+        "difficulty": "beginner"
+      }
+    ]
+  }
+  
+  
