@@ -36,4 +36,6 @@ theoretical calculation.<br>
 SrNo | Name | Faculty or Student | Department| Institute | Email id
 :--|:--|:--|:--|:--|:--|
 1 | Manas Verma  | Student | Information Technology | Rajkiya Engineering College Banda | manasverma012345@gmail.com 
-1 | Adarsh Singh | Student | Information Technology | Rajkiya Engineering College Banda | adarshsingh2508@gmail.com
+2 | Adarsh Singh | Student | Information Technology | Rajkiya Engineering College Banda | adarshsingh2508@gmail.com
+3 | Sejal Pal | Student | Information Technology | Rajkiya Engineering College Banda | 2307340130052@recbanda.ac.in
+4 | Divya Chaurasiya | Student | Information Technology | Rajkiya Engineering College Banda | 2307340130019@recbanda.ac.in
