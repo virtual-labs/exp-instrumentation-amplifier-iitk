@@ -1,42 +1,73 @@
 {
-    "version": 2.0,
-    "questions": [
-      {
-        "question": "1. Which of the following characteristics is NOT desirable for the DC amplifier?",
-        "answers": {
-          "a": "Low common mode rejection ratio",
-          "b": "High input impedance",
-          "c": "Good thermal and long term stability",
-          "d": "Balanced differential inputs"
-        },
-        "explanations": {
-          "a": "Explanation: A low common mode rejection ratio (CMRR) means the amplifier can't effectively reject noise common to both inputs, which is undesirable for DC amplifiers.",
-          "b": "Explanation: High input impedance is desirable in DC amplifiers to prevent loading the source.",
-          "c": "Explanation: Good thermal and long-term stability ensure the amplifier performs reliably over time.",
-          "d": "Explanation: Balanced differential inputs help in rejecting common-mode signals and are desirable in DC amplifier design."
-        },
-        "correctAnswer": "a",
-        "difficulty": "beginner"
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "1. The ratio between the Open Loop Gain and Common Mode Voltage is called ____________.",
+      "answers": {
+        "a": "Slew Rate",
+        "b": "CMRR",
+        "c": "Double Ended",
+        "d": "Stable"
       },
-      {
-        "question": "2. General purpose op-amps are used in applications as:",
-        "answers": {
-          "a": "Instrumentation amplifier",
-          "b": "Differential instrumentation amplifier",
-          "c": "Inverting instrumentation amplifier",
-          "d": "Non-inverting instrumentation amplifier"
-        },
-        "explanations": {
-          "a": "Explanation: Instrumentation amplifiers can be built using general purpose op-amps, but more precise configurations are often preferred.",
-          "b": "Explanation: Differential instrumentation amplifiers are commonly implemented using general-purpose op-amps for measuring small differential voltages.",
-          "c": "Explanation: Inverting instrumentation amplifiers are not typically the default application for general purpose op-amps.",
-          "d": "Explanation: Non-inverting instrumentation amplifiers may use general op-amps but are typically tailored for specific gains and noise requirements."
-        },
-        "correctAnswer": "b",
-        "difficulty": "beginner"
-      }
-    ]
-  }
-  
- 
-
+      "explanations": {
+        "a": "Explanation 2",
+        "b": "Explanation 1 : The ratio between the Open Loop Gain and Common Mode Voltage is called CMRR",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "2. Given an op-amp who’s gain is unknown but the output is saturated, which of the following is not possible?",
+      "answers": {
+        "a": "No feedback is being applied",
+        "b": "Negative feedback is applied while input is more than –VSat/AOL",
+        "c": "Positive feedback is applied",
+        "d": "Negative feedback is applied while the input is more than VSat/AOL"
+      },
+      "explanations": {
+        "a": "Explanation 2",
+        "b": "Explanation 1 : If op-amp is used without feedback or with positive feedback, the difference voltage VD will be large enough and hence op-amp can be considered to be in the saturation region. If op-amp is used with negative feedback then the input is smaller. Saturation of output occurs if the input is not between –VSat/AOL and +VSat/AOL.",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "3. What is incorrect regarding the output offset voltage of op-amp?",
+      "answers": {
+        "a": "It is the output when the input voltage at both input pins of op-amp is zero",
+        "b": "It occurs due to dissimilarities in the internal structure of the op-amp",
+        "c": "The output offset voltage does not depend on the supply voltage",
+        "d": "The output offset voltage can be in the units of Volts"
+      },
+      "explanations": {
+        "a": "Explanation 2",
+        "b": "Explanation 2",
+        "c": "Explanation 1 Output offset voltage is the output voltage of the op-amp when the input at both terminals is zero. It occurs due to the dissimilarities and mismatches in the internal structure of the op-amp. The value of output offset voltage is in volts. It varies with changes in supply voltage.",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "4. Which of these is incorrect for an operational amplifier?",
+      "answers": {
+        "a": "It has a high voltage gain",
+        "b": "It is a direct coupled amplifier",
+        "c": "It is only useful for amplifying AC signals",
+        "d": "It was originally designed to perform mathematical operations"
+      },
+      "explanations": {
+        "a": "Explanation 2",
+        "b": "Explanation 2",
+        "c": "Explanation 2 Operational amplifier is a high voltage gain, direct coupled amplifier which can be used to perform mathematical operations on analog signals. It can be used to amplify both DC and AC signals.",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    }
+  ]
+}
