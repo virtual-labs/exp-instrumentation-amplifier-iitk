@@ -1,4 +1,4 @@
-Here is a general procedure for measuring the operational amplifier (Op-Amp) parameters of Common mode gain (CM gain), Differential mode gain (DM gain), Common mode rejection ratio (CMMR), and Slew rate:<br>
+Here is a general procedure for measuring the operational amplifier (Op-Amp) parameters of Common mode gain (CM gain), Differential mode gain (DM gain), Common mode rejection ratio (CMRR), and Slew rate:<br>
 1. Common mode gain (CM gain):<br>
 a) Connect the balanced differential input signal to the inputs of the Op-Amp.<br>
 b) Measure the output voltage with a differential probe and note the value.<br>
@@ -11,7 +11,7 @@ b) Measure the output voltage with a differential probe and note the value.<br>
 c) Repeat the measurement for various input voltage levels to obtain the relationship between the input voltage and the output voltage.<br>
 d) The differential mode gain is then calculated as the slope of the output voltage vs. input voltage curve.<br>
 
-3. Common mode rejection ratio (CMMR):<br>
+3. Common mode rejection ratio (CMRR):<br>
 a) The CMMR is calculated as the ratio of the differential mode gain (obtained in step 2) to the common mode gain (obtained in step 1).<br>
 
 4. Slew rate:<br>
