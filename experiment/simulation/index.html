@@ -3,1952 +3,336 @@
 <head>
 	<!-- Add CSS at the head of HTML file -->
     <link rel="stylesheet" href="./css/main.css">
-    <script src="./js/main.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 </head>
-
-<body>
+<body><body>
     <div id="mySidepanel" class="sidepanel">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
         <ul id="lists">
-            <h2>Procedure to Perform the Experiment</h2>
-            <li>Step 1: Select the Mode form the available options.</li>
-            <li>Step 2: Follow the instructions in the alert box and select the input voltage.</li>
-            <li>Step 3: Turn on the required switches and press on Calculate v_out.</li>
-            <li>Step 4: Note the readings in the table given below.</li>
-            <li>Step 5: For CMRR mode click on CMRR button to get the ratio in the output box and note down the values in the table given below.</li>
-            <li>Step 6: For Slew_rate mode click on the slew_rate button to get the output in the box and then note down the values in the table below.</li>
+            <h2>Procedure to Perform the Instrumentation Amplifier.</h2>
+            <li>Step 1: Simulator will open the circuit diagram
+                of Instrumentation Amplifier Student will initiate the simulator To aware the connection diagram of
+                Instrumentation amplifier.
+            </li>
+            <li>Step 2: Simulator will allow to change supply voltage from AC or DC voltage Student will select the
+                button of voltage type from input section To aware the type of supply
+                from AC or DC voltage.</li>
+            <li>Step 3: Simulator will show the value of V1 and V2 at the node of supply value Student will allow to
+                change the supply voltage of V1 and V2 by clicking the mouse button on slide bar to obtain the voltage
+                of V1 and V2 .
+            </li>
+            <li>Step 4: Simulator will give the value of R1, R2 and R3 and shown on the diagram Student will change the
+                value of resistor by clicking on the slide bar To show the value of R1, R2, R3.
+            </li>
+            <li>Simulator will display value of Vout or output voltage Student will allow to obtain the value of Vout or
+                output voltage by clicking on the Vout button To obtain the value of Vout of Instrumentation Amplifier
+            </li>
+            <li>Simulator will make a graph on the right side of the simulator interaction Student will allow to obtain
+                the graph To obtain the graph of Instrumentation amplifier.
+            </li>
         </ul>
     </div>
     <button class="openbtn" onclick="openNav()">☰ Open Procedure</button>
-    <div class="btn-group">
-        <button class="button" id="CommonMode" onclick="alertfunc(this.id)">Common Mode</button>
-        <button class="button" id="DifferentialMode" onclick="alertfunc(this.id)">Differential Mode</button>
-        <button class="button" id="CMRR" onclick="alertfunc(this.id)">CMRR</button>
-        <button class="button" id="SlewRate" onclick="alertfunc(this.id)">Slew Rate</button>
-    </div>
-    <div id="svgimg" class="svgclass">
-        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-            x="0px" y="0px" viewBox="0 0 864 525.6" style="enable-background:new 0 0 864 525.6;" xml:space="preserve">
-            <style type="text/css">
-                .st0 {
-                    fill: #FCD088;
-                }
+    <div class="allbox">
+        <div class="container">
 
-                .st1 {
-                    fill: #EBEBEB;
-                    stroke: #979797;
-                    stroke-width: 0.2575;
-                }
+            <section class="main-section">
+                <center>
+                    <h4 style="text-align:center; margin-top: 2 0px;">
+                        INSTRUMENTATION AMPLIFIER CIRCUIT DIAGRAM
+                    </h4>
+                </center>
 
-                .st2 {
-                    fill: #CBCBCA;
-                }
+                <div style="height:400% ; width:100%">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 200 597.6 842.4"
+                        style="enable-background:new 0 0 597.6 842.4;" xml:space="preserve">
+                        <style type="text/css">
+                            .st0 {
+                                fill: none;
+                                stroke: #000000;
+                                stroke-miterlimit: 10;
+                            }
 
-                .st3 {
-                    fill: #818181;
-                    stroke: #010101;
-                    stroke-width: 0.25;
-                }
+                            .st1 {
+                                fill: none;
+                                stroke: #000000;
+                                stroke-width: 0.5;
+                                stroke-miterlimit: 10;
+                            }
 
-                .st4 {
-                    fill: #010101;
-                }
+                            .st2 {
+                                fill: none;
 
-                .st5 {
-                    fill: #B4B2B4;
-                    stroke: #676868;
-                    stroke-width: 0.25;
-                }
+                            }
 
-                .st6 {
-                    fill: #EB2627;
-                }
+                            .st3 {
+                                font-family: 'ArialMT';
 
-                .st7 {
-                    fill: #3A54A3;
-                }
+                            }
 
-                .st8 {
-                    fill: #333333;
-                    stroke: #000000;
-                    stroke-width: 0.5;
-                    stroke-miterlimit: 10;
-                }
+                            .st4 {
+                                font-size: 7px;
 
-                .st9 {
-                    fill: #939392;
-                    stroke: #000000;
-                    stroke-width: 0.25;
-                    stroke-miterlimit: 10;
-                }
+                            }
 
-                .st10 {
-                    fill: none;
-                    stroke: #000000;
-                    stroke-miterlimit: 10;
-                }
+                            .st5 {
+                                font-size: 18px;
+                                fill: #1836b8;
+                            }
+                        </style>
+                        <line class="st0" x1="94" y1="291" x2="159" y2="291" />
+                        <line class="st0" x1="159" y1="279.5" x2="159" y2="344.5" />
+                        <line class="st0" x1="158.7" y1="279.5" x2="219.2" y2="314.6" />
+                        <line class="st0" x1="123.1" y1="386.5" x2="235.1" y2="386.5" />
+                        <line class="st0" x1="123.1" y1="330.5" x2="123.1" y2="386.5" />
+                        <line class="st1" x1="161.4" y1="330.5" x2="165.3" y2="330.5" />
+                        <line class="st0" x1="159" y1="344.4" x2="219.2" y2="314.6" />
+                        <line class="st0" x1="123.1" y1="330.5" x2="159" y2="330.5" />
+                        <rect x="161.4" y="287.7" class="st2" width="7.7" height="6" />
+                        <text transform="matrix(1 0 0 1 161.4249 292.6768)" class="st3 st4">+</text>
+                        <!-- resistor image -->
+                        <image style="overflow:visible;enable-background:new    ;" width="2000" height="750"
+                            xlink:href="https://github.com/virtual-labs/exp-instrumentation-amplifier-iitk/blob/dev/experiment/simulation/images/resistor.png?raw=true"
+                            transform="matrix(-8.872567e-18 4.830000e-02 -4.450000e-02 -8.174517e-18 283.5014 302.5711)">
+                        </image>
+                        <line class="st0" x1="218.3" y1="314.8" x2="283.3" y2="314.8" />
+                        <line class="st0" x1="338.8" y1="314.8" x2="338.8" y2="396.1" />
+                        <!-- resistor image -->
+                        <image style="overflow:visible;enable-background:new    ;" width="2000" height="750"
+                            xlink:href="https://github.com/virtual-labs/exp-instrumentation-amplifier-iitk/blob/dev/experiment/simulation/images/resistor.png?raw=true"
+                            transform="matrix(-9.037893e-18 4.920000e-02 -4.530000e-02 -8.321475e-18 283.8183 361.6157)">
+                        </image>
+                        <line class="st0" x1="225.6" y1="386.5" x2="266.8" y2="386.5" />
+                        <!-- resistor image -->
+                        <image style="overflow:visible;enable-background:new    ;" width="2000" height="750"
+                            xlink:href="https://github.com/virtual-labs/exp-instrumentation-amplifier-iitk/blob/dev/experiment/simulation/images/resistor.png?raw=true"
+                            transform="matrix(4.830000e-02 0 0 4.450000e-02 254.948 298.1833)">
+                        </image>
+                        <line class="st0" x1="338.4" y1="396.1" x2="357.7" y2="396.1" />
+                        <line class="st0" x1="358.4" y1="384.6" x2="358.4" y2="449.6" />
+                        <line class="st0" x1="358.1" y1="384.6" x2="418.5" y2="419.6" />
+                        <line class="st1" x1="360.8" y1="395.6" x2="364.7" y2="395.6" />
+                        <line class="st0" x1="358.4" y1="449.5" x2="418.5" y2="419.6" />
+                        <line class="st0" x1="338.4" y1="435.6" x2="358.4" y2="435.6" />
+                        <rect x="360.8" y="431.8" class="st2" width="7.7" height="6" />
+                        <text transform="matrix(1 0 0 1 360.7783 436.7597)" class="st3 st4">+</text>
+                        <line class="st0" x1="338.8" y1="435.6" x2="338.8" y2="526.5" />
+                        <line class="st0" x1="154.8" y1="447.2" x2="266.8" y2="447.2" />
+                        <line class="st0" x1="123.1" y1="447.2" x2="154.9" y2="447.2" />
+                        <!-- resistor image -->
+                        <image style="overflow:visible;enable-background:new    ;" width="2000" height="750"
+                            xlink:href="https://github.com/virtual-labs/exp-instrumentation-amplifier-iitk/blob/dev/experiment/simulation/images/resistor.png?raw=true"
+                            transform="matrix(-9.037893e-18 4.920000e-02 -4.530000e-02 -8.321475e-18 283.8183 426.413)">
+                        </image>
+                        <line class="st0" x1="123.4" y1="446.6" x2="123.4" y2="502.6" />
+                        <line class="st0" x1="123.1" y1="502.9" x2="158.3" y2="502.9" />
+                        <line class="st0" x1="158.9" y1="491.4" x2="158.9" y2="556.4" />
+                        <line class="st0" x1="158.6" y1="491.4" x2="219.1" y2="526.5" />
+                        <line class="st1" x1="161.4" y1="502.4" x2="165.3" y2="502.4" />
+                        <line class="st0" x1="158.9" y1="556.3" x2="219.1" y2="526.5" />
+                        <line class="st0" x1="94" y1="542.4" x2="158.9" y2="542.4" />
+                        <rect x="161.4" y="538.6" class="st2" width="7.7" height="6" />
+                        <text transform="matrix(1 0 0 1 161.3659 543.5917)" class="st3 st4">+</text>
+                        <line class="st0" x1="219.1" y1="526.5" x2="266.8" y2="526.5" />
+                        <line class="st0" x1="266.8" y1="512.2" x2="266.8" y2="526.8" />
+                        <circle class="st0" cx="90.3" cy="291.7" r="4" />
+                        <circle class="st0" cx="90.3" cy="542.4" r="4" />
+                        <!-- resistor image -->
+                        <image style="overflow:visible;enable-background:new    ;" width="2000" height="750"
+                            xlink:href="https://github.com/virtual-labs/exp-instrumentation-amplifier-iitk/blob/dev/experiment/simulation/images/resistor.png?raw=true"
+                            transform="matrix(-4.860000e-02 0 0 -4.470000e-02 351.4597 543.3197)">
+                        </image>
+                        <line class="st0" x1="338.9" y1="526.5" x2="348" y2="526.5" />
+                        <!-- resistor image -->
+                        <image style="overflow:visible;enable-background:new    ;" width="2000" height="750"
+                            xlink:href="https://github.com/virtual-labs/exp-instrumentation-amplifier-iitk/blob/dev/experiment/simulation/images/resistor.png?raw=true"
+                            transform="matrix(-4.920000e-02 0 0 -4.530000e-02 425.2668 543.5305)">
+                        </image>
 
-                .st11 {
-                    fill: #9E6026;
-                    stroke: #000000;
-                    stroke-width: 0.75;
-                    stroke-miterlimit: 10;
-                }
+                        <image style="overflow:visible;enable-background:new    ;" width="512" height="490"
+                            xlink:href="https://github.com/virtual-labs/exp-instrumentation-amplifier-iitk/blob/dev/experiment/simulation/images/grounding-icon.png?raw=true"
+                            transform="matrix(6.440000e-02 0 0 6.440000e-02 442.4459 525.6301)">
+                        </image>
+                        <line class="st0" x1="412.2" y1="526.5" x2="459.9" y2="526.5" />
+                        <line class="st0" x1="418.7" y1="419.8" x2="524.3" y2="419.8" />
+                        <!-- resistor image -->
+                        <image style="overflow:visible;enable-background:new    ;" width="2000" height="750"
+                            xlink:href="https://github.com/virtual-labs/exp-instrumentation-amplifier-iitk/blob/dev/experiment/simulation/images/resistor.png?raw=true"
+                            transform="matrix(4.830000e-02 0 0 4.450000e-02 326.2687 298.1833)">
+                        </image>
+                        <line class="st0" x1="409.7" y1="314.8" x2="459.9" y2="314.8" />
+                        <line class="st0" x1="459.9" y1="315" x2="459.9" y2="419.6" />
+                        <rect x="68.3" y="256.3" class="st2" width="89.1" height="26.8" />
+                        <text transform="matrix(1 0 0 1 68.3224 269.096)" class="st3 st5" id="voltage-1-display-svg">V1:
+                            0 volts</text>
+                        <polygon class="st2" points="74.5,231.8 86.3,231.8 86.3,231.8 " />
+                        <rect x="68.3" y="565.8" class="st2" width="89.1" height="26.8" />
+                        <text transform="matrix(1 0 0 1 68.3223 578.5952)" class="st3 st5"
+                            id="voltage-2-display-svg">V2: 0 volts</text>
+                        <rect x="231.6" y="347.6" class="st2" width="31" height="26.8" />
+                        <text transform="matrix(1 0 0 1 231.5987 360.3747)" class="st3 st5">R1: </text>
+                        <text transform="matrix(1 0 0 1 275.9211 355.4986)" class="st3 st5" id="r1-svg-display"> 0
+                        </text>
+                        <text transform="matrix(1 0 0 1 275.9211 370.4986)" class="st3 st5">ohm</text>
+                        <rect x="289.4" y="290.7" class="st2" width="27.7" height="26.8" />
+                        <text transform="matrix(1 0 0 1 289.3656 303.4566)" class="st3 st5">R2: </text>
+                        <text transform="matrix(1 0 0 1 283.2774 264.9695)" class="st3 st5" id="r2-svg-display"> 0
+                        </text>
+                        <text transform="matrix(1 0 0 1 283.2774 279.9695)" class="st3 st5">ohm</text>
+                        <rect x="363.7" y="292.1" class="st2" width="27.7" height="26.8" />
+                        <text transform="matrix(1 0 0 1 363.7304 304.8963)" class="st3 st5">R3: </text>
+                        <text transform="matrix(1 0 0 1 357.6422 266.4091)" class="st3 st5" id="r3-svg-display"> 0
+                        </text>
+                        <text transform="matrix(1 0 0 1 357.6422 281.4091)" class="st3 st5">ohm</text>
+                        <rect x="288.3" y="543.8" class="st2" width="27.7" height="26.8" />
+                        <text transform="matrix(1 0 0 1 288.2682 556.5692)" class="st3 st5">R2: </text>
+                        <text transform="matrix(1 0 0 1 282.9615 575.8995)" class="st3 st5" id="r20-svg-display"> 0
+                        </text>
+                        <text transform="matrix(1 0 0 1 282.9615 590.8995)" class="st3 st5">ohm</text>
+                        <rect x="233.4" y="471.4" class="st2" width="31" height="26.8" />
+                        <text transform="matrix(1 0 0 1 233.3685 484.2299)" class="st3 st5">R1: </text>
+                        <text transform="matrix(1 0 0 1 276.6056 475.5861)" class="st3 st5" id="r10-svg-display"> 0
+                        </text>
+                        <text transform="matrix(1 0 0 1 276.6056 490.5861)" class="st3 st5">ohm</text>
+                        <rect x="358.5" y="544.6" class="st2" width="27.7" height="26.8" />
+                        <text transform="matrix(1 0 0 1 358.5525 557.3698)" class="st3 st5">R3: </text>
+                        <text transform="matrix(1 0 0 1 353.2458 576.7003)" class="st3 st5" id="r30-svg-display"> 0
+                        </text>
+                        <text transform="matrix(1 0 0 1 353.2458 591.7003)" class="st3 st5">ohm</text>
+                        <rect x="195.6" y="406.2" class="st2" width="60" height="26.8" />
+                        <text transform="matrix(1 0 0 1 195.6172 418.9506)" class="st3 st5">R gain : </text>
+                        <rect x="472.5" y="403.7" class="st2" width="60" height="26.8" />
+                        <text transform="matrix(1 0 0 1 472.4842 416.4487)" class="st3 st5">V out :</text>
+                        <text transform="matrix(1 0 0 1 276.5148 415.9286)" class="st3 st5" id="rgain-svg-display"> 0
+                        </text>
+                        <text transform="matrix(1 0 0 1 276.5148 430.9286)" class="st3 st5">ohm</text>
+                        <text transform="matrix(1 0 0 1 473.2556 442.5997)" class="st3 st5" id="Vout_svg_display">0
+                            volts</text>
+                    </svg>
+                </div>
+            </section>
+            <section class="main-section2" style="height:400% ; width:50%">
+                <center><h4 style="margin-top:20px ;">INPUT SECTION</h4></center>
+                <div class="control-container">
 
-                .st12 {
-                    fill: #ED6423;
-                    stroke: #000000;
-                    stroke-width: 0.75;
-                    stroke-miterlimit: 10;
-                }
-
-                .st13 {
-                    fill: #FFFFFF;
-                    stroke: #000000;
-                    stroke-width: 0.5;
-                    stroke-miterlimit: 10;
-                }
-
-                .st14 {
-                    stroke: #060606;
-                    fill: #ff0000;
-                    stroke-width: 0.25;
-                    stroke-miterlimit: 10;
-                }
-
-                .st15 {
-                    fill: none;
-                    stroke: #000000;
-                    stroke-width: 0.75;
-                    stroke-miterlimit: 10;
-                }
-
-                .st16 {
-                    fill: #BBAAAA;
-                    stroke: #000000;
-                    stroke-width: 2;
-                }
-
-                .st17 {
-                    fill: #038181;
-                    stroke: #333333;
-                    stroke-width: 2;
-                }
-
-                .st18 {
-                    fill: #CCCCCC;
-                    stroke: #4E4E4E;
-                    stroke-width: 1.891;
-                }
-
-                .st19 {
-                    fill: #989898;
-                    stroke: #010101;
-                }
-
-                .st20 {
-                    fill: #F3F3F3;
-                    stroke: #010101;
-                    stroke-width: 0.7651;
-                    stroke-miterlimit: 3.0603;
-                }
-
-                .st21 {
-                    fill: #010101;
-                    stroke: #010101;
-                }
-
-                .st22 {
-                    fill: none;
-                }
-
-                .st23 {
-                    fill: #FFFFFF;
-                }
-
-                .st24 {
-                    font-family: 'MyriadPro-Regular';
-                }
-
-                .st25 {
-                    font-size: 8.3278px;
-                }
-
-                .st26 {
-                    fill: #FFCC59;
-                }
-
-                .st27 {
-                    fill: #E46432;
-                }
-
-                .st28 {
-                    fill: #F58552;
-                }
-
-                .st29 {
-                    fill: #AA5127;
-                }
-
-                .st30 {
-                    fill: #6983A0;
-                }
-
-                .st31 {
-                    fill: #565B61;
-                }
-
-                .st32 {
-                    fill: #BBE4F9;
-                }
-
-                .st33 {
-                    fill: #FFEBBD;
-                }
-
-                .st34 {
-                    opacity: 0.25;
-                    fill: #F58552;
-                }
-
-                .st35 {
-                    fill: none;
-                    stroke: #000000;
-                    stroke-width: 2;
-                    stroke-miterlimit: 10;
-                }
-
-                .st36 {
-                    fill: none;
-                    stroke: #000000;
-                    stroke-width: 1.75;
-                    stroke-miterlimit: 10;
-                }
-
-                .st37 {
-                    font-size: 6px;
-                }
-
-                .st38 {
-                    font-size: 14px;
-                }
-
-                .st39 {
-                    fill: #B988BD;
-                    stroke: #000000;
-                    stroke-miterlimit: 10;
-                }
-
-                .st40 {
-                    font-size: 10.7731px;
-                }
-
-                .st41 {
-                    font-size: 13px;
-                }
-
-                .st42 {
-                    stroke: #080808;
-                    fill: #ff0000;
-                    stroke-width: 1;
-                    stroke-miterlimit: 10;
-                }
-
-                .st43 {
-                    fill: #FFFFFF;
-                    stroke: #000000;
-                    stroke-miterlimit: 10;
-                }
-
-                .st44 {
-                    font-size: 10px;
-                }
-            </style>
-            <g>
-                <rect class="st0" width="864" height="525.6" />
-                <g id="flowRoot22856-9_1_" transform="translate(-429.22716,-53.020267)">
-                    <g id="flowRoot22856_1_" transform="translate(-431.96313,-96.339827)">
-                    </g>
-                </g>
-                <g id="g8692_1_" transform="translate(289.66534,-208.92872)">
-                    <path class="st1" d="M-78.55,256.99c0,0.07,0.01,0.13,0.01,0.2v273.4h370.89v-273.6H-78.55z" />
-                    <g id="g17935_1_" transform="translate(0.12638,-3.66971)">
-                        <rect id="rect2866-35-7-08-5_1_" x="278.34" y="461.29" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-07-7-38-9_1_" x="278.34" y="448.74" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-61-8-72-0_1_" x="278.34" y="436.19" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-20-3-6-5_1_" x="278.34" y="423.64" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-37-83-93-1_1_" x="278.34" y="411.09" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-35-4-7-81-2_1_" x="278.34" y="373.44" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-07-0-1-0-0_1_" x="278.34" y="360.89" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-61-6-0-33-9_1_" x="278.34" y="348.34" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-20-1-7-84-8_1_" x="278.34" y="335.79" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-37-8-3-801-9_1_" x="278.34" y="323.24" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-96-4-1_1_" x="262.95" y="511.5" class="st2" width="12.31" height="10.04" />
-                        <rect id="rect2866-1-5-1-7_1_" x="247.56" y="511.5" class="st2" width="12.31" height="10.04" />
-                        <rect id="rect2866-4-10-3-3_1_" x="232.17" y="511.5" class="st2" width="12.31" height="10.04" />
-                        <rect id="rect2866-9-9-7-3_1_" x="262.95" y="498.94" class="st2" width="12.31" height="10.04" />
-                        <rect id="rect2866-8-9-3-0_1_" x="247.56" y="498.94" class="st2" width="12.31" height="10.04" />
-                        <rect id="rect2866-2-6-5-7_1_" x="232.17" y="498.94" class="st2" width="12.31" height="10.04" />
-                        <rect id="rect2866-5-8-8-6_1_" x="232.17" y="461.29" class="st2" width="12.31" height="10.04" />
-                        <rect id="rect2866-7-3-5-6_1_" x="247.56" y="461.29" class="st2" width="12.31" height="10.04" />
-                        <rect id="rect2866-52-4-6-0_1_" x="262.95" y="461.29" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-14-84-9-2_1_" x="262.95" y="448.74" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-3-9-0-8_1_" x="262.95" y="436.19" class="st2" width="12.31" height="10.04" />
-                        <rect id="rect2866-16-9-8-9_1_" x="262.95" y="423.64" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-76-25-9-8_1_" x="262.95" y="411.09" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-92-53-3-9_1_" x="247.56" y="411.09" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-54-3-6-9_1_" x="247.56" y="423.64" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-12-3-0-9_1_" x="247.56" y="436.19" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-41-7-6-4_1_" x="247.56" y="448.74" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-87-4-9-2_1_" x="232.17" y="448.74" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-77-3-7-0_1_" x="232.17" y="436.19" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-31-8-8-8_1_" x="232.17" y="423.64" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-6-0-9-7_1_" x="232.17" y="411.09" class="st2" width="12.31" height="10.04" />
-                        <rect id="rect2866-60-8-4-8_1_" x="216.78" y="411.09" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-86-8-1-7_1_" x="216.78" y="423.64" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-0-06-5-3_1_" x="216.78" y="436.19" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-06-8-6-0_1_" x="216.78" y="448.74" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-93-1-6-7_1_" x="216.78" y="461.29" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-606-9-6-6_1_" x="216.78" y="498.94" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-18-89-6-4_1_" x="216.78" y="511.5" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-63-7-6-2_1_" x="201.38" y="511.5" class="st2" width="12.31" height="10.04" />
-                        <rect id="rect2866-82-2-7-1_1_" x="201.38" y="498.94" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-35-2-1-9_1_" x="201.38" y="461.29" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-07-8-4-1_1_" x="201.38" y="448.74" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-61-2-0-6_1_" x="201.38" y="436.19" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-20-8-6-0_1_" x="201.38" y="423.64" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-37-9-1-3_1_" x="201.38" y="411.09" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-5-6-0-2-3_1_" x="232.17" y="373.44" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-7-0-7-1-6_1_" x="247.56" y="373.44" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-52-3-8-4-2_1_" x="262.95" y="373.44" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-14-8-1-9-2_1_" x="262.95" y="360.89" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-3-0-5-5-1_1_" x="262.95" y="348.34" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-16-1-8-2-4_1_" x="262.95" y="335.79" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-76-2-6-3-3_1_" x="262.95" y="323.24" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-92-5-1-4-2_1_" x="247.56" y="323.24" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-54-0-2-1-6_1_" x="247.56" y="335.79" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-12-9-4-5-0_1_" x="247.56" y="348.34" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-41-4-2-2-5_1_" x="247.56" y="360.89" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-87-7-5-3-4_1_" x="232.17" y="360.89" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-77-8-8-1-9_1_" x="232.17" y="348.34" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-31-3-6-6-6_1_" x="232.17" y="335.79" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-6-5-2-8-0_1_" x="232.17" y="323.24" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-60-1-6-8-8_1_" x="216.78" y="323.24" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-86-2-5-2-2_1_" x="216.78" y="335.79" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-0-0-3-7-7_1_" x="216.78" y="348.34" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-06-1-9-7-4_1_" x="216.78" y="360.89" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-93-6-2-1-0_1_" x="216.78" y="373.44" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-35-4-4-2-7_1_" x="201.38" y="373.44" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-07-0-6-6-6_1_" x="201.38" y="360.89" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-61-6-1-0-0_1_" x="201.38" y="348.34" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-20-1-8-4-1_1_" x="201.38" y="335.79" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-37-8-2-9-2_1_" x="201.38" y="323.24" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-98-1-4-9_1_" x="262.95" y="285.58" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-1-4-1-6-3_1_" x="247.56" y="285.58" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-4-1-9-0-8_1_" x="232.17" y="285.58" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-9-4-7-3-5_1_" x="262.95" y="273.03" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-8-3-6-6-1_1_" x="247.56" y="273.03" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-2-9-2-2-5_1_" x="232.17" y="273.03" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-606-8-9-4-6_1_" x="216.78" y="273.03" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-18-8-5-5-6_1_" x="216.78" y="285.58" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-63-0-2-8-8_1_" x="201.38" y="285.58" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-82-8-0-8-8_1_" x="201.38" y="273.03" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-35-7-0-1-9_1_" x="185.99" y="461.29" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-07-7-3-2-8_1_" x="185.99" y="448.74" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-61-8-9-1-7_1_" x="185.99" y="436.19" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-20-3-1-4-0_1_" x="185.99" y="423.64" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-37-83-8-9-7_1_" x="185.99" y="411.09" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-35-4-7-1-8-9_1_" x="185.99" y="373.44" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-07-0-1-9-2-1_1_" x="185.99" y="360.89" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-61-6-0-5-4-5_1_" x="185.99" y="348.34" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-20-1-7-3-5-8_1_" x="185.99" y="335.79" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-37-8-3-2-2-6_1_" x="185.99" y="323.24" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-58-9-3_1_" x="170.6" y="511.5" class="st2" width="12.31" height="10.04" />
-                        <rect id="rect2866-1-6-8-9_1_" x="155.21" y="511.5" class="st2" width="12.31" height="10.04" />
-                        <rect id="rect2866-4-7-3-4_1_" x="139.82" y="511.5" class="st2" width="12.31" height="10.04" />
-                        <rect id="rect2866-9-7-8-5_1_" x="170.6" y="498.94" class="st2" width="12.31" height="10.04" />
-                        <rect id="rect2866-8-2-6-3_1_" x="155.21" y="498.94" class="st2" width="12.31" height="10.04" />
-                        <rect id="rect2866-2-2-9-8_1_" x="139.82" y="498.94" class="st2" width="12.31" height="10.04" />
-                        <rect id="rect2866-5-9-8-2_1_" x="139.82" y="461.29" class="st2" width="12.31" height="10.04" />
-                        <rect id="rect2866-7-4-6-3_1_" x="155.21" y="461.29" class="st2" width="12.31" height="10.04" />
-                        <rect id="rect2866-52-1-6-9_1_" x="170.6" y="461.29" class="st2" width="12.31" height="10.04" />
-                        <rect id="rect2866-14-9-2-4_1_" x="170.6" y="448.74" class="st2" width="12.31" height="10.04" />
-                        <rect id="rect2866-3-6-3-8_1_" x="170.6" y="436.19" class="st2" width="12.31" height="10.04" />
-                        <rect id="rect2866-16-98-8-5_1_" x="170.6" y="423.64" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-76-255-2-1_1_" x="170.6" y="411.09" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-92-4-6-3_1_" x="155.21" y="411.09" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-54-9-2-2_1_" x="155.21" y="423.64" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-12-1-7-8_1_" x="155.21" y="436.19" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-41-2-5-1_1_" x="155.21" y="448.74" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-87-5-7-6_1_" x="139.82" y="448.74" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-77-0-8-4_1_" x="139.82" y="436.19" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-31-83-2-6_1_" x="139.82" y="423.64" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-6-9-7-7_1_" x="139.82" y="411.09" class="st2" width="12.31" height="10.04" />
-                        <rect id="rect2866-60-3-8-7_1_" x="124.43" y="411.09" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-86-9-0-9_1_" x="124.43" y="423.64" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-0-6-2-6_1_" x="124.43" y="436.19" class="st2" width="12.31" height="10.04" />
-                        <rect id="rect2866-06-7-0-4_1_" x="124.43" y="448.74" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-93-9-8-1_1_" x="124.43" y="461.29" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-606-97-9-9_1_" x="124.43" y="498.94" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-18-6-2-2_1_" x="124.43" y="511.5" class="st2" width="12.31" height="10.04" />
-                        <rect id="rect2866-63-9-8-6_1_" x="109.03" y="511.5" class="st2" width="12.31" height="10.04" />
-                        <rect id="rect2866-82-3-2-3_1_" x="109.03" y="498.94" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-35-5-0-1_1_" x="109.03" y="461.29" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-07-76-5-5_1_" x="109.03" y="448.74" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-61-65-5-9_1_" x="109.03" y="436.19" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-20-82-2-7_1_" x="109.03" y="423.64" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-37-5-7-0_1_" x="109.03" y="411.09" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-5-6-4-6-2_1_" x="139.82" y="373.44" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-7-0-4-7-6_1_" x="155.21" y="373.44" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-52-3-1-8-1_1_" x="170.6" y="373.44" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-14-8-6-7-7_1_" x="170.6" y="360.89" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-3-0-1-8-6_1_" x="170.6" y="348.34" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-16-1-6-1-2_1_" x="170.6" y="335.79" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-76-2-3-6-5_1_" x="170.6" y="323.24" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-92-5-3-0-3_1_" x="155.21" y="323.24" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-54-0-5-9-4_1_" x="155.21" y="335.79" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-12-9-5-5-0_1_" x="155.21" y="348.34" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-41-4-3-8-7_1_" x="155.21" y="360.89" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-87-7-2-9-5_1_" x="139.82" y="360.89" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-77-8-82-0-5_1_" x="139.82" y="348.34" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-31-3-5-0-3_1_" x="139.82" y="335.79" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-6-5-3-0-1_1_" x="139.82" y="323.24" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-60-1-61-7-8_1_" x="124.43" y="323.24" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-86-2-8-2-8_1_" x="124.43" y="335.79" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-0-0-6-5-8_1_" x="124.43" y="348.34" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-06-1-2-5-0_1_" x="124.43" y="360.89" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-93-6-1-2-1_1_" x="124.43" y="373.44" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-35-4-46-1-7_1_" x="109.03" y="373.44" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-07-0-2-4-5_1_" x="109.03" y="360.89" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-61-6-9-8-0_1_" x="109.03" y="348.34" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-20-1-1-6-5_1_" x="109.03" y="335.79" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-37-8-5-4-9_1_" x="109.03" y="323.24" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-98-0-6-0_1_" x="170.6" y="285.58" class="st2" width="12.31" height="10.04" />
-                        <rect id="rect2866-1-4-3-8-9_1_" x="155.21" y="285.58" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-4-1-6-9-3_1_" x="139.82" y="285.58" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-9-4-4-8-5_1_" x="170.6" y="273.03" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-8-3-9-3-4_1_" x="155.21" y="273.03" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-2-9-29-5-2_1_" x="139.82" y="273.03" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-606-8-3-5-7_1_" x="124.43" y="273.03" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-18-8-4-1-2_1_" x="124.43" y="285.58" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-63-0-4-5-6_1_" x="109.03" y="285.58" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-82-8-05-5-7_1_" x="109.03" y="273.03" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-35-7-9-8-2_1_" x="93.64" y="461.29" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-07-7-6-4-2_1_" x="93.64" y="448.74" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-61-8-3-0-0_1_" x="93.64" y="436.19" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-20-3-4-5-1_1_" x="93.64" y="423.64" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-37-83-2-4-1_1_" x="93.64" y="411.09" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-35-4-7-8-7-7_1_" x="93.64" y="373.44" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-07-0-1-8-2-5_1_" x="93.64" y="360.89" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-61-6-0-7-1-9_1_" x="93.64" y="348.34" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-20-1-7-5-4-1_1_" x="93.64" y="335.79" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-37-8-3-8-9-8_1_" x="93.64" y="323.24" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-74-0-1_1_" x="78.25" y="511.5" class="st2" width="12.31" height="10.04" />
-                        <rect id="rect2866-1-44-3-7_1_" x="62.86" y="511.5" class="st2" width="12.31" height="10.04" />
-                        <rect id="rect2866-4-4-0-8_1_" x="47.47" y="511.5" class="st2" width="12.31" height="10.04" />
-                        <rect id="rect2866-9-42-3-6_1_" x="78.25" y="498.94" class="st2" width="12.31" height="10.04" />
-                        <rect id="rect2866-8-93-5-6_1_" x="62.86" y="498.94" class="st2" width="12.31" height="10.04" />
-                        <rect id="rect2866-2-0-0-9_1_" x="47.47" y="498.94" class="st2" width="12.31" height="10.04" />
-                        <rect id="rect2866-5-7-7-9_1_" x="47.47" y="461.29" class="st2" width="12.31" height="10.04" />
-                        <rect id="rect2866-7-7-6-2_1_" x="62.86" y="461.29" class="st2" width="12.31" height="10.04" />
-                        <rect id="rect2866-52-8-7-6_1_" x="78.25" y="461.29" class="st2" width="12.31" height="10.04" />
-                        <rect id="rect2866-14-7-8-6_1_" x="78.25" y="448.74" class="st2" width="12.31" height="10.04" />
-                        <rect id="rect2866-3-3-3-5_1_" x="78.25" y="436.19" class="st2" width="12.31" height="10.04" />
-                        <rect id="rect2866-16-0-6-8_1_" x="78.25" y="423.64" class="st2" width="12.31" height="10.04" />
-                        <rect id="rect2866-76-3-4-4_1_" x="78.25" y="411.09" class="st2" width="12.31" height="10.04" />
-                        <rect id="rect2866-92-8-4-0_1_" x="62.86" y="411.09" class="st2" width="12.31" height="10.04" />
-                        <rect id="rect2866-54-2-1-3_1_" x="62.86" y="423.64" class="st2" width="12.31" height="10.04" />
-                        <rect id="rect2866-12-5-9-7_1_" x="62.86" y="436.19" class="st2" width="12.31" height="10.04" />
-                        <rect id="rect2866-41-20-5-8_1_" x="62.86" y="448.74" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-87-3-5-3_1_" x="47.47" y="448.74" class="st2" width="12.31" height="10.04" />
-                        <rect id="rect2866-77-7-7-1_1_" x="47.47" y="436.19" class="st2" width="12.31" height="10.04" />
-                        <rect id="rect2866-31-2-4-1_1_" x="47.47" y="423.64" class="st2" width="12.31" height="10.04" />
-                        <rect id="rect2866-6-97-7-2_1_" x="47.47" y="411.09" class="st2" width="12.31" height="10.04" />
-                        <rect id="rect2866-60-5-3-5_1_" x="32.08" y="411.09" class="st2" width="12.31" height="10.04" />
-                        <rect id="rect2866-86-3-4-7_1_" x="32.08" y="423.64" class="st2" width="12.31" height="10.04" />
-                        <rect id="rect2866-0-4-0-6_1_" x="32.08" y="436.19" class="st2" width="12.31" height="10.04" />
-                        <rect id="rect2866-06-3-8-2_1_" x="32.08" y="448.74" class="st2" width="12.31" height="10.04" />
-                        <rect id="rect2866-93-2-8-1_1_" x="32.08" y="461.29" class="st2" width="12.31" height="10.04" />
-                        <rect id="rect2866-606-1-1-6_1_" x="32.08" y="498.94" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-18-1-5-1_1_" x="32.08" y="511.5" class="st2" width="12.31" height="10.04" />
-                        <rect id="rect2866-63-3-2-1_1_" x="16.68" y="511.5" class="st2" width="12.31" height="10.04" />
-                        <rect id="rect2866-82-25-3-5_1_" x="16.68" y="498.94" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-35-3-2-7_1_" x="16.68" y="461.29" class="st2" width="12.31" height="10.04" />
-                        <rect id="rect2866-07-5-4-4_1_" x="16.68" y="448.74" class="st2" width="12.31" height="10.04" />
-                        <rect id="rect2866-61-1-6-8_1_" x="16.68" y="436.19" class="st2" width="12.31" height="10.04" />
-                        <rect id="rect2866-20-2-6-5_1_" x="16.68" y="423.64" class="st2" width="12.31" height="10.04" />
-                        <rect id="rect2866-37-2-6-6_1_" x="16.68" y="411.09" class="st2" width="12.31" height="10.04" />
-                        <rect id="rect2866-5-6-2-2-4_1_" x="47.47" y="373.44" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-7-0-6-9-9_1_" x="62.86" y="373.44" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-52-3-4-0-8_1_" x="78.25" y="373.44" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-14-8-0-4-4_1_" x="78.25" y="360.89" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-3-0-7-9-3_1_" x="78.25" y="348.34" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-16-1-0-3-2_1_" x="78.25" y="335.79" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-76-2-34-1-5_1_" x="78.25" y="323.24" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-92-5-0-1-3_1_" x="62.86" y="323.24" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-54-0-0-9-8_1_" x="62.86" y="335.79" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-12-9-53-9-3_1_" x="62.86" y="348.34" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-41-4-1-5-2_1_" x="62.86" y="360.89" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-87-7-0-5-7_1_" x="47.47" y="360.89" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-77-8-6-5-0_1_" x="47.47" y="348.34" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-31-3-7-6-6_1_" x="47.47" y="335.79" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-6-5-5-0-8_1_" x="47.47" y="323.24" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-60-1-0-5-0_1_" x="32.08" y="323.24" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-86-2-0-9-1_1_" x="32.08" y="335.79" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-0-0-4-4-1_1_" x="32.08" y="348.34" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-06-1-5-6-9_1_" x="32.08" y="360.89" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-93-6-4-3-5_1_" x="32.08" y="373.44" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-35-4-9-4-3_1_" x="16.68" y="373.44" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-07-0-5-9-6_1_" x="16.68" y="360.89" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-61-6-6-0-3_1_" x="16.68" y="348.34" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-20-1-4-5-1_1_" x="16.68" y="335.79" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-37-8-8-3-5_1_" x="16.68" y="323.24" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-98-2-9-3_1_" x="78.25" y="285.58" class="st2" width="12.31" height="10.04" />
-                        <rect id="rect2866-1-4-16-1-4_1_" x="62.86" y="285.58" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-4-1-8-2-0_1_" x="47.47" y="285.58" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-9-4-3-8-3_1_" x="78.25" y="273.03" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-8-3-1-8-1_1_" x="62.86" y="273.03" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-2-9-4-1-7_1_" x="47.47" y="273.03" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-606-8-8-8-9_1_" x="32.08" y="273.03" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-18-8-49-6-0_1_" x="32.08" y="285.58" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-63-0-20-0-3_1_" x="16.68" y="285.58" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-82-8-7-2-5_1_" x="16.68" y="273.03" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-35-7-06-4-2_1_" x="1.29" y="461.29" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-07-7-0-9-9_1_" x="1.29" y="448.74" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-61-8-7-0-1_1_" x="1.29" y="436.19" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-20-3-0-2-2_1_" x="1.29" y="423.64" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-37-83-5-2-6_1_" x="1.29" y="411.09" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-35-4-7-6-1-1_1_" x="1.29" y="373.44" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-07-0-1-7-5-7_1_" x="1.29" y="360.89" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-61-6-0-3-4-0_1_" x="1.29" y="348.34" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-20-1-7-8-4-1_1_" x="1.29" y="335.79" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-37-8-3-4-4-5_1_" x="1.29" y="323.24" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-57-5-2_1_" x="-14.1" y="511.5" class="st2" width="12.31" height="10.04" />
-                        <rect id="rect2866-1-7-0-2_1_" x="-29.49" y="511.5" class="st2" width="12.31" height="10.04" />
-                        <rect id="rect2866-4-45-4-9_1_" x="-44.88" y="511.5" class="st2" width="12.31" height="10.04" />
-                        <rect id="rect2866-9-79-2-0_1_" x="-14.1" y="498.94" class="st2" width="12.31" height="10.04" />
-                        <rect id="rect2866-8-8-1-5_1_" x="-29.49" y="498.94" class="st2" width="12.31" height="10.04" />
-                        <rect id="rect2866-2-3-2-1_1_" x="-44.88" y="498.94" class="st2" width="12.31" height="10.04" />
-                        <rect id="rect2866-5-0-7-8_1_" x="-44.88" y="461.29" class="st2" width="12.31" height="10.04" />
-                        <rect id="rect2866-7-2-7-3_1_" x="-29.49" y="461.29" class="st2" width="12.31" height="10.04" />
-                        <rect id="rect2866-52-2-9-6_1_" x="-14.1" y="461.29" class="st2" width="12.31" height="10.04" />
-                        <rect id="rect2866-14-3-5-8_1_" x="-14.1" y="448.74" class="st2" width="12.31" height="10.04" />
-                        <rect id="rect2866-3-67-5-8_1_" x="-14.1" y="436.19" class="st2" width="12.31" height="10.04" />
-                        <rect id="rect2866-16-15-4-6_1_" x="-14.1" y="423.64" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-76-5-0-1_1_" x="-14.1" y="411.09" class="st2" width="12.31" height="10.04" />
-                        <rect id="rect2866-92-40-3-6_1_" x="-29.49" y="411.09" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-54-26-4-6_1_" x="-29.49" y="423.64" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-12-0-1-7_1_" x="-29.49" y="436.19" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-41-6-2-0_1_" x="-29.49" y="448.74" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-87-1-2-4_1_" x="-44.88" y="448.74" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-77-1-9-9_1_" x="-44.88" y="436.19" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-31-1-8-8_1_" x="-44.88" y="423.64" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-6-7-2-9_1_" x="-44.88" y="411.09" class="st2" width="12.31" height="10.04" />
-                        <rect id="rect2866-60-30-2-4_1_" x="-60.27" y="411.09" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-86-0-7-9_1_" x="-60.27" y="423.64" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-0-48-8-8_1_" x="-60.27" y="436.19" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-06-30-5-7_1_" x="-60.27" y="448.74" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-93-12-8-5_1_" x="-60.27" y="461.29" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-606-90-3-6_1_" x="-60.27" y="498.94" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-18-3-9-4_1_" x="-60.27" y="511.5" class="st2" width="12.31" height="10.04" />
-                        <rect id="rect2866-63-8-4-8_1_" x="-75.67" y="511.5" class="st2" width="12.31" height="10.04" />
-                        <rect id="rect2866-82-85-4-6_1_" x="-75.67" y="498.94" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-35-77-6-8_1_" x="-75.67" y="461.29" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-07-08-9-7_1_" x="-75.67" y="448.74" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-61-9-8-8_1_" x="-75.67" y="436.19" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-20-30-5-0_1_" x="-75.67" y="423.64" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-37-7-6-9_1_" x="-75.67" y="411.09" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-5-6-47-6-5_1_" x="-44.88" y="373.44" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-7-0-8-0-6_1_" x="-29.49" y="373.44" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-52-3-3-7-9_1_" x="-14.1" y="373.44" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-14-8-7-2-0_1_" x="-14.1" y="360.89" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-3-0-10-7-0_1_" x="-14.1" y="348.34" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-16-1-08-2-1_1_" x="-14.1" y="335.79" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-76-2-345-6-3_1_" x="-14.1" y="323.24" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-92-5-01-4-5_1_" x="-29.49" y="323.24" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-54-0-4-7-5_1_" x="-29.49" y="335.79" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-12-9-56-1-8_1_" x="-29.49" y="348.34" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-41-4-20-3-0_1_" x="-29.49" y="360.89" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-87-7-3-2-1_1_" x="-44.88" y="360.89" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-77-8-5-1-7_1_" x="-44.88" y="348.34" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-31-3-66-6-7_1_" x="-44.88" y="335.79" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-6-5-6-3-4_1_" x="-44.88" y="323.24" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-60-1-7-8-6_1_" x="-60.27" y="323.24" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-86-2-6-3-7_1_" x="-60.27" y="335.79" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-0-0-7-2-0_1_" x="-60.27" y="348.34" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-06-1-7-8-7_1_" x="-60.27" y="360.89" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-93-6-19-6-4_1_" x="-60.27" y="373.44" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-35-4-1-0-1_1_" x="-75.67" y="373.44" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-07-0-62-1-2_1_" x="-75.67" y="360.89" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-61-6-7-2-1_1_" x="-75.67" y="348.34" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-20-1-2-6-8_1_" x="-75.67" y="335.79" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-37-8-7-0-3_1_" x="-75.67" y="323.24" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-98-6-5-5_1_" x="-14.1" y="285.58" class="st2" width="12.31" height="10.04" />
-                        <rect id="rect2866-1-4-5-4-7_1_" x="-29.49" y="285.58" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-4-1-1-6-1_1_" x="-44.88" y="285.58" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-9-4-39-7-4_1_" x="-14.1" y="273.03" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-8-3-95-9-7_1_" x="-29.49" y="273.03" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-2-9-9-3-6_1_" x="-44.88" y="273.03" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-606-8-2-4-8_1_" x="-60.27" y="273.03" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-18-8-6-7-2_1_" x="-60.27" y="285.58" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-63-0-5-8-3_1_" x="-75.67" y="285.58" class="st2" width="12.31"
-                            height="10.04" />
-                        <rect id="rect2866-82-8-3-8-0_1_" x="-75.67" y="273.03" class="st2" width="12.31"
-                            height="10.04" />
-                    </g>
-                    <g id="g4862_1_" transform="translate(0.12638,-3.66971)">
-                        <rect id="rect2866-35-7-08_1_" x="281.42" y="463.8" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-07-7-38_1_" x="281.42" y="451.25" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-61-8-72_1_" x="281.42" y="438.7" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-20-3-6_1_" x="281.42" y="426.15" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-37-83-93_1_" x="281.42" y="413.6" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-35-4-7-81_1_" x="281.42" y="375.95" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-07-0-1-0_1_" x="281.42" y="363.4" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-61-6-0-33_1_" x="281.42" y="350.85" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-20-1-7-84_1_" x="281.42" y="338.3" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-37-8-3-801_1_" x="281.42" y="325.75" class="st3" width="6.16"
-                            height="5.02" />
-                        <rect id="rect2866-96-4_1_" x="266.03" y="514.01" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-1-5-1_1_" x="250.64" y="514.01" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-4-10-3_1_" x="235.25" y="514.01" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-9-9-7_1_" x="266.03" y="501.46" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-8-9-3_1_" x="250.64" y="501.46" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-2-6-5_1_" x="235.25" y="501.46" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-5-8-8_1_" x="235.25" y="463.8" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-7-3-5_1_" x="250.64" y="463.8" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-52-4-6_1_" x="266.03" y="463.8" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-14-84-9_1_" x="266.03" y="451.25" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-3-9-0_1_" x="266.03" y="438.7" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-16-9-8_1_" x="266.03" y="426.15" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-76-25-9_1_" x="266.03" y="413.6" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-92-53-3_1_" x="250.64" y="413.6" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-54-3-6_1_" x="250.64" y="426.15" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-12-3-0_1_" x="250.64" y="438.7" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-41-7-6_1_" x="250.64" y="451.25" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-87-4-9_1_" x="235.25" y="451.25" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-77-3-7_1_" x="235.25" y="438.7" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-31-8-8_1_" x="235.25" y="426.15" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-6-0-9_1_" x="235.25" y="413.6" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-60-8-4_1_" x="219.85" y="413.6" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-86-8-1_1_" x="219.85" y="426.15" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-0-06-5_1_" x="219.85" y="438.7" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-06-8-6_1_" x="219.85" y="451.25" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-93-1-6_1_" x="219.85" y="463.8" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-606-9-6_1_" x="219.85" y="501.46" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-18-89-6_1_" x="219.85" y="514.01" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-63-7-6_1_" x="204.46" y="514.01" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-82-2-7_1_" x="204.46" y="501.46" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-35-2-1_1_" x="204.46" y="463.8" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-07-8-4_1_" x="204.46" y="451.25" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-61-2-0_1_" x="204.46" y="438.7" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-20-8-6_1_" x="204.46" y="426.15" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-37-9-1_1_" x="204.46" y="413.6" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-5-6-0-2_1_" x="235.25" y="375.95" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-7-0-7-1_1_" x="250.64" y="375.95" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-52-3-8-4_1_" x="266.03" y="375.95" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-14-8-1-9_1_" x="266.03" y="363.4" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-3-0-5-5_1_" x="266.03" y="350.85" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-16-1-8-2_1_" x="266.03" y="338.3" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-76-2-6-3_1_" x="266.03" y="325.75" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-92-5-1-4_1_" x="250.64" y="325.75" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-54-0-2-1_1_" x="250.64" y="338.3" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-12-9-4-5_1_" x="250.64" y="350.85" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-41-4-2-2_1_" x="250.64" y="363.4" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-87-7-5-3_1_" x="235.25" y="363.4" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-77-8-8-1_1_" x="235.25" y="350.85" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-31-3-6-6_1_" x="235.25" y="338.3" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-6-5-2-8_1_" x="235.25" y="325.75" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-60-1-6-8_1_" x="219.85" y="325.75" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-86-2-5-2_1_" x="219.85" y="338.3" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-0-0-3-7_1_" x="219.85" y="350.85" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-06-1-9-7_1_" x="219.85" y="363.4" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-93-6-2-1_1_" x="219.85" y="375.95" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-35-4-4-2_1_" x="204.46" y="375.95" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-07-0-6-6_1_" x="204.46" y="363.4" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-61-6-1-0_1_" x="204.46" y="350.85" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-20-1-8-4_1_" x="204.46" y="338.3" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-37-8-2-9_1_" x="204.46" y="325.75" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-98-1-4_1_" x="266.03" y="288.09" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-1-4-1-6_1_" x="250.64" y="288.09" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-4-1-9-0_1_" x="235.25" y="288.09" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-9-4-7-3_1_" x="266.03" y="275.54" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-8-3-6-6_1_" x="250.64" y="275.54" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-2-9-2-2_1_" x="235.25" y="275.54" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-606-8-9-4_1_" x="219.85" y="275.54" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-18-8-5-5_1_" x="219.85" y="288.09" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-63-0-2-8_1_" x="204.46" y="288.09" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-82-8-0-8_1_" x="204.46" y="275.54" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-35-7-0-1_1_" x="189.07" y="463.8" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-07-7-3-2_1_" x="189.07" y="451.25" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-61-8-9-1_1_" x="189.07" y="438.7" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-20-3-1-4_1_" x="189.07" y="426.15" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-37-83-8-9_1_" x="189.07" y="413.6" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-35-4-7-1-8_1_" x="189.07" y="375.95" class="st3" width="6.16"
-                            height="5.02" />
-                        <rect id="rect2866-07-0-1-9-2_1_" x="189.07" y="363.4" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-61-6-0-5-4_1_" x="189.07" y="350.85" class="st3" width="6.16"
-                            height="5.02" />
-                        <rect id="rect2866-20-1-7-3-5_1_" x="189.07" y="338.3" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-37-8-3-2-2_1_" x="189.07" y="325.75" class="st3" width="6.16"
-                            height="5.02" />
-                        <rect id="rect2866-58-9_1_" x="173.68" y="514.01" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-1-6-8_1_" x="158.29" y="514.01" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-4-7-3_1_" x="142.9" y="514.01" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-9-7-8_1_" x="173.68" y="501.46" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-8-2-6_1_" x="158.29" y="501.46" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-2-2-9_1_" x="142.9" y="501.46" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-5-9-8_1_" x="142.9" y="463.8" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-7-4-6_1_" x="158.29" y="463.8" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-52-1-6_1_" x="173.68" y="463.8" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-14-9-2_1_" x="173.68" y="451.25" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-3-6-3_1_" x="173.68" y="438.7" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-16-98-8_1_" x="173.68" y="426.15" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-76-255-2_1_" x="173.68" y="413.6" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-92-4-6_1_" x="158.29" y="413.6" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-54-9-2_1_" x="158.29" y="426.15" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-12-1-7_1_" x="158.29" y="438.7" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-41-2-5_1_" x="158.29" y="451.25" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-87-5-7_1_" x="142.9" y="451.25" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-77-0-8_1_" x="142.9" y="438.7" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-31-83-2_1_" x="142.9" y="426.15" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-6-9-7_1_" x="142.9" y="413.6" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-60-3-8_1_" x="127.5" y="413.6" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-86-9-0_1_" x="127.5" y="426.15" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-0-6-2_1_" x="127.5" y="438.7" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-06-7-0_1_" x="127.5" y="451.25" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-93-9-8_1_" x="127.5" y="463.8" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-606-97-9_1_" x="127.5" y="501.46" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-18-6-2_1_" x="127.5" y="514.01" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-63-9-8_1_" x="112.11" y="514.01" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-82-3-2_1_" x="112.11" y="501.46" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-35-5-0_1_" x="112.11" y="463.8" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-07-76-5_1_" x="112.11" y="451.25" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-61-65-5_1_" x="112.11" y="438.7" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-20-82-2_1_" x="112.11" y="426.15" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-37-5-7_1_" x="112.11" y="413.6" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-5-6-4-6_1_" x="142.9" y="375.95" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-7-0-4-7_1_" x="158.29" y="375.95" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-52-3-1-8_1_" x="173.68" y="375.95" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-14-8-6-7_1_" x="173.68" y="363.4" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-3-0-1-8_1_" x="173.68" y="350.85" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-16-1-6-1_1_" x="173.68" y="338.3" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-76-2-3-6_1_" x="173.68" y="325.75" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-92-5-3-0_1_" x="158.29" y="325.75" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-54-0-5-9_1_" x="158.29" y="338.3" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-12-9-5-5_1_" x="158.29" y="350.85" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-41-4-3-8_1_" x="158.29" y="363.4" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-87-7-2-9_1_" x="142.9" y="363.4" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-77-8-82-0_1_" x="142.9" y="350.85" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-31-3-5-0_1_" x="142.9" y="338.3" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-6-5-3-0_1_" x="142.9" y="325.75" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-60-1-61-7_1_" x="127.5" y="325.75" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-86-2-8-2_1_" x="127.5" y="338.3" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-0-0-6-5_1_" x="127.5" y="350.85" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-06-1-2-5_1_" x="127.5" y="363.4" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-93-6-1-2_1_" x="127.5" y="375.95" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-35-4-46-1_1_" x="112.11" y="375.95" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-07-0-2-4_1_" x="112.11" y="363.4" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-61-6-9-8_1_" x="112.11" y="350.85" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-20-1-1-6_1_" x="112.11" y="338.3" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-37-8-5-4_1_" x="112.11" y="325.75" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-98-0-6_1_" x="173.68" y="288.09" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-1-4-3-8_1_" x="158.29" y="288.09" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-4-1-6-9_1_" x="142.9" y="288.09" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-9-4-4-8_1_" x="173.68" y="275.54" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-8-3-9-3_1_" x="158.29" y="275.54" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-2-9-29-5_1_" x="142.9" y="275.54" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-606-8-3-5_1_" x="127.5" y="275.54" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-18-8-4-1_1_" x="127.5" y="288.09" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-63-0-4-5_1_" x="112.11" y="288.09" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-82-8-05-5_1_" x="112.11" y="275.54" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-35-7-9-8_1_" x="96.72" y="463.8" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-07-7-6-4_1_" x="96.72" y="451.25" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-61-8-3-0_1_" x="96.72" y="438.7" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-20-3-4-5_1_" x="96.72" y="426.15" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-37-83-2-4_1_" x="96.72" y="413.6" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-35-4-7-8-7_1_" x="96.72" y="375.95" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-07-0-1-8-2_1_" x="96.72" y="363.4" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-61-6-0-7-1_1_" x="96.72" y="350.85" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-20-1-7-5-4_1_" x="96.72" y="338.3" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-37-8-3-8-9_1_" x="96.72" y="325.75" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-74-0_1_" x="81.33" y="514.01" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-1-44-3_1_" x="65.94" y="514.01" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-4-4-0_1_" x="50.55" y="514.01" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-9-42-3_1_" x="81.33" y="501.46" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-8-93-5_1_" x="65.94" y="501.46" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-2-0-0_1_" x="50.55" y="501.46" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-5-7-7_1_" x="50.55" y="463.8" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-7-7-6_1_" x="65.94" y="463.8" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-52-8-7_1_" x="81.33" y="463.8" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-14-7-8_1_" x="81.33" y="451.25" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-3-3-3_1_" x="81.33" y="438.7" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-16-0-6_1_" x="81.33" y="426.15" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-76-3-4_1_" x="81.33" y="413.6" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-92-8-4_1_" x="65.94" y="413.6" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-54-2-1_1_" x="65.94" y="426.15" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-12-5-9_1_" x="65.94" y="438.7" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-41-20-5_1_" x="65.94" y="451.25" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-87-3-5_1_" x="50.55" y="451.25" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-77-7-7_1_" x="50.55" y="438.7" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-31-2-4_1_" x="50.55" y="426.15" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-6-97-7_1_" x="50.55" y="413.6" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-60-5-3_1_" x="35.15" y="413.6" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-86-3-4_1_" x="35.15" y="426.15" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-0-4-0_1_" x="35.15" y="438.7" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-06-3-8_1_" x="35.15" y="451.25" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-93-2-8_1_" x="35.15" y="463.8" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-606-1-1_1_" x="35.15" y="501.46" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-18-1-5_1_" x="35.15" y="514.01" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-63-3-2_1_" x="19.76" y="514.01" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-82-25-3_1_" x="19.76" y="501.46" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-35-3-2_1_" x="19.76" y="463.8" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-07-5-4_1_" x="19.76" y="451.25" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-61-1-6_1_" x="19.76" y="438.7" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-20-2-6_1_" x="19.76" y="426.15" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-37-2-6_1_" x="19.76" y="413.6" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-5-6-2-2_1_" x="50.55" y="375.95" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-7-0-6-9_1_" x="65.94" y="375.95" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-52-3-4-0_1_" x="81.33" y="375.95" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-14-8-0-4_1_" x="81.33" y="363.4" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-3-0-7-9_1_" x="81.33" y="350.85" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-16-1-0-3_1_" x="81.33" y="338.3" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-76-2-34-1_1_" x="81.33" y="325.75" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-92-5-0-1_1_" x="65.94" y="325.75" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-54-0-0-9_1_" x="65.94" y="338.3" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-12-9-53-9_1_" x="65.94" y="350.85" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-41-4-1-5_1_" x="65.94" y="363.4" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-87-7-0-5_1_" x="50.55" y="363.4" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-77-8-6-5_1_" x="50.55" y="350.85" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-31-3-7-6_1_" x="50.55" y="338.3" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-6-5-5-0_1_" x="50.55" y="325.75" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-60-1-0-5_1_" x="35.15" y="325.75" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-86-2-0-9_1_" x="35.15" y="338.3" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-0-0-4-4_1_" x="35.15" y="350.85" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-06-1-5-6_1_" x="35.15" y="363.4" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-93-6-4-3_1_" x="35.15" y="375.95" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-35-4-9-4_1_" x="19.76" y="375.95" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-07-0-5-9_1_" x="19.76" y="363.4" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-61-6-6-0_1_" x="19.76" y="350.85" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-20-1-4-5_1_" x="19.76" y="338.3" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-37-8-8-3_1_" x="19.76" y="325.75" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-98-2-9_1_" x="81.33" y="288.09" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-1-4-16-1_1_" x="65.94" y="288.09" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-4-1-8-2_1_" x="50.55" y="288.09" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-9-4-3-8_1_" x="81.33" y="275.54" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-8-3-1-8_1_" x="65.94" y="275.54" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-2-9-4-1_1_" x="50.55" y="275.54" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-606-8-8-8_1_" x="35.15" y="275.54" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-18-8-49-6_1_" x="35.15" y="288.09" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-63-0-20-0_1_" x="19.76" y="288.09" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-82-8-7-2_1_" x="19.76" y="275.54" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-35-7-06-4_1_" x="4.37" y="463.8" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-07-7-0-9_1_" x="4.37" y="451.25" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-61-8-7-0_1_" x="4.37" y="438.7" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-20-3-0-2_1_" x="4.37" y="426.15" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-37-83-5-2_1_" x="4.37" y="413.6" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-35-4-7-6-1_1_" x="4.37" y="375.95" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-07-0-1-7-5_1_" x="4.37" y="363.4" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-61-6-0-3-4_1_" x="4.37" y="350.85" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-20-1-7-8-4_1_" x="4.37" y="338.3" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-37-8-3-4-4_1_" x="4.37" y="325.75" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-57-5_1_" x="-11.02" y="514.01" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-1-7-0_1_" x="-26.41" y="514.01" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-4-45-4_1_" x="-41.8" y="514.01" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-9-79-2_1_" x="-11.02" y="501.46" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-8-8-1_1_" x="-26.41" y="501.46" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-2-3-2_1_" x="-41.8" y="501.46" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-5-0-7_1_" x="-41.8" y="463.8" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-7-2-7_1_" x="-26.41" y="463.8" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-52-2-9_1_" x="-11.02" y="463.8" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-14-3-5_1_" x="-11.02" y="451.25" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-3-67-5_1_" x="-11.02" y="438.7" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-16-15-4_1_" x="-11.02" y="426.15" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-76-5-0_1_" x="-11.02" y="413.6" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-92-40-3_1_" x="-26.41" y="413.6" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-54-26-4_1_" x="-26.41" y="426.15" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-12-0-1_1_" x="-26.41" y="438.7" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-41-6-2_1_" x="-26.41" y="451.25" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-87-1-2_1_" x="-41.8" y="451.25" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-77-1-9_1_" x="-41.8" y="438.7" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-31-1-8_1_" x="-41.8" y="426.15" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-6-7-2_1_" x="-41.8" y="413.6" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-60-30-2_1_" x="-57.2" y="413.6" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-86-0-7_1_" x="-57.2" y="426.15" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-0-48-8_1_" x="-57.2" y="438.7" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-06-30-5_1_" x="-57.2" y="451.25" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-93-12-8_1_" x="-57.2" y="463.8" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-606-90-3_1_" x="-57.2" y="501.46" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-18-3-9_1_" x="-57.2" y="514.01" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-63-8-4_1_" x="-72.59" y="514.01" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-82-85-4_1_" x="-72.59" y="501.46" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-35-77-6_1_" x="-72.59" y="463.8" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-07-08-9_1_" x="-72.59" y="451.25" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-61-9-8_1_" x="-72.59" y="438.7" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-20-30-5_1_" x="-72.59" y="426.15" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-37-7-6_1_" x="-72.59" y="413.6" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-5-6-47-6_1_" x="-41.8" y="375.95" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-7-0-8-0_1_" x="-26.41" y="375.95" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-52-3-3-7_1_" x="-11.02" y="375.95" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-14-8-7-2_1_" x="-11.02" y="363.4" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-3-0-10-7_1_" x="-11.02" y="350.85" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-16-1-08-2_1_" x="-11.02" y="338.3" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-76-2-345-6_1_" x="-11.02" y="325.75" class="st3" width="6.16"
-                            height="5.02" />
-                        <rect id="rect2866-92-5-01-4_1_" x="-26.41" y="325.75" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-54-0-4-7_1_" x="-26.41" y="338.3" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-12-9-56-1_1_" x="-26.41" y="350.85" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-41-4-20-3_1_" x="-26.41" y="363.4" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-87-7-3-2_1_" x="-41.8" y="363.4" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-77-8-5-1_1_" x="-41.8" y="350.85" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-31-3-66-6_1_" x="-41.8" y="338.3" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-6-5-6-3_1_" x="-41.8" y="325.75" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-60-1-7-8_1_" x="-57.2" y="325.75" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-86-2-6-3_1_" x="-57.2" y="338.3" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-0-0-7-2_1_" x="-57.2" y="350.85" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-06-1-7-8_1_" x="-57.2" y="363.4" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-93-6-19-6_1_" x="-57.2" y="375.95" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-35-4-1-0_1_" x="-72.59" y="375.95" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-07-0-62-1_1_" x="-72.59" y="363.4" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-61-6-7-2_1_" x="-72.59" y="350.85" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-20-1-2-6_1_" x="-72.59" y="338.3" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-37-8-7-0_1_" x="-72.59" y="325.75" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-98-6-5_1_" x="-11.02" y="288.09" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-1-4-5-4_1_" x="-26.41" y="288.09" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-4-1-1-6_1_" x="-41.8" y="288.09" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-9-4-39-7_1_" x="-11.02" y="275.54" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-8-3-95-9_1_" x="-26.41" y="275.54" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-2-9-9-3_1_" x="-41.8" y="275.54" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-606-8-2-4_1_" x="-57.2" y="275.54" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-18-8-6-7_1_" x="-57.2" y="288.09" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-63-0-5-8_1_" x="-72.59" y="288.09" class="st3" width="6.16" height="5.02" />
-                        <rect id="rect2866-82-8-3-8_1_" x="-72.59" y="275.54" class="st3" width="6.16" height="5.02" />
-                    </g>
-                    <rect x="-78.54" y="482.9" class="st4" width="370.89" height="0.31" />
-                    <rect x="-78.54" y="304.37" class="st4" width="370.89" height="0.31" />
-                    <g id="g8584_1_" transform="translate(-1.3125,0.125)">
-                        <g id="flowRoot4656_1_" transform="translate(87.43638,-354.06804)">
-                        </g>
-                        <g id="flowRoot4656-5_1_" transform="translate(87.24738,-318.63497)">
-                        </g>
-                        <g id="flowRoot4656-8_1_" transform="translate(85.42437,-274.27764)">
-                        </g>
-                        <g id="flowRoot4656-8-7_1_" transform="translate(85.52037,-229.9863)">
-                        </g>
-                        <g id="flowRoot4656-8-5_1_" transform="translate(85.60137,-185.69497)">
-                        </g>
-                        <g id="flowRoot4656-8-4_1_" transform="translate(85.69737,-141.40363)">
-                        </g>
-                        <g id="flowRoot4656-8-3_1_" transform="translate(85.61037,-97.11229)">
-                        </g>
-                        <g id="flowRoot4656-8-2_1_" transform="translate(85.70637,-52.82094)">
-                        </g>
-                        <g id="flowRoot4656-8-79_1_" transform="translate(85.69137,-8.52961)">
-                        </g>
-                        <g id="flowRoot4656-8-31_1_" transform="translate(85.78736,35.76172)">
-                        </g>
-                        <g id="flowRoot4656-8-76_1_" transform="translate(85.61037,80.05306)">
-                        </g>
-                        <g id="flowRoot4656-8-75_1_" transform="translate(85.70637,124.3444)">
-                        </g>
-                        <g id="flowRoot4656-8-0_1_" transform="translate(85.63437,168.63574)">
-                        </g>
-                    </g>
-                    <rect x="-78.54" y="388.59" class="st5" width="370.89" height="10.04" />
-                    <g id="flowRoot4656-9_1_" transform="matrix(0.85,0,0,0.85,122.15852,-236.12872)">
-                    </g>
-                    <rect x="-78.4" y="297.15" class="st6" width="370.74" height="2.51" />
-                    <rect x="-78.4" y="262.01" class="st7" width="370.74" height="2.51" />
-                    <rect x="-78.4" y="523.07" class="st6" width="370.74" height="2.51" />
-                    <rect x="-78.4" y="487.92" class="st7" width="370.74" height="2.51" />
-                    <g id="flowRoot4656-8-0-1-7_1_" transform="translate(51.362873,-354.90716)">
-                    </g>
-                    <g id="flowRoot4656-8-0-1-4-0_1_" transform="matrix(1.6403006,0,0,1,107.28401,-354.59562)">
-                    </g>
-                    <g id="g8638_1_" transform="translate(1.6875,0.0625)">
-                        <g id="flowRoot4656-7_1_" transform="translate(199.63265,-354.3461)">
-                        </g>
-                        <g id="flowRoot4656-5-2_1_" transform="translate(199.44365,-318.91303)">
-                        </g>
-                        <g id="flowRoot4656-8-6_1_" transform="translate(197.62064,-274.5557)">
-                        </g>
-                        <g id="flowRoot4656-8-7-5_1_" transform="translate(197.71664,-230.26436)">
-                        </g>
-                        <g id="flowRoot4656-8-5-0_1_" transform="translate(197.79763,-185.97303)">
-                        </g>
-                        <g id="flowRoot4656-8-4-3_1_" transform="translate(197.89363,-141.68169)">
-                        </g>
-                        <g id="flowRoot4656-8-3-6_1_" transform="translate(197.80663,-97.39034)">
-                        </g>
-                        <g id="flowRoot4656-8-2-7_1_" transform="translate(197.90263,-53.099)">
-                        </g>
-                        <g id="flowRoot4656-8-79-8_1_" transform="translate(197.88763,-8.80767)">
-                        </g>
-                        <g id="flowRoot4656-8-31-8_1_" transform="translate(197.98363,35.48366)">
-                        </g>
-                        <g id="flowRoot4656-8-76-4_1_" transform="translate(197.80663,79.775)">
-                        </g>
-                        <g id="flowRoot4656-8-75-7_1_" transform="translate(197.90263,124.06634)">
-                        </g>
-                        <g id="flowRoot4656-8-0-5_1_" transform="translate(197.83063,168.35768)">
-                        </g>
-                    </g>
-                    <g id="flowRoot4656-8-0-1-7-1_1_" transform="translate(210.81546,-354.90325)">
-                    </g>
-                    <g id="flowRoot4656-8-0-1-4-0-0_1_" transform="matrix(1.6403006,0,0,1,266.73283,-354.59562)">
-                    </g>
-                    <g id="flowRoot4656-8-0-1-7-6_1_" transform="translate(210.82326,188.99974)">
-                    </g>
-                    <g id="flowRoot4656-8-0-1-4-0-3_1_" transform="matrix(1.6403006,0,0,1,266.73283,189.30201)">
-                    </g>
-                    <g id="flowRoot4656-8-0-1-7-8_1_" transform="translate(51.357701,188.99975)">
-                    </g>
-                    <g id="flowRoot4656-8-0-1-4-0-9_1_" transform="matrix(1.6403006,0,0,1,107.28401,189.30201)">
-                    </g>
-                    <g id="flowRoot4656-9-6_1_" transform="matrix(0.85,0,0,0.85,86.40617,-236.12872)">
-                    </g>
-                    <g id="flowRoot4656-9-2_1_" transform="matrix(0.85,0,0,0.85,95.39867,-236.17689)">
-                    </g>
-                    <g id="flowRoot4656-9-4_1_" transform="matrix(0.85,0,0,0.85,104.24155,-236.21672)">
-                    </g>
-                    <g id="flowRoot4656-9-0_1_" transform="matrix(0.85,0,0,0.85,112.69343,-236.17612)">
-                    </g>
-                    <g id="flowRoot4656-9-7_1_" transform="matrix(0.85,0,0,0.85,122.32628,329.06373)">
-                    </g>
-                    <g id="flowRoot4656-9-6-3_1_" transform="matrix(0.85,0,0,0.85,86.57393,329.06373)">
-                    </g>
-                    <g id="flowRoot4656-9-2-5_1_" transform="matrix(0.85,0,0,0.85,95.56643,329.01556)">
-                    </g>
-                    <g id="flowRoot4656-9-4-9_1_" transform="matrix(0.85,0,0,0.85,104.40931,328.97573)">
-                    </g>
-                    <g id="flowRoot4656-9-0-9_1_" transform="matrix(0.85,0,0,0.85,112.86119,329.01633)">
-                    </g>
-                    <g id="flowRoot4656-9-28_1_" transform="matrix(0.85,0,0,0.85,185.09028,329.22757)">
-                    </g>
-                    <g id="flowRoot4656-9-6-34_1_" transform="matrix(0.85,0,0,0.85,149.03352,329.32492)">
-                    </g>
-                    <g id="flowRoot4656-9-2-2_1_" transform="matrix(0.85,0,0,0.85,157.48671,329.26638)">
-                    </g>
-                    <g id="flowRoot4656-9-4-1_1_" transform="matrix(0.85,0,0,0.85,166.2357,329.32492)">
-                    </g>
-                    <g id="flowRoot4656-9-0-6_1_" transform="matrix(0.85,0,0,0.85,176.48068,329.32492)">
-                    </g>
-                    <g id="flowRoot4656-9-28-6_1_" transform="matrix(0.85,0,0,0.85,185.02294,-236.28849)">
-                    </g>
-                    <g id="flowRoot4656-9-6-34-0_1_" transform="matrix(0.85,0,0,0.85,148.96618,-236.19113)">
-                    </g>
-                    <g id="flowRoot4656-9-2-2-3_1_" transform="matrix(0.85,0,0,0.85,157.41937,-236.24968)">
-                    </g>
-                    <g id="flowRoot4656-9-4-1-0_1_" transform="matrix(0.85,0,0,0.85,166.16836,-236.19113)">
-                    </g>
-                    <g id="flowRoot4656-9-0-6-5_1_" transform="matrix(0.85,0,0,0.85,176.41334,-236.19113)">
-                    </g>
-                </g>
-                <g>
-                    <rect x="392.67" y="170.88" class="st8" width="71.11" height="27.61" />
-
-                    <rect x="447.21" y="198.49" transform="matrix(-1 1.876068e-07 -1.876068e-07 -1 902.4463 407.5372)"
-                        class="st9" width="8.03" height="10.55" />
-
-                    <rect x="449.62" y="209.05" transform="matrix(-1 1.223357e-07 -1.223357e-07 -1 902.6191 424.2202)"
-                        width="3.37" height="6.13" />
-
-                    <rect x="431.75" y="198.49" transform="matrix(-1 1.876068e-07 -1.876068e-07 -1 871.5327 407.5372)"
-                        class="st9" width="8.03" height="10.55" />
-
-                    <rect x="434.17" y="209.05" transform="matrix(-1 1.223357e-07 -1.223357e-07 -1 871.7055 424.2202)"
-                        width="3.37" height="6.13" />
-
-                    <rect x="416.36" y="198.49" transform="matrix(-1 1.876069e-07 -1.876069e-07 -1 840.7493 407.5373)"
-                        class="st9" width="8.03" height="10.55" />
-
-                    <rect x="418.78" y="209.05" transform="matrix(-1 1.223349e-07 -1.223349e-07 -1 840.9222 424.2203)"
-                        width="3.37" height="6.13" />
-
-                    <rect x="400.97" y="198.49" transform="matrix(-1 1.876068e-07 -1.876068e-07 -1 809.9655 407.5372)"
-                        class="st9" width="8.03" height="10.55" />
-
-                    <rect x="403.38" y="209.05" transform="matrix(-1 1.223357e-07 -1.223357e-07 -1 810.1383 424.2202)"
-                        width="3.37" height="6.13" />
-                    <rect x="401.09" y="160.33" class="st9" width="8.03" height="10.55" />
-                    <rect x="403.33" y="154.2" width="3.37" height="6.13" />
-                    <rect x="416.54" y="160.33" class="st9" width="8.03" height="10.55" />
-                    <rect x="418.79" y="154.2" width="3.37" height="6.13" />
-                    <rect x="431.94" y="160.33" class="st9" width="8.03" height="10.55" />
-                    <rect x="434.18" y="154.2" width="3.37" height="6.13" />
-                    <rect x="447.33" y="160.33" class="st9" width="8.03" height="10.55" />
-                    <rect x="449.57" y="154.2" width="3.37" height="6.13" />
-                </g>
-                <line class="st10" x1="420.37" y1="141.13" x2="420.37" y2="65.46" />
-                <g>
-                    <rect x="295.66" y="215.33" width="79.09" height="1.32" />
-                    <rect x="322.03" y="214.76" class="st11" width="30.29" height="2.64" />
-                    <path class="st12" d="M326.36,215.99c0-1.95,1.94-3.53,4.33-3.53h12.98c2.39,0,4.33,1.58,4.33,3.53c0,1.95-1.94,3.53-4.33,3.53
-			h-12.98C328.3,219.52,326.36,217.94,326.36,215.99L326.36,215.99z" />
-                </g>
-                <g>
-                    <rect x="311.23" y="228" width="63.52" height="1.32" />
-                    <rect x="322.03" y="227.43" class="st11" width="30.29" height="2.64" />
-                    <path class="st12" d="M326.36,228.66c0-1.95,1.94-3.53,4.33-3.53h12.98c2.39,0,4.33,1.58,4.33,3.53c0,1.95-1.94,3.53-4.33,3.53
-			l-12.98,0C328.3,232.19,326.36,230.61,326.36,228.66L326.36,228.66z" />
-                </g>
-                <g>
-                    <rect x="433.43" y="253.11" width="64.5" height="1.39" />
-                    <rect x="461.23" y="252.51" class="st11" width="31.93" height="2.79" />
-                    <path class="st12" d="M465.79,253.81c0-2.05,2.04-3.72,4.56-3.72h13.69c2.52,0,4.56,1.66,4.56,3.72c0,2.05-2.04,3.72-4.56,3.72
-			h-13.69C467.83,257.53,465.79,255.86,465.79,253.81L465.79,253.81z" />
-                </g>
-                <g>
-                    <rect x="340.06" y="253.11" width="83.14" height="1.39" />
-                    <rect x="367.78" y="252.51" class="st11" width="31.84" height="2.78" />
-                    <path class="st12" d="M372.33,253.81c0-2.05,2.04-3.71,4.55-3.71h13.65c2.51,0,4.55,1.66,4.55,3.71c0,2.05-2.04,3.71-4.55,3.71
-			h-13.65C374.37,257.52,372.33,255.86,372.33,253.81L372.33,253.81z" />
-                </g>
-                <line class="st10" x1="404.17" y1="254.1" x2="452.96" y2="254.1" />
-                <line class="st10" x1="358.02" y1="228.61" x2="435.77" y2="228.61" />
-                <line class="st10" x1="420.37" y1="217.28" x2="420.37" y2="222.73" />
-                <path class="st10" d="M420.13,222.73c7.62,4.18,7.62,8.36,0,12.54" />
-                <line class="st10" x1="420.56" y1="234.5" x2="420.56" y2="254.05" />
-                <line class="st10" x1="374.03" y1="216.11" x2="374.03" y2="228.42" />
-                <path class="st10"
-                    d="M451.16,216.88c0,0-0.05,30.78-0.05,30.78c7.62,4.18,7.62,8.36,0,12.54l-0.04-0.76v32.68" />
-                <line class="st10" x1="374.61" y1="291.13" x2="404.22" y2="291.13" />
-                <line class="st10" x1="374.61" y1="303.68" x2="404.22" y2="303.68" />
-                <line class="st10" x1="358.02" y1="216.06" x2="374.03" y2="216.11" />
-                <line class="st10" x1="211.27" y1="254.07" x2="360.65" y2="254.07" />
-                <line class="st10" x1="211.27" y1="216.06" x2="313.42" y2="216.06" />
-                <line class="st10" x1="313.28" y1="259.43" x2="313.28" y2="292.11" />
-                <path class="st10" d="M312.38,228.35v19.31h0.47c7.62,4.18,7.62,8.36,0,12.54" />
-                <line class="st10" x1="211.27" y1="291.37" x2="235.67" y2="291.37" />
-                <line class="st10" x1="497.94" y1="237.63" x2="497.94" y2="253.81" />
-                <g>
-                    <rect x="488.71" y="229.19" class="st13" width="19.16" height="11.46" />
-                    <ellipse class="st14" cx="498.3" cy="234.92" rx="3.37" ry="2.75" id="s3" onclick="rswitch3()"
-                        style="cursor:pointer;" />
-                </g>
-                <line class="st10" x1="497.94" y1="128.21" x2="497.94" y2="228.61" />
-                <line class="st10" x1="436.25" y1="128.21" x2="497.94" y2="128.21" />
-                <line class="st10" x1="436.25" y1="140.76" x2="490.25" y2="140.76" />
-                <path class="st15" d="M505.62,140.94c-5.12,6.21-10.25,6.21-15.37,0" />
-                <line class="st15" x1="582.01" y1="141.13" x2="505" y2="141.13" />
-                <ellipse cx="420.37" cy="65.46" rx="1.09" ry="0.89" />
-                <ellipse cx="436.25" cy="128.21" rx="1.09" ry="0.89" />
-                <ellipse cx="436.25" cy="140.76" rx="1.09" ry="0.89" />
-                <ellipse cx="420.47" cy="141.13" rx="1.09" ry="0.89" />
-                <ellipse cx="375.7" cy="303.68" rx="1.09" ry="0.89" />
-                <ellipse cx="375.7" cy="291.13" rx="1.09" ry="0.89" />
-                <ellipse cx="235.67" cy="291.37" rx="1.09" ry="0.89" />
-                <ellipse cx="313.42" cy="292.11" rx="1.09" ry="0.89" />
-                <ellipse cx="497.94" cy="128.21" rx="1.09" ry="0.89" />
-                <line class="st10" x1="435.74" y1="216.57" x2="435.74" y2="228.88" />
-                <ellipse cx="312.32" cy="228.88" rx="1.09" ry="0.89" />
-                <ellipse cx="374.03" cy="216.06" rx="1.09" ry="0.89" />
-                <ellipse cx="435.95" cy="228.66" rx="1.09" ry="0.89" />
-                <ellipse cx="497.94" cy="253.71" rx="1.09" ry="0.89" />
-                <ellipse cx="404.22" cy="303.68" rx="1.09" ry="0.89" />
-                <ellipse cx="404.54" cy="291.13" rx="1.09" ry="0.89" />
-                <ellipse cx="451.04" cy="292.11" rx="1.09" ry="0.89" />
-                <line class="st10" x1="374.48" y1="65.2" x2="403.94" y2="65.2" />
-                <line class="st10" x1="374.48" y1="77.75" x2="403.89" y2="77.75" />
-                <ellipse cx="405.03" cy="65.2" rx="1.09" ry="0.89" />
-                <ellipse cx="375.37" cy="77.75" rx="1.09" ry="0.89" />
-                <ellipse cx="404.98" cy="77.75" rx="1.09" ry="0.89" />
-                <ellipse cx="375.37" cy="65.2" rx="1.09" ry="0.89" />
-            </g>
-            <g>
-                <g>
-                    <g>
-                        <path class="st16" d="M467.89,379.44v65.14c0,10.72-8.91,19.41-19.89,19.41H281.73c-10.99,0-19.89-8.69-19.89-19.41v-65.14
-				c0-10.72,8.91-19.41,19.89-19.41H448C458.98,360.03,467.89,368.72,467.89,379.44z" />
-                        <g>
-                            <path class="st17" d="M272.43,375.68h52.34c1.13,0,2.05,0.83,2.05,1.86v36.01c0,1.03-0.92,1.86-2.05,1.86h-52.34
-					c-1.13,0-2.05-0.83-2.05-1.86v-36.01C270.38,376.51,271.3,375.68,272.43,375.68z" />
-                        </g>
-                        <g>
-                            <path class="st17" d="M338.97,375.85h52.34c1.13,0,2.05,0.83,2.05,1.86v35.86c0,1.02-0.92,1.86-2.05,1.86h-52.34
-					c-1.13,0-2.05-0.83-2.05-1.86V377.7C336.92,376.68,337.84,375.85,338.97,375.85z" />
-                            <g transform="matrix(.77155 0 0 .5878 97.58 153.86)">
-                            </g>
-                        </g>
-                        <g>
-                            <path class="st17" d="M405.59,375.46h52.34c1.13,0,2.05,0.85,2.05,1.91v36.88c0,1.05-0.92,1.91-2.05,1.91h-52.34
-					c-1.13,0-2.05-0.85-2.05-1.91v-36.88C403.54,376.31,404.46,375.46,405.59,375.46z" />
-                        </g>
-                    </g>
-                    <g>
-                        <g>
-                            <path class="st18" d="M300.12,446.04c-3.94-0.11-6.12,5.8-3.13,8.59c2.57,2.9,7.78,0.97,7.97-3.07
-					C305.27,448.68,302.88,445.84,300.12,446.04L300.12,446.04z" />
-                            <g>
-                                <path class="st19" d="M304.16,451.1c0,2.14-1.73,3.87-3.87,3.87s-3.87-1.73-3.87-3.87c0-2.14,1.73-3.87,3.87-3.87
-						S304.16,448.96,304.16,451.1" />
-                            </g>
-                            <g transform="matrix(.76508 0 0 .76508 333.09 132.52)">
-                                <path class="st20" d="M-39,416.39c0,2.14-1.73,3.87-3.87,3.87s-3.87-1.73-3.87-3.87c0-2.14,1.73-3.87,3.87-3.87
-						S-39,414.25-39,416.39z" />
-                            </g>
-                            <path class="st21" d="M301.07,451.08c0,0.43-0.35,0.78-0.78,0.78s-0.78-0.35-0.78-0.78c0-0.43,0.35-0.78,0.78-0.78
-					C300.72,450.3,301.07,450.65,301.07,451.08L301.07,451.08z" />
-                            <path class="st18" d="M284.59,446.04c-3.94-0.11-6.12,5.8-3.13,8.59c2.57,2.9,7.78,0.97,7.97-3.07
-					C289.73,448.68,287.34,445.84,284.59,446.04L284.59,446.04z" />
-                            <g>
-                                <path class="st19" d="M288.63,451.1c0,2.14-1.73,3.87-3.87,3.87s-3.87-1.73-3.87-3.87c0-2.14,1.73-3.87,3.87-3.87
-						S288.63,448.96,288.63,451.1" />
-                            </g>
-                            <g transform="matrix(.76508 0 0 .76508 333.09 132.52)">
-                                <path class="st20" d="M-59.3,416.39c0,2.14-1.73,3.87-3.87,3.87c-2.14,0-3.87-1.73-3.87-3.87c0-2.14,1.73-3.87,3.87-3.87
-						C-61.03,412.52-59.3,414.25-59.3,416.39z" />
-                            </g>
-                            <path class="st21" d="M285.54,451.08c0,0.43-0.35,0.78-0.78,0.78s-0.78-0.35-0.78-0.78c0-0.43,0.35-0.78,0.78-0.78
-					C285.19,450.3,285.54,450.65,285.54,451.08L285.54,451.08z" />
-                            <path class="st18" d="M315.66,446.04c-3.94-0.11-6.12,5.8-3.13,8.59c2.57,2.9,7.78,0.97,7.97-3.07
-					C320.8,448.67,318.41,445.84,315.66,446.04L315.66,446.04z" />
-                            <g>
-                                <path class="st19" d="M319.7,451.09c0,2.14-1.73,3.87-3.87,3.87s-3.87-1.73-3.87-3.87s1.73-3.87,3.87-3.87
-						S319.7,448.95,319.7,451.09" />
-                            </g>
-                            <g transform="matrix(.76508 0 0 .76508 333.09 132.52)">
-                                <path class="st20" d="M-18.69,416.38c0,2.14-1.73,3.87-3.87,3.87s-3.87-1.73-3.87-3.87c0-2.14,1.73-3.87,3.87-3.87
-						S-18.69,414.24-18.69,416.38z" />
-                            </g>
-                            <path class="st21" d="M316.61,451.07c0,0.43-0.35,0.78-0.78,0.78c-0.43,0-0.78-0.35-0.78-0.78s0.35-0.78,0.78-0.78
-					S316.61,450.64,316.61,451.07z" />
-                        </g>
-                        <g>
-                            <path class="st18" d="M365.48,446.04c-3.94-0.11-6.12,5.8-3.13,8.59c2.57,2.9,7.78,0.97,7.97-3.07
-					C370.62,448.67,368.23,445.84,365.48,446.04L365.48,446.04z" />
-                            <g>
-                                <path class="st19" d="M369.52,451.09c0,2.14-1.73,3.87-3.87,3.87s-3.87-1.73-3.87-3.87c0-2.14,1.73-3.87,3.87-3.87
-						S369.52,448.96,369.52,451.09" />
-                            </g>
-                            <g transform="matrix(.76508 0 0 .76508 333.09 132.52)">
-                                <path class="st20" d="M46.42,416.38c0,2.14-1.73,3.87-3.87,3.87s-3.87-1.73-3.87-3.87c0-2.14,1.73-3.87,3.87-3.87
-						C44.69,412.51,46.42,414.24,46.42,416.38z" />
-                            </g>
-                            <path class="st21" d="M366.43,451.08c0,0.43-0.35,0.78-0.78,0.78c-0.43,0-0.78-0.35-0.78-0.78c0-0.43,0.35-0.78,0.78-0.78
-					C366.08,450.3,366.43,450.65,366.43,451.08L366.43,451.08z" />
-                            <path class="st18" d="M349.94,446.04c-3.94-0.11-6.12,5.8-3.13,8.59c2.57,2.9,7.78,0.97,7.97-3.07
-					C355.08,448.67,352.69,445.84,349.94,446.04L349.94,446.04z" />
-                            <g>
-                                <path class="st19" d="M353.98,451.09c0,2.14-1.73,3.87-3.87,3.87c-2.14,0-3.87-1.73-3.87-3.87c0-2.14,1.73-3.87,3.87-3.87
-						C352.25,447.22,353.98,448.96,353.98,451.09" />
-                            </g>
-                            <g transform="matrix(.76508 0 0 .76508 333.09 132.52)">
-                                <path class="st20" d="M26.12,416.38c0,2.14-1.73,3.87-3.87,3.87s-3.87-1.73-3.87-3.87c0-2.14,1.73-3.87,3.87-3.87
-						S26.12,414.24,26.12,416.38z" />
-                            </g>
-                            <path class="st21" d="M350.89,451.08c0,0.43-0.35,0.78-0.78,0.78s-0.78-0.35-0.78-0.78c0-0.43,0.35-0.78,0.78-0.78
-					C350.54,450.3,350.89,450.65,350.89,451.08L350.89,451.08z" />
-                            <path class="st18" d="M381.01,446.03c-3.94-0.11-6.12,5.8-3.13,8.59c2.57,2.9,7.78,0.97,7.97-3.07
-					C386.15,448.67,383.76,445.83,381.01,446.03L381.01,446.03z" />
-                            <g>
-                                <path class="st19" d="M385.05,451.09c0,2.14-1.73,3.87-3.87,3.87s-3.87-1.73-3.87-3.87s1.73-3.87,3.87-3.87
-						S385.05,448.95,385.05,451.09" />
-                            </g>
-                            <g transform="matrix(.76508 0 0 .76508 333.09 132.52)">
-                                <path class="st20" d="M66.73,416.37c0,2.14-1.73,3.87-3.87,3.87c-2.14,0-3.87-1.73-3.87-3.87c0-2.14,1.73-3.87,3.87-3.87
-						C64.99,412.5,66.73,414.23,66.73,416.37z" />
-                            </g>
-                            <path class="st21" d="M381.96,451.07c0,0.43-0.35,0.78-0.78,0.78s-0.78-0.35-0.78-0.78c0-0.43,0.35-0.78,0.78-0.78
-					S381.96,450.64,381.96,451.07z" />
-                        </g>
-                        <g>
-                            <path class="st18" d="M432.1,446.04c-3.94-0.11-6.12,5.8-3.13,8.59c2.57,2.9,7.78,0.97,7.97-3.07
-					C437.24,448.67,434.85,445.84,432.1,446.04L432.1,446.04z" />
-                            <g>
-                                <path class="st19" d="M436.14,451.09c0,2.14-1.73,3.87-3.87,3.87s-3.87-1.73-3.87-3.87c0-2.14,1.73-3.87,3.87-3.87
-						S436.14,448.95,436.14,451.09" />
-                            </g>
-                            <g transform="matrix(.76508 0 0 .76508 333.09 132.52)">
-                                <path class="st20" d="M133.5,416.38c0,2.14-1.73,3.87-3.87,3.87c-2.14,0-3.87-1.73-3.87-3.87c0-2.14,1.73-3.87,3.87-3.87
-						C131.77,412.51,133.5,414.24,133.5,416.38z" />
-                            </g>
-                            <path class="st21" d="M433.05,451.07c0,0.43-0.35,0.78-0.78,0.78c-0.43,0-0.78-0.35-0.78-0.78c0-0.43,0.35-0.78,0.78-0.78
-					C432.7,450.29,433.05,450.64,433.05,451.07L433.05,451.07z" />
-                            <path class="st18" d="M416.56,446.04c-3.94-0.11-6.12,5.8-3.13,8.59c2.57,2.9,7.78,0.97,7.97-3.07
-					C421.7,448.67,419.31,445.84,416.56,446.04L416.56,446.04z" />
-                            <g>
-                                <path class="st19" d="M420.6,451.09c0,2.14-1.73,3.87-3.87,3.87c-2.14,0-3.87-1.73-3.87-3.87c0-2.14,1.73-3.87,3.87-3.87
-						C418.87,447.22,420.6,448.95,420.6,451.09" />
-                            </g>
-                            <g transform="matrix(.76508 0 0 .76508 333.09 132.52)">
-                                <path class="st20" d="M113.2,416.38c0,2.14-1.73,3.87-3.87,3.87c-2.14,0-3.87-1.73-3.87-3.87c0-2.14,1.73-3.87,3.87-3.87
-						C111.46,412.51,113.2,414.24,113.2,416.38z" />
-                            </g>
-                            <path class="st21" d="M417.51,451.07c0,0.43-0.35,0.78-0.78,0.78c-0.43,0-0.78-0.35-0.78-0.78c0-0.43,0.35-0.78,0.78-0.78
-					C417.16,450.29,417.51,450.64,417.51,451.07L417.51,451.07z" />
-                            <path class="st18" d="M447.63,446.03c-3.94-0.11-6.12,5.8-3.13,8.59c2.57,2.9,7.78,0.97,7.97-3.07
-					C452.77,448.66,450.38,445.83,447.63,446.03L447.63,446.03z" />
-                            <g>
-                                <path class="st19" d="M451.67,451.08c0,2.14-1.73,3.87-3.87,3.87c-2.14,0-3.87-1.73-3.87-3.87c0-2.14,1.73-3.87,3.87-3.87
-						C449.94,447.21,451.67,448.94,451.67,451.08" />
-                            </g>
-                            <g transform="matrix(.76508 0 0 .76508 333.09 132.52)">
-                                <path class="st20" d="M153.8,416.36c0,2.14-1.73,3.87-3.87,3.87s-3.87-1.73-3.87-3.87c0-2.14,1.73-3.87,3.87-3.87
-						C152.07,412.49,153.8,414.23,153.8,416.36z" />
-                            </g>
-                            <path class="st21" d="M448.58,451.06c0,0.43-0.35,0.78-0.78,0.78s-0.78-0.35-0.78-0.78c0-0.43,0.35-0.78,0.78-0.78
-					S448.58,450.63,448.58,451.06z" />
-                        </g>
-                    </g>
-                </g>
-                <rect x="274.18" y="391.9" class="st22" width="42.97" height="17.19" />
-                <text transform="matrix(1 0 0 1 284.3443 397.8155)" class="st23 st24 st25" id="V_1">0 volts</text>
-                <rect x="283.43" y="416.15" width="5.96" height="5.96" />
-                <rect x="306.04" y="416.15" width="5.96" height="5.96" />
-                <rect x="350.86" y="416.15" width="5.96" height="5.96" />
-                <rect x="373.46" y="416.15" width="5.96" height="5.96" />
-                <rect x="418.25" y="416.53" width="5.96" height="5.96" />
-                <rect x="440.95" y="416.53" width="5.96" height="5.96" />
-                <rect x="341.2" y="391.9" class="st22" width="42.97" height="17.19" />
-                <text transform="matrix(1 0 0 1 351.368 397.8155)" class="st23 st24 st25" id="V_2">0 volts</text>
-                <rect x="410.78" y="391.9" class="st22" width="42.97" height="17.19" />
-                <text transform="matrix(1 0 0 1 418.8126 397.8155)" class="st23 st24 st25">15 volts</text>
-            </g>
-            <g>
-                <g>
-                    <path class="st26" d="M735.48,173.91l-3.85,85.36c-0.06,1.43-1.05,2.61-2.38,2.98c-0.24,0.07-0.5,0.11-0.77,0.12l-46.05,1.44
-			c-0.39,0.01-0.77-0.04-1.12-0.16c-0.35-0.12-0.68-0.29-0.97-0.52c-0.68-0.52-1.15-1.31-1.25-2.22l-0.81-7.5l-8.38-77.45
-			c-0.26-2.39,1.1-4.67,3.33-5.57c4.97-2.02,14.84-5.12,29.13-5.57c14.3-0.45,24.33,2.03,29.43,3.74c0.45,0.15,0.86,0.35,1.24,0.6
-			C734.61,170.19,735.57,171.98,735.48,173.91z" />
-                    <path class="st27" d="M729.26,262.25c-0.24,0.07-0.5,0.11-0.77,0.12l-41.41,1.3l-4.64,0.15c-0.39,0.01-0.77-0.04-1.12-0.16
-			l7.46,3.98c0.52,0.32,1.14,0.5,1.8,0.48l46.05-1.44c0.18-0.01,0.35-0.03,0.52-0.06L729.26,262.25z" />
-                    <path class="st28"
-                        d="M743.62,178.21l-3.85,85.36c-0.07,1.51-1.18,2.76-2.63,3.04l-7.89-4.36c1.32-0.37,2.31-1.55,2.38-2.98
-			l3.85-85.36c0.09-1.94-0.87-3.73-2.43-4.75l7.34,3.86c0.24,0.1,0.47,0.23,0.69,0.36C742.71,174.41,743.71,176.23,743.62,178.21z" />
-                    <path class="st29"
-                        d="M739.66,190.86c-0.05,0-0.09,0-0.14,0c-0.56-0.04-1.04-0.45-1.32-1.12c-0.22-0.53-0.32-1.21-0.26-1.9
-			c0.12-1.56,0.91-2.72,1.89-2.75c0.04,0,0.09,0,0.14,0c1.03,0.08,1.71,1.38,1.58,3.02C741.42,189.67,740.63,190.83,739.66,190.86z" />
-                    <g>
-                        <path class="st29" d="M739.37,201.65c-0.05,0-0.09,0-0.14,0c-0.56-0.04-1.04-0.45-1.32-1.12c-0.22-0.53-0.32-1.21-0.26-1.9
-				c0.12-1.56,0.91-2.72,1.89-2.75c0.04,0,0.09,0,0.14,0c1.03,0.08,1.71,1.38,1.58,3.02C741.13,200.47,740.34,201.62,739.37,201.65z
-				" />
-                    </g>
-                    <g>
-                        <path class="st26" d="M739.07,212.44c-0.05,0-0.09,0-0.14,0c-0.56-0.04-1.04-0.45-1.32-1.12c-0.22-0.53-0.32-1.21-0.26-1.9
-				c0.12-1.56,0.91-2.72,1.89-2.75c0.04,0,0.09,0,0.14,0c1.03,0.08,1.71,1.38,1.58,3.02C740.84,211.26,740.05,212.41,739.07,212.44z
-				" />
-                        <path class="st27" d="M740.29,209.65c-0.09,1.22-0.68,2.18-1.3,2.13c-0.63-0.05-1.06-1.08-0.97-2.3c0.09-1.22,0.68-2.18,1.3-2.13
-				C739.95,207.39,740.39,208.42,740.29,209.65z" />
-                    </g>
-                    <path class="st30" d="M722.53,202.34l-38.79,1.22c-1.59,0.05-2.96-1.39-3.18-3.34l-2.18-19.55c-0.12-1.07,0.13-2.15,0.69-2.96
-			c0.56-0.81,1.38-1.3,2.25-1.32l41.91-1.32c0.87-0.03,1.72,0.4,2.33,1.18c0.61,0.78,0.93,1.84,0.88,2.91l-0.95,19.65
-			C725.4,200.77,724.13,202.29,722.53,202.34z" />
-                    <path class="st31" d="M725.88,178.83l-0.94,20.85c-0.05,1.13-0.75,2.01-1.64,2.03l-39.5,1.24c-0.88,0.03-1.64-0.8-1.76-1.93
-			l-2.24-20.76c-0.07-0.62,0.07-1.23,0.38-1.7c0.31-0.48,0.75-0.75,1.24-0.76l42.68-1.34c0.49-0.02,0.94,0.23,1.29,0.68
-			C725.73,177.6,725.9,178.2,725.88,178.83z" />
-                    <path class="st32" d="M722.27,203.45l-39.5,1.24c-1.62,0.05-3.01-1.45-3.24-3.48l-2.23-20.35c-0.12-1.11,0.13-2.23,0.7-3.08
-			c0.57-0.85,1.4-1.35,2.29-1.38l42.68-1.34c0.88-0.03,1.75,0.42,2.37,1.23c0.62,0.81,0.95,1.91,0.89,3.03l-0.95,20.45
-			C725.18,201.82,723.89,203.4,722.27,203.45z M680.35,178.22c-0.49,0.02-0.93,0.28-1.24,0.75c-0.31,0.47-0.45,1.06-0.38,1.67
-			l2.23,20.35c0.12,1.11,0.88,1.92,1.76,1.89l39.5-1.24c0.88-0.03,1.59-0.89,1.64-2l0.95-20.45c0.03-0.62-0.14-1.2-0.49-1.65
-			c-0.34-0.45-0.8-0.68-1.29-0.67L680.35,178.22z" />
-                    <path class="st33" d="M705.71,209.1c-0.19,0.01-0.34,0.17-0.33,0.36l0.1,3.27c0.01,0.19,0.17,0.34,0.36,0.33
-			c0.19-0.01,0.34-0.16,0.34-0.36l-0.1-3.27C706.06,209.25,705.91,209.1,705.71,209.1z" />
-                    <path class="st33" d="M697.84,210.75c-0.18,0.07-0.26,0.27-0.19,0.45l1.21,3.03c0.07,0.18,0.27,0.26,0.45,0.19
-			c0.18-0.07,0.26-0.27,0.19-0.45l-1.21-3.03C698.22,210.76,698.02,210.67,697.84,210.75z" />
-                    <path class="st33" d="M691.01,214.98c-0.14,0.13-0.15,0.35-0.03,0.49l2.18,2.44c0.13,0.14,0.35,0.15,0.49,0.03
-			c0.14-0.13,0.15-0.35,0.03-0.49l-2.18-2.44C691.37,214.87,691.15,214.85,691.01,214.98z" />
-                    <path class="st33" d="M686.04,221.3c-0.09,0.17-0.03,0.38,0.14,0.47l2.88,1.54c0.17,0.09,0.38,0.03,0.47-0.14
-			c0.09-0.17,0.03-0.38-0.14-0.47l-2.88-1.55C686.34,221.07,686.13,221.13,686.04,221.3z" />
-                    <path class="st33" d="M683.53,228.94c-0.03,0.19,0.1,0.36,0.29,0.39l3.23,0.47c0.19,0.03,0.36-0.1,0.39-0.29
-			c0.03-0.19-0.1-0.36-0.29-0.39l-3.23-0.47C683.73,228.62,683.55,228.75,683.53,228.94z" />
-                    <path class="st33" d="M683.78,236.97c0.04,0.19,0.22,0.31,0.41,0.27l3.2-0.67c0.19-0.04,0.31-0.22,0.27-0.41
-			c-0.04-0.19-0.22-0.31-0.41-0.27l-3.2,0.67C683.86,236.6,683.74,236.79,683.78,236.97z" />
-                    <path class="st33" d="M686.76,244.44c0.1,0.16,0.31,0.21,0.48,0.11l2.78-1.72c0.16-0.1,0.21-0.31,0.11-0.48
-			c-0.1-0.16-0.31-0.21-0.48-0.11l-2.78,1.72C686.71,244.06,686.66,244.28,686.76,244.44z" />
-                    <path class="st33" d="M692.12,250.43c0.15,0.12,0.37,0.09,0.49-0.06l2.02-2.57c0.12-0.15,0.09-0.37-0.06-0.49
-			c-0.15-0.12-0.37-0.09-0.49,0.06l-2.02,2.57C691.95,250.1,691.97,250.31,692.12,250.43z" />
-                    <path class="st33" d="M699.21,254.23c0.18,0.06,0.38-0.04,0.44-0.22l1.02-3.1c0.06-0.18-0.04-0.38-0.22-0.44
-			c-0.18-0.06-0.38,0.04-0.44,0.22l-1.02,3.1C698.93,253.98,699.03,254.17,699.21,254.23z" />
-                    <path class="st33" d="M707.17,255.38c0.19-0.01,0.34-0.17,0.33-0.36l-0.1-3.27c-0.01-0.19-0.17-0.34-0.36-0.33
-			c-0.19,0.01-0.34,0.17-0.33,0.36l0.1,3.27C706.82,255.23,706.98,255.38,707.17,255.38z" />
-                    <path class="st33" d="M715.04,253.73c0.18-0.07,0.26-0.27,0.19-0.45l-1.21-3.03c-0.07-0.18-0.27-0.26-0.45-0.19
-			c-0.18,0.07-0.26,0.27-0.19,0.45l1.21,3.03C714.66,253.72,714.86,253.81,715.04,253.73z" />
-                    <path class="st33" d="M721.87,249.5c0.14-0.13,0.15-0.35,0.03-0.49l-2.18-2.44c-0.13-0.14-0.35-0.15-0.49-0.03
-			c-0.14,0.13-0.15,0.35-0.03,0.49l2.18,2.44C721.51,249.61,721.73,249.63,721.87,249.5z" />
-                    <path class="st33" d="M726.84,243.18c0.09-0.17,0.03-0.38-0.14-0.47l-2.88-1.54c-0.17-0.09-0.38-0.03-0.47,0.14
-			c-0.09,0.17-0.03,0.38,0.14,0.47l2.88,1.54C726.54,243.41,726.75,243.35,726.84,243.18z" />
-                    <path class="st33" d="M729.35,235.54c0.03-0.19-0.1-0.36-0.29-0.39l-3.23-0.47c-0.19-0.03-0.36,0.1-0.39,0.29
-			c-0.03,0.19,0.1,0.36,0.29,0.39l3.23,0.47C729.15,235.86,729.33,235.73,729.35,235.54z" />
-                    <path class="st33" d="M729.1,227.51c-0.04-0.19-0.22-0.31-0.41-0.27l-3.2,0.67c-0.19,0.04-0.31,0.22-0.27,0.41
-			c0.04,0.19,0.22,0.31,0.41,0.27l3.2-0.67C729.02,227.88,729.14,227.69,729.1,227.51z" />
-                    <path class="st33" d="M726.11,220.04c-0.1-0.16-0.31-0.21-0.48-0.11l-2.78,1.72c-0.16,0.1-0.21,0.31-0.11,0.48
-			c0.1,0.16,0.31,0.21,0.48,0.11l2.78-1.72C726.17,220.42,726.22,220.2,726.11,220.04z" />
-                    <path class="st33" d="M720.76,214.05c-0.15-0.12-0.37-0.09-0.49,0.06l-2.02,2.57c-0.12,0.15-0.09,0.37,0.06,0.49
-			c0.15,0.12,0.37,0.09,0.49-0.06l2.02-2.57C720.93,214.38,720.91,214.17,720.76,214.05z" />
-                    <path class="st33" d="M713.67,210.25c-0.18-0.06-0.38,0.04-0.44,0.22l-1.02,3.1c-0.06,0.18,0.04,0.38,0.22,0.44
-			c0.18,0.06,0.38-0.04,0.44-0.22l1.02-3.1C713.95,210.5,713.85,210.31,713.67,210.25z" />
-                    <g>
-                        <path class="st28" d="M723.7,231.7c0.28,8.86-6.68,16.26-15.54,16.54c-8.86,0.28-16.26-6.68-16.54-15.54
-				c-0.28-8.86,6.68-16.26,15.53-16.54C716.01,215.88,723.42,222.84,723.7,231.7z" />
-                        <path class="st33" d="M721.26,231.77c0.28,8.86-6.68,16.26-15.54,16.54c-8.86,0.28-16.26-6.68-16.54-15.54
-				c-0.28-8.86,6.68-16.26,15.54-16.54C713.58,215.96,720.98,222.92,721.26,231.77z" />
-                        <g>
-                            <path class="st28" d="M711.4,218.06c-0.13-0.05-0.26-0.08-0.39-0.1c-0.07-0.01-1.42-0.11-1.42-0.11l-0.09,0.46
-					c-0.35,0.24-0.64,0.59-0.79,1.03l-8.66,24.61c-0.29,0.82-0.04,1.7,0.57,2.26l-0.08,0.44l1.06,0.06c0.24,0.05,0.47,0.06,0.7,0.04
-					c0.8-0.12,1.47-0.62,1.74-1.39l8.66-24.61C713.08,219.66,712.5,218.45,711.4,218.06z" />
-                            <path class="st26" d="M700.19,246.57c-1.1-0.39-1.68-1.59-1.29-2.69l8.66-24.61c0.39-1.1,1.59-1.68,2.69-1.29
-					c1.1,0.39,1.68,1.59,1.29,2.69l-8.66,24.61C702.5,246.38,701.29,246.96,700.19,246.57z" />
-                        </g>
-                    </g>
-                    <path class="st34" d="M735.48,173.91l-3.85,85.36c-0.06,1.43-1.05,2.61-2.38,2.98c-0.24,0.07-0.5,0.11-0.77,0.12l-46.05,1.44
-			c-0.39,0.01-0.77-0.04-1.12-0.16c-0.35-0.12-0.68-0.29-0.97-0.52c-0.68-0.52-1.15-1.31-1.25-2.22l-0.81-7.5l0.12-0.41l29.9-0.94
-			c9.21-0.29,16.78-7.35,17.7-16.52c1.51-15.01,3.55-37.42,4.04-53.05c0.15-4.76-3.25-8.91-7.95-9.65
-			c-22.66-3.56-52.19,3.12-52.19,3.12c-0.26-2.39,1.1-4.67,3.33-5.57c4.97-2.02,14.84-5.12,29.13-5.57
-			c14.3-0.45,24.33,2.03,29.43,3.74c0.45,0.15,0.86,0.35,1.24,0.6C734.61,170.19,735.57,171.98,735.48,173.91z" />
-                </g>
-            </g>
-            <line class="st35" x1="211.27" y1="254.07" x2="160.4" y2="254.07" />
-            <line class="st35" x1="160.4" y1="338.79" x2="398.83" y2="338.79" />
-            <polyline class="st35" points="376.22,425.63 398.83,425.63 398.83,337.64 " />
-            <polyline class="st35" points="353.98,425.92 309.01,425.92 309.01,422.1 " />
-            <path class="st35" d="M353.91,425.92l-0.15-3.82L353.91,425.92z" />
-            <polyline class="st35" points="286.41,422.1 286.41,425.92 286.41,425.93 124.06,425.93 124.06,426.39 124.06,216.06 211.27,216.06 
-	" />
-            <path class="st35" d="M315.71,425.92v14.22H190.67c0,0,0-6.88,0-6.88c7.62-4.18,7.62-8.36,0-12.54c0,0,0-75.67,0-75.67
-	c7.62-4.18,7.62-8.36,0-12.54c0,0,0-41.16,0-41.16h20.6" />
-            <line class="st35" x1="377.35" y1="425.92" x2="377.2" y2="422.1" />
-            <polyline class="st36" points="741.54,187.97 767.82,187.97 767.82,141.13 582.01,141.13 " />
-            <polyline class="st36" points="766.19,198.49 766.19,291.25 561.98,291.25 " />
-            <path class="st36" d="M766.19,200.49h-24.94H766.19z" />
-            <path class="st35" d="M641.01,274.7V147.52c7.62-4.18,7.62-8.36,0-12.54c0,0,0-69.64,0-69.64h-79.04" />
-            <path class="st35" d="M611.51,290.47V147.28v-0.77c7.62-4.18,7.62-8.36,0-12.54V77.48H561.9" />
-            <path class="st35" d="M639.78,273.98c7.62,4.18,7.62,8.36,0,12.54" />
-            <line class="st35" x1="639.78" y1="285.8" x2="639.78" y2="304.39" />
-            <line class="st36" x1="561.98" y1="304.39" x2="641.01" y2="304.39" />
-            <path class="st36" d="M602.77,291.13v17.99c7.62,4.18,7.62,8.36,0,12.54v103.97v0.29H421.23v-3.44" />
-            <polyline class="st36" points="446.91,420.13 590.57,420.13 590.57,419.13 590.57,303.92 " />
-            <rect x="321.14" y="213.53" class="st22" width="32.23" height="10.09" />
-            <text transform="matrix(1 0 0 1 334.1063 217.7881)" class="st24 st37">R3</text>
-            <rect x="461.08" y="251.18" class="st22" width="32.23" height="10.09" />
-            <text transform="matrix(1 0 0 1 474.0415 255.4401)" class="st24 st37">R2</text>
-            <rect x="367.58" y="251.18" class="st22" width="32.23" height="10.09" />
-            <text transform="matrix(1 0 0 1 380.5482 255.44)" class="st24 st37">R1</text>
-            <rect x="321.06" y="226.08" class="st22" width="32.23" height="10.09" />
-            <text transform="matrix(1 0 0 1 334.0228 230.3388)" class="st24 st37">R4</text>
-            <rect x="668.01" y="184.15" class="st22" width="68.79" height="33.71" />
-            <text transform="matrix(1 0 0 1 683.4229 194.0885)" class="st23 st24 st38" id="multi">0 V</text>
-            <g>
-                <line class="st10" x1="198.73" y1="198.45" x2="198.73" y2="207.73" />
-                <line class="st10" x1="194.12" y1="203.09" x2="203.05" y2="203.09" />
-            </g>
-            <line class="st10" x1="194.38" y1="244.46" x2="204.81" y2="244.46" />
-            <rect x="168.78" y="198.44" class="st22" width="25.38" height="20.18" />
-            <text transform="matrix(1 0 0 1 173.9709 208.3835)" class="st24 st38">V1</text>
-            <rect x="168.78" y="237.16" class="st22" width="25.38" height="20.18" />
-            <text transform="matrix(1 0 0 1 173.9709 247.0971)" class="st24 st38">V2</text>
-            <g>
-                <line class="st10" x1="574.07" y1="323.44" x2="574.07" y2="332.22" />
-                <line class="st10" x1="569.72" y1="327.83" x2="578.16" y2="327.83" />
-            </g>
-            <line class="st10" x1="568.59" y1="285.8" x2="579.02" y2="285.8" />
-            <g>
-                <line class="st10" x1="574.02" y1="46" x2="574.02" y2="37.22" />
-                <line class="st10" x1="578.38" y1="41.61" x2="569.94" y2="41.61" />
-            </g>
-            <line class="st10" x1="579.51" y1="83.65" x2="569.08" y2="83.65" />
-            <g>
-                <line class="st15" x1="285" y1="430.77" x2="285" y2="435.3" />
-                <line class="st15" x1="282.75" y1="433.03" x2="287.1" y2="433.03" />
-            </g>
-            <line class="st15" x1="306.41" y1="433.26" x2="311.62" y2="433.26" />
-            <g>
-                <line class="st15" x1="354.24" y1="430.77" x2="354.24" y2="435.3" />
-                <line class="st15" x1="351.99" y1="433.03" x2="356.35" y2="433.03" />
-            </g>
-            <line class="st15" x1="375.65" y1="433.26" x2="380.86" y2="433.26" />
-            <g>
-                <line class="st15" x1="421.5" y1="431.72" x2="421.5" y2="436.25" />
-                <line class="st15" x1="419.25" y1="433.98" x2="423.61" y2="433.98" />
-            </g>
-            <line class="st15" x1="442.91" y1="434.21" x2="448.12" y2="434.21" />
-            <rect x="479.75" y="381.64" class="st39" width="97.62" height="27.27" />
-            <rect x="485.83" y="391.42" class="st22" width="72.48" height="18" />
-            <text transform="matrix(1 0 0 1 489.4434 399.0728)" class="st23 st24 st40">CRO MACHINE</text>
-            <rect x="669.71" y="300.49" class="st39" width="100.98" height="27.27" />
-            <rect x="675.43" y="310.28" class="st22" width="72.48" height="18" />
-            <text transform="matrix(1 0 0 1 682.1361 317.9274)" class="st23 st24 st40">MULTIMETER</text>
-            <rect x="380.19" y="9.83" class="st39" width="99.84" height="27.27" />
-            <rect x="386.27" y="19.61" class="st22" width="72.48" height="18" />
-            <text transform="matrix(1 0 0 1 390.7401 27.2629)" class="st23 st24 st40">BREADBOARD</text>
-            <rect x="401.48" y="179.28" class="st22" width="50.22" height="13.07" />
-            <text transform="matrix(1 0 0 1 403.3174 188.5103)" class="st23 st24 st41">Op-Amp</text>
-            <line class="st35" x1="161.92" y1="305.98" x2="161.92" y2="338.79" />
-            <circle class="st42" cx="162.42" cy="308.86" r="3.23" id="srpo" onclick="rswitch2()"
-                style="cursor:pointer;" />
-            <line class="st35" x1="132.08" y1="268.36" x2="124.73" y2="268.36" />
-            <line class="st35" x1="150.64" y1="268.36" x2="161.92" y2="268.36" />
-            <line class="st35" x1="131.51" y1="268.36" x2="145.23" y2="254.63" id="bar_s1" />
-            <circle class="st42" cx="149.52" cy="267.86" r="3.23" id="s1" onclick="rswitch1()"
-                style="cursor:pointer;" />
-            <rect x="98.74" y="261" class="st22" width="25.38" height="20.18" />
-            <text transform="matrix(1 0 0 1 104.3868 270.9434)" class="st24 st38">S1</text>
-            <rect x="133.6" y="322.43" class="st22" width="25.38" height="20.18" />
-            <text transform="matrix(1 0 0 1 139.2493 332.3729)" class="st24 st38">S2</text>
-            <rect x="519.6" y="223.34" class="st43" width="27.99" height="21.52" />
-            <rect x="520.51" y="229.87" class="st22" width="25.38" height="20.18" />
-            <text transform="matrix(1 0 0 1 526.1523 239.8054)" class="st24 st38">S3</text>
-            <rect x="289.88" y="364.69" class="st22" width="17.43" height="13.15" />
-            <text transform="matrix(1 0 0 1 289.8836 371.7922)" class="st24 st44">V1</text>
-            <rect x="360.63" y="364.69" class="st22" width="17.43" height="13.15" />
-            <text transform="matrix(1 0 0 1 360.6267 371.7922)" class="st24 st44">V2</text>
-            <rect x="426.51" y="364.69" class="st22" width="17.43" height="13.15" />
-            <text transform="matrix(1 0 0 1 426.5136 371.7922)" class="st24 st44">V3</text>
-            <line class="st35" x1="161.4" y1="254.07" x2="161.4" y2="285.8" />
-            <line class="st35" x1="145.79" y1="301.41" x2="161.8" y2="285.4" id="bar_s2" />
-
-
-
-            <foreignObject x="270" y="470" width="150" height="100">
-                <div xmlns="http://www.w3.org/1999/xhtml">
-                    <div> <span style="margin-left:10px ;">V1 Input</span>
-                        <input type="range" min="0" max="30" value="0" class="slider" id="voltage1"
+                    <select style="margin-top: 10px;" id="ACDC">
+                        <option value="voltagetype">Voltage-Type</option>
+                        <option value="Alternative">AC</option>
+                        <option value="Direct">DC</option>
+                    </select>
+                </div>
+                <div class="control-container">
+                    <div class="control-grp">
+                        <span>V1</span>
+                        <input type="range" min="-10" max="10" value="0" class="slider" id="voltage1"
                             oninput="getVoltage(this.id)">
                         <span id="voltage-1-display">0</span>
                     </div>
-                </div>
-            </foreignObject>
-            <foreignObject x="380" y="485" width="200" height="100">
-                <div xmlns="http://www.w3.org/1999/xhtml">
-                    <div> <span style="margin-left:10px ;">V2 Input</span>
-                        <input type="range" min="0" max="30" value="0" class="slider" id="voltage2"
+                    <div class="control-grp">
+                        <span>V2</span>
+                        <input type="range" min="-10" max="10" value="0" class="slider" id="voltage2"
                             oninput="getVoltage(this.id)">
                         <span id="voltage-2-display">0</span>
                     </div>
                 </div>
-            </foreignObject>
-            <foreignObject x="670" y="350" width="150" height="200">
-                <div xmlns="http://www.w3.org/1999/xhtml">
-                    <table class="table123" id="tab1">
+                <div class="control-container">
+                    <div class="control-grp">
+                        <span>R1</span>
+                        <input type="range" min="0" max="2000" value="0" class="slider" id="Resistance-1"
+                            oninput="getResistance(this.id)">
+                        <span id="r-1-display">0</span>
+                    </div>
+                    <div class="control-grp">
+                        <span>R2</span>
+                        <input type="range" min="0" max="2000" value="0" class="slider" id="Resistance-2"
+                            oninput="getResistance(this.id)">
+                        <span id="r-2-display">0</span>
+                    </div>
+                    <div class="control-grp">
+                        <span>R3</span>
+                        <input type="range" min="0" max="2000" value="0" class="slider" id="Resistance-3"
+                            oninput="getResistance(this.id)">
+                        <span id="r-3-display">0</span>
+                    </div>
+                    <div class="control-grp">
+                        <span style="position: relative; left: -10px;">R<sub>gain</sub></span>
+                        <input type="range" min="0" max="2000" value="0" class="slider" id="Rgain"
+                            oninput="getResistance(this.id)" style="position: relative; left: -8px;">
+                        <span id="rgain-display">0</span>
+                    </div>
+                    <div class="buttons">
+                        <button id="getvoutid" onclick="get_Vout()"> V_out </button>
+                        <button id="graphid" onclick="graph()">GRAPH</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section class="main-section3">
+            <h3 style="margin-left:300px;margin-top: 20px;">OUTPUT SECTION FOR INSTRUMENTATION AMPLIFIER</h4>
+                <div class="outsection">
+                    <div id="myPlot"
+                        style="height:420px;width:400px; margin-left:50px;margin-top:20px;border:2px solid rgb(0, 0, 0)">
+                    </div>
+                    <table id="tab1" class="tableclass" border="2px">
                         <tr>
-                            <td>R1</td>
-                            <td>100 Ω</td>
+                            <th>S.No:</th>
+                            <th>V1(volts)</th>
+                            <th>V2(volts)</th>
+                            <th>R1(ohms)</th>
+                            <th>R2(ohms)</th>
+                            <th>R3(ohms)</th>
+                            <th>Rgain(ohms)</th>
+                            <th>Vout(ohms)</th>
                         </tr>
                         <tr>
-                            <td>R2</td>
-                            <td id="change">22K Ω</td>
+                            <td>1.</td>
+                            <td><input type="number"></td>
+                            <td><input type="number"></td>
+                            <td><input type="number"></td>
+                            <td><input type="number"></td>
+                            <td><input type="number"></td>
+                            <td><input type="number"></td>
+                            <td><input type="number"></td>
                         </tr>
                         <tr>
-                            <td>R3</td>
-                            <td>100 Ω</td>
+                            <td>2.</td>
+                            <td><input type="number"></td>
+                            <td><input type="number"></td>
+                            <td><input type="number"></td>
+                            <td><input type="number"></td>
+                            <td><input type="number"></td>
+                            <td><input type="number"></td>
+                            <td><input type="number"></td>
                         </tr>
                         <tr>
-                            <td>R4</td>
-                            <td>100K Ω</td>
+                            <td>3.</td>
+                            <td><input type="number"></td>
+                            <td><input type="number"></td>
+                            <td><input type="number"></td>
+                            <td><input type="number"></td>
+                            <td><input type="number"></td>
+                            <td><input type="number"></td>
+                            <td><input type="number"></td>
+                        </tr>
+                        <tr>
+                            <td>4.</td>
+                            <td><input type="number"></td>
+                            <td><input type="number"></td>
+                            <td><input type="number"></td>
+                            <td><input type="number"></td>
+                            <td><input type="number"></td>
+                            <td><input type="number"></td>
+                            <td><input type="number"></td>
                         </tr>
                     </table>
                 </div>
-            </foreignObject>
-            <foreignObject x="130" y="485" width="150" height="100">
-                <div xmlns="http://www.w3.org/1999/xhtml">
-                    <button id="out_v" onclick="calculate(this.id)" style="cursor:pointer;">Calculate V_out</button>
-                </div>
-            </foreignObject>
-
-            <foreignObject x="560" y="485" width="150" height="100">
-                <div xmlns="http://www.w3.org/1999/xhtml">
-                    <button id="rate_slew" onclick="calculate(this.id)" style="cursor:pointer; display:none;">Slew_rate</button>
-                </div>
-            </foreignObject>
-            <foreignObject x="500" y="345" width="150" height="100">
-                <div xmlns="http://www.w3.org/1999/xhtml">
-                    <button id="cmrr_ratio" onclick="calculate(this.id)" style="cursor:pointer; display:none;">CMRR</button>
-                </div>
-            </foreignObject>
-
-
-            <foreignObject x="555" y="438" width="150" height="40">
-                <div xmlns="http://www.w3.org/1999/xhtml">
-                    <div class="output-window">
-                        <span id="number-output">0</span>
-                      </div>
-                </div>
-            </foreignObject>
-        </svg>
-        <div id="outputsec">
-            <table class="table987" id="tab11" style="display:none;">
-                <tr>
-                    <th>Vin V1 (Volt)</th>
-                    <th>Vout (Volt)</th>
-                </tr>
-                <tr>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
-                </tr>
-                <tr>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
-                </tr>
-                <tr>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
-                </tr>
-                <tr>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
-                </tr>
-                <tr>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
-                </tr>
-            </table>
-        </div>
-        <div>
-            <table class="table987" id="tab2" style="display:none;">
-                <tr>
-                    <th>Vin V1 (Volt)</th>
-                    <th>Vin V2 (Volt)</th>
-                    <th>Vout (Volt)</th>
-                </tr>
-                <tr>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
-                </tr>
-                <tr>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
-                </tr>
-                <tr>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
-                </tr>
-                <tr>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
-                </tr>
-                <tr>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
-                </tr>
-            </table>
-        </div>
-        <div>
-            <table class="table987" id="tab3" style="display:none;">
-                <tr>
-                    <th>Vin V1 (Volt)</th>
-                    <th>Vin V2 (Volt)</th>
-                    <th>Vout (Volt)</th>
-                    <th>CMRR</th>
-                </tr>
-                <tr>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
-                </tr>
-                <tr>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
-                </tr>
-                <tr>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
-                </tr>
-                <tr>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
-                </tr>
-                <tr>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
-                </tr>
-            </table>
-        </div>
-        <div>
-            <table class="table987" id="tab4" style="display:none;">
-                <tr>
-                    <th>Vin V1 (Volt)</th>
-                    <th>Vin V2 (Volt)</th>
-                    <th>Vout (Volt)</th>
-                    <th>Slew_Rate</th>
-                </tr>
-                <tr>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
-                </tr>
-                <tr>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
-                </tr>
-                <tr>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
-                </tr>
-                <tr>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
-                </tr>
-                <tr>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
-                </tr>
-            </table>
-        </div>
+        </section>
     </div>
-
+    </div>
+    <script src="./js/main.js"></script>
+    <div>
+    <center><button style="margin-bottom: 40px; " onclick="window.print()">Print this page</button></center>
+    </div>
 </body>
 </html>
