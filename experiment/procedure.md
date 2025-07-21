@@ -18,7 +18,7 @@ a) The CMMR is calculated as the ratio of the differential mode gain (obtained i
 a) Connect a step input signal to the inputs of the Op-Amp.<br>
 b) Observe the output waveform on an oscilloscope and note the rise time of the waveform.<br>
 c) The slew rate is then calculated as the change in voltage divided by the rise time.<br>
-d) Calculate slew rate, SR=2*3.14*F Vm/10^6  v/us <br>
+d) Calculate slew rate, SR=2*3.14*F Vm/10<sup>6</sup>  v/us <br>
 e) Increase the input frequency slowly until the output is just barely a triangular wave.<br><br>
     The slew rate SR = change in the output voltage amplitude /change in the output time v/us. 
 
