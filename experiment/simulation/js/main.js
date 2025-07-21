@@ -1,148 +1,274 @@
-//Your JavaScript goes in here
-let voltage1 = 0;
-let voltage2 = 0;
-let r1 = 0;
-let r2 = 0;
-let r3 = 0;
-let rgain = 0;
-let gain = 0;
-let vout1 = 0;
-const V_type = document.querySelector("#ACDC");
-V_type.addEventListener('change', function () {
-    if (V_type.value == 'Alternative' || V_type.value == 'Direct') {
-        V1id.disabled = false;
-        V2id.disabled = false;
-        R1id.disabled = false;
-        R2id.disabled = false;
-        R3id.disabled = false;
-        Rgainid.disabled = false;
-
-    }
-});
-var V1id = document.getElementById("voltage1");
-var V2id = document.getElementById("voltage2");
-var R1id = document.getElementById("Resistance-1");
-var R2id = document.getElementById("Resistance-2");
-var R3id = document.getElementById("Resistance-3");
-var Rgainid = document.getElementById("Rgain");
-var Voutid = document.getElementById("rgain-display");
-var V_outid = document.getElementById("getvoutid");
-var Graph_id = document.getElementById("graphid");
-V1id.disabled = true;
-V2id.disabled = true;
-R1id.disabled = true;
-R2id.disabled = true;
-R3id.disabled = true;
-Rgainid.disabled = true;
-V_outid.disabled = false;
-
-Graph_id.disabled = true;
+var sw1 = false
+var sw2 = false
+var sw3 = false
+s1count = 0;
+s2count = 0;
+s3count = 0;
+v1coun = 0;
+v2count = 0;
+voltage1 = 0
+voltage2 = 0
+mode = "";
+r1 = 100
+r2_1 = 22000
+r2_2 = 100000
+r3 = 100
+r4 = 100000
 function getVoltage(id) {
     if (id === 'voltage1') {
         voltage1 = document.getElementById(id).value;
-        document.getElementById("voltage-1-display").innerText = voltage1+"V";
-        document.getElementById("voltage-1-display-svg").innerHTML = "V1: " + voltage1 + " volts";
+        document.getElementById("voltage-1-display").innerText = voltage1;
+        volt_1 = document.getElementById('V_1').innerHTML = voltage1 + " volts";
     }
 
     else {
         voltage2 = document.getElementById(id).value;
-        document.getElementById("voltage-2-display").innerText = voltage2+"V";
-        document.getElementById("voltage-2-display-svg").innerHTML = "V2: " + voltage2 + " volts";
+        document.getElementById("voltage-2-display").innerText = voltage2;
+        volt_2 = document.getElementById('V_2').innerHTML = voltage2 + " volts";
     }
+}
+function rswitch1() {
+    // if(s1count!=1){
+    //     document.getElementById("bar_s1").style.transform = "rotate(30deg)";
+    //     document.getElementById("bar_s1").style.transformOrigin = "131.51px 268.36px";
+    //     document.getElementById("bar_s1").style.transition = 'transform 0.5s';
+    //     switch_1color = document.getElementById('s1').style.fill = 'green';
+    //     sw1 = true;
+    // }
+    // if (sw1 === false) {
 
-    // console.log(voltage1, voltage2);
-
-    // console.log(document.getElementById("voltage-1-display-svg").innerText)
+    // }
+    // else {
+    //     document.getElementById("bar_s1").style.transform = "rotate(0deg)";
+    //     switch_1color = document.getElementById('s1').style.fill = '#ff0000';
+    //     sw1 = false;
+    // }
+    if (mode === "common_mode" || mode === "Slew_rate" || mode === "CMRR_ratio") {
+        if (sw1 === false) {
+            document.getElementById("bar_s1").style.transform = "rotate(30deg)";
+            document.getElementById("bar_s1").style.transformOrigin = "131.51px 268.36px";
+            document.getElementById("bar_s1").style.transition = 'transform 0.5s';
+            document.getElementById('s1').style.fill = 'green';
+            sw1 = true;
+        }
+        else {
+            document.getElementById("bar_s1").style.transform = "rotate(0deg)";
+            document.getElementById('s1').style.fill = '#ff0000';
+            sw1 = false;
+        }
+    }
 }
 
-function getResistance(id) {
-
-    if (id === 'Resistance-1') {
-        r1 = document.getElementById(id).value;
-        document.getElementById("r-1-display").innerText = r1+"Ω";
-
-        document.getElementById("r1-svg-display").innerHTML = r1;
-        document.getElementById("r10-svg-display").innerHTML = r1;
+function rswitch2() {
+    if (mode === "differential_mode") {
+        if (sw2 === false) {
+            document.getElementById("bar_s2").style.transform = "rotate(-35deg)";
+            document.getElementById("bar_s2").style.transformOrigin = "161.8px 285.4px";
+            document.getElementById("bar_s2").style.transition = 'transform 0.5s';
+            switch_2color = document.getElementById('srpo').style.fill = 'green';
+            sw2 = true;
+        }
+        else {
+            document.getElementById("bar_s2").style.transform = "rotate(0deg)";
+            switch_2color = document.getElementById('srpo').style.fill = '#ff0000';
+            sw2 = false;
+        }
     }
 
-    else if (id === 'Resistance-2') {
-        r2 = document.getElementById(id).value;
-        document.getElementById("r-2-display").innerText = r2+"Ω";
+}
 
-        document.getElementById("r2-svg-display").innerHTML = r2;
-        document.getElementById("r20-svg-display").innerHTML = r2;
+function rswitch3() {
+    if (sw3 === false) {
+        switch_3color = document.getElementById('s3').style.fill = 'green';
+        sw3 = true;
     }
-
-    else if (id === 'Resistance-3') {
-        r3 = document.getElementById(id).value;
-        document.getElementById("r-3-display").innerText = r3+"Ω";
-
-        document.getElementById("r3-svg-display").innerHTML = r3;
-        document.getElementById("r30-svg-display").innerHTML = r3;
-    }
-
     else {
-        rgain = document.getElementById(id).value;
-        document.getElementById("rgain-display").innerText = rgain+"Ω";
-
-        document.getElementById("rgain-svg-display").innerHTML = rgain;
+        switch_3color = document.getElementById('s3').style.fill = '#ff0000';
+        sw3 = false;
     }
 }
-function get_Vout() {
-    gain = (1 + (2 * r1 / rgain) * (r3 / r2));
-    vout1 = gain * (voltage1 - voltage2);
-    vout1 = vout1.toFixed(3);
-    document.getElementById("Vout_svg_display").innerHTML = vout1;
-    Graph_id.disabled = false;
 
+function alertfunc(id) {
+    if (id === "CommonMode") {
+        but1 = document.getElementById('CommonMode').style.backgroundColor = 'green';
+        but2 = document.getElementById('DifferentialMode').style.backgroundColor = '#2f85ee';
+        but3 = document.getElementById('CMRR').style.backgroundColor = '#2f85ee';
+        but4 = document.getElementById('SlewRate').style.backgroundColor = '#2f85ee';
+        alert('STEPS TO PERFORM COMMON MODE :\n \n1.  Switch1 (S1) and Switch3 (S3) is Closed. \n2.  Switch2 (S2) is Open. \n3.  V1 source is active \n4.  V2 source is not active ')
+        s2count = 1;
+        mode = "common_mode";
+        console.log(mode);
+        document.getElementById("voltage1").disabled = false;
+        document.getElementById("voltage2").disabled = true;
+        document.getElementById("change").innerHTML = "22K Ω";
+
+        document.getElementById("bar_s1").style.transform = "rotate(0deg)";
+        document.getElementById('s1').style.fill = '#ff0000';
+        sw1 = false;
+        document.getElementById("bar_s2").style.transform = "rotate(0deg)";
+        switch_2color = document.getElementById('srpo').style.fill = '#ff0000';
+        sw2 = false;
+        switch_3color = document.getElementById('s3').style.fill = '#ff0000';
+        sw3 = false;
+        document.getElementById("multi").innerHTML = "0V";
+
+        document.getElementById("tab11").style.display = "block";
+        document.getElementById("tab2").style.display = "none";
+        document.getElementById("tab3").style.display = "none";
+        document.getElementById("tab4").style.display = "none";
+
+        numberOutput = document.getElementById("number-output");
+        numberOutput.innerHTML = "0";
+
+        document.getElementById("cmrr_ratio").style.display = "none";
+        document.getElementById("rate_slew").style.display = "none";
+
+    }
+    else if (id === "DifferentialMode") {
+        but1 = document.getElementById('CommonMode').style.backgroundColor = '#2f85ee';
+        but2 = document.getElementById('DifferentialMode').style.backgroundColor = 'green';
+        but3 = document.getElementById('CMRR').style.backgroundColor = '#2f85ee';
+        but4 = document.getElementById('SlewRate').style.backgroundColor = '#2f85ee';
+        alert('STEPS TO PERFORM DIFFERENTIAL MODE :\n \n1.  Switch1 (S1) is open.  \n2.  Switch2 (S2) and Switch3 (S3) is closed. \n3.  V1,V2 source is active')
+        s1count = 1;
+        mode = "differential_mode";
+        document.getElementById("voltage1").disabled = false;
+        document.getElementById("voltage2").disabled = false;
+        document.getElementById("change").innerHTML = "100K Ω";
+
+        document.getElementById("bar_s1").style.transform = "rotate(0deg)";
+        document.getElementById('s1').style.fill = '#ff0000';
+        sw1 = false;
+        document.getElementById("bar_s2").style.transform = "rotate(0deg)";
+        switch_2color = document.getElementById('srpo').style.fill = '#ff0000';
+        sw2 = false;
+        switch_3color = document.getElementById('s3').style.fill = '#ff0000';
+        sw3 = false;
+        document.getElementById("multi").innerHTML = "0V";
+        document.getElementById("tab11").style.display = "none";
+        document.getElementById("tab2").style.display = "block";
+        document.getElementById("tab3").style.display = "none";
+        document.getElementById("tab4").style.display = "none";
+
+        numberOutput = document.getElementById("number-output");
+        numberOutput.innerHTML = "0";
+        document.getElementById("cmrr_ratio").style.display = "none";
+        document.getElementById("rate_slew").style.display = "none";
+    }
+    else if (id === "CMRR") {
+        but1 = document.getElementById('CommonMode').style.backgroundColor = '#2f85ee';
+        but2 = document.getElementById('DifferentialMode').style.backgroundColor = '#2f85ee';
+        but3 = document.getElementById('CMRR').style.backgroundColor = 'green';
+        but4 = document.getElementById('SlewRate').style.backgroundColor = '#2f85ee';
+        alert('STEPS TO PERFORM CMRR MODE :\n \n1.  Switch1 (S1) and Switch3 (S3) is Closed. \n2.  Switch2(S2) is Open. \n3.  V1 source is active. \n4.  V2 source is not active. ')
+        mode = "CMRR_ratio";
+        document.getElementById("voltage1").disabled = false;
+        document.getElementById("voltage2").disabled = true;
+        document.getElementById("change").innerHTML = "100K Ω";
+
+        document.getElementById("bar_s1").style.transform = "rotate(0deg)";
+        document.getElementById('s1').style.fill = '#ff0000';
+        sw1 = false;
+        document.getElementById("bar_s2").style.transform = "rotate(0deg)";
+        switch_2color = document.getElementById('srpo').style.fill = '#ff0000';
+        sw2 = false;
+        switch_3color = document.getElementById('s3').style.fill = '#ff0000';
+        sw3 = false;
+        document.getElementById("multi").innerHTML = "0V";
+
+        document.getElementById("tab11").style.display = "none";
+        document.getElementById("tab2").style.display = "none";
+        document.getElementById("tab3").style.display = "block";
+        document.getElementById("tab4").style.display = "none";
+
+        numberOutput = document.getElementById("number-output");
+        numberOutput.innerHTML = "0";
+
+        document.getElementById("cmrr_ratio").style.display = "block";
+        document.getElementById("rate_slew").style.display = "none";
+    }
+    else if (id === "SlewRate") {
+        but1 = document.getElementById('CommonMode').style.backgroundColor = '#2f85ee';
+        but2 = document.getElementById('DifferentialMode').style.backgroundColor = '#2f85ee';
+        but3 = document.getElementById('CMRR').style.backgroundColor = '#2f85ee';
+        but4 = document.getElementById('SlewRate').style.backgroundColor = 'green';
+        alert('STEPS TO PERFORM SLEW RATE :\n \n1.  Switch1 (S1) and Switch3 (S3) is closed. \n2.  Switch2 (S2) is open. \n3.  V1 source is active.')
+        mode = "Slew_rate";
+        document.getElementById("voltage1").disabled = false;
+        document.getElementById("voltage2").disabled = true;
+        document.getElementById("change").innerHTML = "100K Ω";
+
+        document.getElementById("bar_s1").style.transform = "rotate(0deg)";
+        document.getElementById('s1').style.fill = '#ff0000';
+        sw1 = false;
+        document.getElementById("bar_s2").style.transform = "rotate(0deg)";
+        switch_2color = document.getElementById('srpo').style.fill = '#ff0000';
+        sw2 = false;
+        switch_3color = document.getElementById('s3').style.fill = '#ff0000';
+        sw3 = false;
+        document.getElementById("multi").innerHTML = "0V";
+
+        document.getElementById("tab11").style.display = "none";
+        document.getElementById("tab2").style.display = "none";
+        document.getElementById("tab3").style.display = "none";
+        document.getElementById("tab4").style.display = "block";
+
+        numberOutput = document.getElementById("number-output");
+        numberOutput.innerHTML = "0";
+        document.getElementById("cmrr_ratio").style.display = "none";
+        document.getElementById("rate_slew").style.display = "block";
+    }
 }
-function makeGraph() {
 
-}
-function graph() {
-
-    if (V_type.value == 'Alternative') {
-        var exp = "((Math.sin(10*x-3.14))*vout1)";
-        // Generate values
-        var xValues = [];
-        var yValues = [];
-        for (var x = 0; x <= 5; x += 0.0001) {
-            xValues.push(x);
-            yValues.push(eval(exp));
+function calculate(id) {
+    if (id === "out_v") {
+        if (sw1 === true && sw3 === true && mode === "common_mode") {
+            v_out = ((r4 / (r3 + r4)) * voltage1 * (1 - ((r2_1 * r3) / r4))).toFixed(2);
+            document.getElementById("multi").innerHTML = v_out;
         }
-
-        // Display using Plotly
-        var data = [{ x: xValues, y: yValues, mode: "lines" }];
-        var layout = { title: "y = " + exp };
-        var layout2 = { title: "Voltage(Volts) vs Time(Seconds)" + " " }
-        Plotly.newPlot("myPlot", data, layout2);
-    }
-    else if (V_type.value == 'Direct') {
-        var exp = "vout1";
-        // Generate values
-        var xValues = [];
-        var yValues = [];
-        for (var x = 0; x <= 10; x += 1) {
-            xValues.push(x);
-            yValues.push(eval(exp));
+        else if (sw1 === true && sw3 === true && (mode === "CMRR_ratio" || mode === "Slew_rate")) {
+            v_out = ((r4 / (r3 + r4)) * voltage1 * (1 - ((r2_2 * r3) / r4))).toFixed(2);
+            document.getElementById("multi").innerHTML = v_out;
         }
-
-        // Define Data
-        var data = [{
-            x: xValues,
-            y: yValues,
-            mode: "lines"
-        }];
-
-        // Define Layout
-        var layout = { title: "y = " + exp };
-        var layout1 = { title: "Voltage(Volts) vs Time(Seconds)" + " " }
-
-        // Display using Plotly
-        Plotly.newPlot("myPlot", data, layout1);
+        else if (sw2 === true && sw3 === true) {
+            v_out = (voltage2 - voltage1) * (r2_2 / r1).toFixed(2);
+            document.getElementById("multi").innerHTML = v_out;
+        }
+        else {
+            alert("Please turn on the required switches and select the voltage")
+        }
     }
-}
+    else if (id === "cmrr_ratio") {
+        if (sw1 === true && sw3 === true && mode === "CMRR_ratio") {
 
+            v_out = ((r4 / (r3 + r4)) * voltage1 * (1 - ((r2_2 * r3) / r4))).toFixed(2);
+            v_in = voltage1;
+            cmrr = Math.abs(((voltage1 / v_out) * (1 + (r2_2 / r1))).toFixed(2));
+            console.log(cmrr);
+            numberOutput = document.getElementById("number-output");
+            numberOutput.innerHTML = cmrr;
+        }
+        else {
+            alert("Please turn on the required switches and select the voltage");
+        }
+    }
+    else if (id === "rate_slew") {
+        if (sw1 === true && sw3 === true && mode === "Slew_rate") {
+            var minMicroseconds = 1;
+            var maxMicroseconds = 10;
+            var randomMicroseconds = minMicroseconds + Math.random() * (maxMicroseconds - minMicroseconds);
+            v_out = ((r4 / (r3 + r4)) * voltage1 * (1 - ((r2_2 * r3) / r4))).toFixed(2);
+            slew_rate=Math.abs((v_out/randomMicroseconds).toFixed(2));
+            numberOutput = document.getElementById("number-output");
+            numberOutput.innerHTML = slew_rate;
+        }
+        else{
+            alert("Please turn on the required switches and select the voltage");
+        }
+    }
+
+
+}
 function openNav() {
     document.getElementById("mySidepanel").style.width = "500px";
     document.getElementById("mySidepanel").style.height = "100%";
@@ -151,4 +277,3 @@ function openNav() {
 function closeNav() {
     document.getElementById("mySidepanel").style.width = "0";
 }
-
