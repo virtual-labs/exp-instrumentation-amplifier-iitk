@@ -19,15 +19,15 @@ The gain of the circuit is given as: <br>
 A<sub>v</sub> = (1 + (2R₁ / R<sub>G</sub>)) × (R₃ / R₂) <br>
 Where:
 
-R₁ is the resistor connected in series with the input stage op-amps.
+- R₁ is the resistor connected in series with the input stage op-amps.
 
-R<sub>G</sub> is the resistor between the input stage op-amps and is used to set the overall gain.
+- R<sub>G</sub> is the resistor between the input stage op-amps and is used to set the overall gain.
 
-R₂ and R₃ are the resistors in the differential amplifier stage (third op-amp).
+- R₂ and R₃ are the resistors in the differential amplifier stage (third op-amp).
 
-The first term (1 + 2R₁ / R<sub>G</sub>) represents the gain from the input buffer stage.
+- The first term (1 + 2R₁ / R<sub>G</sub>) represents the gain from the input buffer stage.
 
-The second term (R₃ / R₂) represents the gain from the differential stage.
+- The second term (R₃ / R₂) represents the gain from the differential stage.
 
 
 <!--<p align="left">
@@ -38,15 +38,15 @@ It is essentially a differential amplifier enhanced with input buffer stages, wh
 
 Additional key characteristics include:
 
-Very low DC offset
+- Very low DC offset
 
-Low drift and low noise
+- Low drift and low noise
 
-Very high open-loop gain
+- Very high open-loop gain
 
-Excellent common-mode rejection ratio (CMRR)
+- Excellent common-mode rejection ratio (CMRR)
 
-Very high input impedance
+- Very high input impedance
 
 The input of an instrumentation amplifier typically receives signals from transducers, which usually output very small voltage levels. Because of this, the amplifier must maintain accuracy and stability over both short- and long-term periods.
 
@@ -55,13 +55,13 @@ Instrumentation amplifiers are commonly used in applications where precision, st
 
 The output voltage (V<sub>out</sub>) of the instrumentation amplifier can be calculated using the following formula:
 
-V<sub>out</sub> = A<sub>v</sub> × (V<sub>2</sub> − V<sub>1</sub>)
+  V<sub>out</sub> = A<sub>v</sub> × (V<sub>2</sub> − V<sub>1</sub>)
 
 Where:
 
-V<sub>1</sub> and V<sub>2</sub> are the two input voltages.
+- V<sub>1</sub> and V<sub>2</sub> are the two input voltages.
 
-A<sub>v</sub> is the voltage gain of the amplifier.
+- A<sub>v</sub> is the voltage gain of the amplifier.
 
 <br>
 <!--<p align="left">
@@ -77,13 +77,13 @@ So the value of R and Rg decides the gain of the amplifier.
 </p> --> 
 The gain of the input stage of the instrumentation amplifier is given by:
 
-A<sub>v</sub> = 1 + (2R / R<sub>G</sub>)
+   A<sub>v</sub> = 1 + (2R / R<sub>G</sub>)
 
 Where:
 
-R is the resistance connected between each input op-amp and the shared resistor.
+- R is the resistance connected between each input op-amp and the shared resistor.
 
-R<sub>G</sub> is the resistor between the two input op-amps that sets the gain.
+- R<sub>G</sub> is the resistor between the two input op-amps that sets the gain.
 
 This equation shows that the gain can be increased by decreasing the value of R<sub>G</sub>, making the amplifier suitable for various signal amplification needs.
 
@@ -100,10 +100,23 @@ This intimidating circuit is constructed from a buffered differential amplifier 
   <img src="circuit2.png" alt="Instrumentation Amplifier Circuit" width="600" height="350">
 </p>
 
-Consider all resistors to be of equal value except for R<sub>gain</sub>.<br>The negative feedback of the upper-left op-amp causes the voltage at point 1 (top of R<sub>gain</sub>) to be equal to V1.<br> Likewise, the voltage at point 2 (bottom of R<sub>gain</sub>) is held to a value equal to V2.<br> This establishes a voltage drop across R<sub>gain</sub> equal to the voltage difference between V1 and V2. <br>That voltage drop causes a current through R<sub>gain</sub>, and since the feedback loops of the two input op-amps draw no current, that same amount of current through R<sub>gain</sub> must be going through the two “R” resistors above and below it.<br>This produces a voltage drop between points 3 and 4 equal to:
-<p align="left">
+Consider all resistors to be of equal value except for R<sub>gain</sub>.<br>The negative feedback of the upper-left op-amp causes the voltage at point 1 (top of R<sub>gain</sub>) to be equal to V1.<br> Likewise, the voltage at point 2 (bottom of R<sub>gain</sub>) is held to a value equal to V2.<br> This establishes a voltage drop across R<sub>gain</sub> equal to the voltage difference between V1 and V2. <br>That voltage drop causes a current through R<sub>gain</sub>, and since the feedback loops of the two input op-amps draw no current, that same amount of current through R<sub>gain</sub> must be going through the two “R” resistors above and below it.<br>
+The voltage drop between points 3 and 4 is given by the equation:
+
+V<sub>3</sub> − V<sub>4</sub> = (V<sub>2</sub> − V<sub>1</sub>) × (1 + (2R / R<sub>G</sub>))
+
+Where:
+
+- V<sub>1</sub> and V<sub>2</sub> are the input voltages,
+
+- R is the resistor in the input stage (same on both sides),
+
+- R<sub>G</sub> is the gain-setting resistor between the two buffer op-amps,
+
+- V<sub>3</sub> and V<sub>4</sub> are the outputs of the first-stage op-amps.
+<!--<p align="left">
   <img src="equation4.jpg" alt="" width="600" height="130">
-</p>
+</p>-->
 The regular differential amplifier on the right-hand side of the circuit then takes this voltage drop between points 3 and 4 and amplifies it by a gain of 1 (assuming again that all “R” resistors are of equal value)<br>
 <h3>Instrumentation Amplifier Characteristics</h3>
 Let us look at the characteristics of the instrumentation amplifiers at a glance:<br>
