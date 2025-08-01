@@ -87,21 +87,19 @@ Where:
 
 This equation shows that the gain can be increased by decreasing the value of R<sub>G</sub>, making the amplifier suitable for various signal amplification needs.
 
-The amplifier’s gain is referred to as the factor by which the amplifier amplifies the input signal.<br> The resistance values represent the gain of an instrumentation amplifier.<br> The gain also depends on the type of feedbacks being used. The positive feedback provides higher gain, whereas negative feedback provides better stabilities of the system.
+The amplifier’s gain is referred to as the factor by which the amplifier amplifies the input signal. The resistance values represent the gain of an instrumentation amplifier. The gain also depends on the type of feedbacks being used. The positive feedback provides higher gain, whereas negative feedback provides better stabilities of the system.
 <h2>Understanding the Instrumentation Amplifier Circuit</h2>
 
 <h3>Instrumentation Amplifier Design</h3>
-An instrumentation amplifier is a combination of 3 typical amplifiers.<br> They are connected in a specific order to build an instrumentation amplifier. <br>We can segregate the instrument amplifier design into two-part.<br>
-The first part is “Two input and two output”. <br>Two standard operational amplifiers are connected, as shown in the amplifier circuit figure.<br> Both of them are provided with negative feedback as it stabilizes the circuit more.<br> The output of both the amplifier is connected with three resistors.<br>
-The second part is a basic “Differential Amplifier”.<br>  The output of both the previous amplifier acts as input for the last amplifier.<br> Outputs are connected with two identical valued resistors with the amplifier. <br>
-The positive section is grounded, and negative feedback is associated with the negative terminal and the o/p of this op-amp <br>is the final output of the instrument amplifier.
-This intimidating circuit is constructed from a buffered differential amplifier stage with three new resistors linking the two buffer circuits together as shown in fig:2. <br> <br>
+An instrumentation amplifier is a combination of 3 typical amplifiers. They are connected in a specific order to build an instrumentation amplifier. We can segregate the instrument amplifier design into two-part.<br>
+The first part is “Two input and two output”. Two standard operational amplifiers are connected, as shown in the amplifier circuit figure. Both of them are provided with negative feedback as it stabilizes the circuit more. The output of both the amplifier is connected with three resistors.<br>
+The second part is a basic “Differential Amplifier”. The output of both the previous amplifier acts as input for the last amplifier. Outputs are connected with two identical valued resistors with the amplifier. <br>
+The positive section is grounded, and negative feedback is associated with the negative terminal and the o/p of this op-amp is the final output of the instrument amplifier. This intimidating circuit is constructed from a buffered differential amplifier stage with three new resistors linking the two buffer circuits together as shown in fig:2. <br> <br>
 <p align="center">
   <img src="circuit2.png" alt="Instrumentation Amplifier Circuit" width="600" height="350">
 </p>
 
-Consider all resistors to be of equal value except for R<sub>gain</sub>.<br>The negative feedback of the upper-left op-amp causes the voltage at point 1 (top of R<sub>gain</sub>) to be equal to V1.<br> Likewise, the voltage at point 2 (bottom of R<sub>gain</sub>) is held to a value equal to V2.<br> This establishes a voltage drop across R<sub>gain</sub> equal to the voltage difference between V1 and V2. <br>That voltage drop causes a current through R<sub>gain</sub>, and since the feedback loops of the two input op-amps draw no current, that same amount of current through R<sub>gain</sub> must be going through the two “R” resistors above and below it.<br>
-The voltage drop between points 3 and 4 is given by the equation:
+Consider all resistors to be of equal value except for R<sub>gain</sub>. The negative feedback of the upper-left op-amp causes the voltage at point 1 (top of R<sub>gain</sub>) to be equal to V<sub>1</sub>. Likewise, the voltage at point 2 (bottom of R<sub>gain</sub>) is held to a value equal to V<sub>2</sub>. This establishes a voltage drop across R<sub>gain</sub> equal to the voltage difference between V<sub>1</sub> and V<sub>2</sub>. That voltage drop causes a current through R<sub>gain</sub>, and since the feedback loops of the two input op-amps draw no current, that same amount of current through R<sub>gain</sub> must be going through the two “R” resistors above and below it. The voltage drop between points 3 and 4 is given by the equation: <br>
 
 <b>V<sub>3</sub> − V<sub>4</sub> = (V<sub>2</sub> − V<sub>1</sub>) × (1 + (2R / R<sub>G</sub>))</b>
 
