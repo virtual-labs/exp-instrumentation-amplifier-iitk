@@ -16,7 +16,7 @@ Due to their high CMRR, instrumentation amplifiers are widely used in applicatio
 </p>
 The most commonly used instrumentation amplifier circuit is shown in fig 1.<br>
 The gain of the circuit is given as: <br>
-A<sub>v</sub> = (1 + (2R₁ / R<sub>G</sub>)) × (R₃ / R₂) <br>
+<b>A<sub>v</sub> = (1 + (2R₁ / R<sub>G</sub>)) × (R₃ / R₂)</b> <br>
 Where:
 
 - R₁ is the resistor connected in series with the input stage op-amps.
@@ -55,7 +55,7 @@ Instrumentation amplifiers are commonly used in applications where precision, st
 
 The output voltage (V<sub>out</sub>) of the instrumentation amplifier can be calculated using the following formula:
 
-  V<sub>out</sub> = A<sub>v</sub> × (V<sub>2</sub> − V<sub>1</sub>)
+  <b>V<sub>out</sub> = A<sub>v</sub> × (V<sub>2</sub> − V<sub>1</sub>)</b>
 
 Where:
 
@@ -77,7 +77,7 @@ So the value of R and Rg decides the gain of the amplifier.
 </p> --> 
 The gain of the input stage of the instrumentation amplifier is given by:
 
-   A<sub>v</sub> = 1 + (2R / R<sub>G</sub>)
+   <b>A<sub>v</sub> = 1 + (2R / R<sub>G</sub>)</b>
 
 Where:
 
@@ -103,7 +103,7 @@ This intimidating circuit is constructed from a buffered differential amplifier 
 Consider all resistors to be of equal value except for R<sub>gain</sub>.<br>The negative feedback of the upper-left op-amp causes the voltage at point 1 (top of R<sub>gain</sub>) to be equal to V1.<br> Likewise, the voltage at point 2 (bottom of R<sub>gain</sub>) is held to a value equal to V2.<br> This establishes a voltage drop across R<sub>gain</sub> equal to the voltage difference between V1 and V2. <br>That voltage drop causes a current through R<sub>gain</sub>, and since the feedback loops of the two input op-amps draw no current, that same amount of current through R<sub>gain</sub> must be going through the two “R” resistors above and below it.<br>
 The voltage drop between points 3 and 4 is given by the equation:
 
-V<sub>3</sub> − V<sub>4</sub> = (V<sub>2</sub> − V<sub>1</sub>) × (1 + (2R / R<sub>G</sub>))
+<b>V<sub>3</sub> − V<sub>4</sub> = (V<sub>2</sub> − V<sub>1</sub>) × (1 + (2R / R<sub>G</sub>))</b>
 
 Where:
 
