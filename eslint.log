@@ -1,0 +1,22 @@
+
+/home/runner/work/exp-instrumentation-amplifier-iitk/exp-instrumentation-amplifier-iitk/experiment/simulation/js/main.js
+   28:5   warning  'Voutid' is assigned a value but never used  no-unused-vars
+   40:10  warning  'getVoltage' is defined but never used       no-unused-vars
+   58:10  warning  'getResistance' is defined but never used    no-unused-vars
+   91:10  warning  'get_Vout' is defined but never used         no-unused-vars
+   99:10  warning  'makeGraph' is defined but never used        no-unused-vars
+  102:10  warning  'graph' is defined but never used            no-unused-vars
+  118:9   warning  'Plotly' is not defined                      no-undef
+  121:13  warning  'exp' is already defined                     no-redeclare
+  123:13  warning  'xValues' is already defined                 no-redeclare
+  124:13  warning  'yValues' is already defined                 no-redeclare
+  125:18  warning  'x' is already defined                       no-redeclare
+  131:13  warning  'data' is already defined                    no-redeclare
+  138:13  warning  'layout' is already defined                  no-redeclare
+  138:13  warning  'layout' is assigned a value but never used  no-unused-vars
+  142:9   warning  'Plotly' is not defined                      no-undef
+  146:10  warning  'openNav' is defined but never used          no-unused-vars
+  151:10  warning  'closeNav' is defined but never used         no-unused-vars
+
+✖ 17 problems (0 errors, 17 warnings)
+
