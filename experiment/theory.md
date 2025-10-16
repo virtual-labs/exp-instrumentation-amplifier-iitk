@@ -1,5 +1,7 @@
 <h3>Introduction:</h3>
-An Instrumentation amplifier is not just an integrated circuit (IC), but an amplifier to provide high differential gain and high common-mode rejection.This type of amplifier is in the differential amplifier family because It amplifies the difference between two inputs. The importance of an Instrumentation amplifier is that it can reduce unwanted noise that is picked up by the circuit. The ability to reject noise or unwanted signals common to all IC pins is called the common-mode rejection ratio (CMRR). Instrumentation amplifiers are very useful due to their high CMRR. Other characteristics, such as : <br>
+While often an integrated circuit (IC), an instrumentation amplifier is better defined by its core function: to deliver high differential gain and high common-mode rejection.This type of amplifier is in the differential amplifier family because It amplifies the difference between two inputs. The importance of an Instrumentation amplifier is that it can reduce unwanted noise that is picked up by the circuit. The ability to reject noise or unwanted signals common to all IC pins is called the common-mode rejection ratio (CMRR). Instrumentation amplifiers are very useful due to their high CMRR. Other characteristics, such as : <br>
+
+- Loop Gain: The gain within the feedback loop of the amplifier, which affects accuracy, stability, and rejection of common-mode signals. High loop gain helps maintain precise amplification. <br> 
 
 - Loop Gain: The gain within the feedback loop of the amplifier, which affects accuracy, stability, and rejection of common-mode signals. High loop gain helps maintain precise amplification. <br> 
 
